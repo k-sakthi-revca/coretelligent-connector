@@ -163,14 +163,7 @@ class ITGlueConnector:
         """
         return self.get_all_pages('domains')
     
-    def get_vendors(self) -> List[Dict]:
-        """
-        Get all vendors
-        
-        Returns:
-            List of vendors
-        """
-        return self.get_all_pages('vendors')
+    
     
     def get_attachments(self, resource_type: str, resource_id: int) -> List[Dict]:
         """

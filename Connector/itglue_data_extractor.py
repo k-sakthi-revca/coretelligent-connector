@@ -286,37 +286,15 @@ class ITGlueDataExtractor:
     
     def extract_vendors(self) -> List[Dict]:
         """
-        Extract vendors data
+        Extract vendors data (as flexible assets with ID 43822)
         
         Returns:
             List of processed vendors
         """
-        logger.info("Extracting vendors data")
+        logger.info("Extracting vendors data (as flexible assets with ID 43822)")
         
-        raw_data = self.connector.get_vendors()
-        
-        # Process the data
-        processed_data = []
-        for item in raw_data:
-            vendor = {
-                'id': item.get('id'),
-                'name': item.get('attributes', {}).get('name'),
-                'organization_id': item.get('attributes', {}).get('organization-id'),
-                'description': item.get('attributes', {}).get('description'),
-                'contact_name': item.get('attributes', {}).get('contact-name'),
-                'contact_phone': item.get('attributes', {}).get('contact-phone'),
-                'contact_email': item.get('attributes', {}).get('contact-email'),
-                'website': item.get('attributes', {}).get('website'),
-                'created_at': item.get('attributes', {}).get('created-at'),
-                'updated_at': item.get('attributes', {}).get('updated-at')
-            }
-            processed_data.append(vendor)
-        
-        # Save the data
-        self._save_to_json(raw_data, "vendors_raw")
-        self._save_to_csv(processed_data, "vendors")
-        
-        return processed_data
+        # Vendors are flexible assets with ID 43822
+        return self.extract_flexible_assets(asset_type_id=43822, asset_type_name="vendors")
     
     def extract_all_data(self) -> Dict[str, List[Dict]]:
         """
