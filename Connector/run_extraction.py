@@ -78,6 +78,11 @@ def main():
     vendors = extractor.extract_vendors()
     display_data_sample(vendors, "Vendors")
     
+    # Extract configuration types
+    logger.info("Extracting configuration types...")
+    config_types_data = extractor.extract_configuration_types()
+    display_data_sample(config_types_data, "Configuration Types")
+    
     # Extract Configuration Items
     config_types = {
         '703409': 'servers',
@@ -134,6 +139,7 @@ def main():
     print("\nExtraction Summary:")
     print("Organizations: {}".format(len(organizations)))
     print("Flexible Asset Types: {}".format(len(asset_types)))
+    print("Configuration Types: {}".format(len(config_types_data)))
     print("Domains: {}".format(len(domains)))
     print("Vendors: {}".format(len(vendors)))
     

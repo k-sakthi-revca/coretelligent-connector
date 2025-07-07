@@ -120,6 +120,15 @@ class ITGlueConnector:
         """
         return self.get_all_pages('flexible_asset_types')
     
+    def get_configuration_types(self) -> List[Dict]:
+        """
+        Get all configuration types
+        
+        Returns:
+            List of configuration types
+        """
+        return self.get_all_pages('configuration_types')
+    
     def get_configurations(self, config_type_id: Optional[int] = None) -> List[Dict]:
         """
         Get configurations, optionally filtered by configuration type ID

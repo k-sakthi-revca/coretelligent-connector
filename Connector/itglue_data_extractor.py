@@ -141,6 +141,36 @@ class ITGlueDataExtractor:
         
         return processed_data
     
+    def extract_configuration_types(self) -> List[Dict]:
+        """
+        Extract configuration types
+        
+        Returns:
+            List of processed configuration types
+        """
+        logger.info("Extracting configuration types")
+        
+        raw_data = self.connector.get_configuration_types()
+        
+        # Process the data
+        processed_data = []
+        for item in raw_data:
+            config_type = {
+                'id': item.get('id'),
+                'name': item.get('attributes', {}).get('name'),
+                'description': item.get('attributes', {}).get('description'),
+                'icon': item.get('attributes', {}).get('icon'),
+                'created_at': item.get('attributes', {}).get('created-at'),
+                'updated_at': item.get('attributes', {}).get('updated-at')
+            }
+            processed_data.append(config_type)
+        
+        # Save the data
+        self._save_to_json(raw_data, "configuration_types_raw")
+        self._save_to_csv(processed_data, "configuration_types")
+        
+        return processed_data
+    
     def extract_flexible_assets(self, asset_type_id: Optional[int] = None, asset_type_name: str = None) -> List[Dict]:
         """
         Extract flexible assets data
@@ -310,6 +340,7 @@ class ITGlueDataExtractor:
         result = {
             'organizations': self.extract_organizations(),
             'flexible_asset_types': self.extract_flexible_asset_types(),
+            'configuration_types': self.extract_configuration_types(),
             'domains': self.extract_domains(),
             'vendors': self.extract_vendors()
         }
