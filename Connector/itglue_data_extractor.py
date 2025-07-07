@@ -298,7 +298,11 @@ class ITGlueDataExtractor:
             '124327': 'network_devices',
             '122627': 'printers',
             '328022': 'mobile_devices',
-            '124328': 'storage_devices'
+            '124328': 'storage_devices',
+            '124324': 'application_servers',
+            '124329': 'unified_communication_equipment',
+            '328026': 'ssl_certificates',
+            '328029': 'ups'
         }
         
         for type_id, type_name in config_types.items():

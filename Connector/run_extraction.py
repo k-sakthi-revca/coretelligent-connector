@@ -51,7 +51,7 @@ def main():
     )
     
     # Create output directory for this run
-    output_dir = "extracted_data_sample"
+    output_dir = "extracted_data"
     
     logger.info("Starting ITGlue data extraction to {}".format(output_dir))
     
@@ -73,40 +73,81 @@ def main():
     domains = extractor.extract_domains()
     display_data_sample(domains, "Domains")
     
-    # Extract servers
-    logger.info("Extracting servers...")
-    servers = extractor.extract_configurations(
-        config_type_id=703409, 
-        config_type_name="servers"
-    )
-    display_data_sample(servers, "Servers")
+    # Extract Configuration Items
+    config_types = {
+        '703409': 'servers',
+        '328008': 'workstations',
+        '122621': 'laptops',
+        '328015': 'desktops',
+        '124327': 'network_devices',
+        '122627': 'printers',
+        '328022': 'mobile_devices',
+        '124328': 'storage_devices',
+        '124324': 'application_servers',
+        '124329': 'unified_communication_equipment',
+        '328026': 'ssl_certificates',
+        '328029': 'ups'
+    }
     
-    # Extract network devices
-    logger.info("Extracting network devices...")
-    network_devices = extractor.extract_configurations(
-        config_type_id=124327, 
-        config_type_name="network_devices"
-    )
-    display_data_sample(network_devices, "Network Devices")
+    for type_id, type_name in config_types.items():
+        logger.info("Extracting {}...".format(type_name))
+        try:
+            configs = extractor.extract_configurations(
+                config_type_id=int(type_id), 
+                config_type_name=type_name
+            )
+            display_data_sample(configs, "{}".format(type_name.replace('_', ' ').title()))
+            logger.info(f"Successfully extracted {len(configs)} {type_name}")
+        except Exception as e:
+            logger.error(f"Error extracting {type_name}: {str(e)}")
     
-    # Extract Voice/PBX flexible assets if available
-    logger.info("Extracting Voice/PBX assets...")
-    try:
-        voice_pbx = extractor.extract_flexible_assets(
-            asset_type_id=43489, 
-            asset_type_name="voice_pbx"
-        )
-        display_data_sample(voice_pbx, "Voice/PBX Assets")
-    except Exception as e:
-        logger.warning("Could not extract Voice/PBX assets: {}".format(str(e)))
+    # Extract Flexible Assets
+    flexible_asset_types = {
+        '43489': 'voice_pbx',
+        '43822': 'wireless_networks',
+        '43815': 'line_of_business_applications',
+        '43816': 'email_systems',
+        '39796': 'identity_services',
+        '45360': 'backup_solutions',
+        '44104': 'security_systems',
+        '44090': 'licensing_renewals'
+    }
+    
+    for type_id, type_name in flexible_asset_types.items():
+        logger.info("Extracting {}...".format(type_name))
+        try:
+            assets = extractor.extract_flexible_assets(
+                asset_type_id=int(type_id), 
+                asset_type_name=type_name
+            )
+            display_data_sample(assets, "{}".format(type_name.replace('_', ' ').title()))
+            logger.info(f"Successfully extracted {len(assets)} {type_name}")
+        except Exception as e:
+            logger.error("Could not extract {} assets: {}".format(type_name, str(e)))
     
     # Print summary of extracted data
     print("\nExtraction Summary:")
     print("Organizations: {}".format(len(organizations)))
     print("Flexible Asset Types: {}".format(len(asset_types)))
     print("Domains: {}".format(len(domains)))
-    print("Servers: {}".format(len(servers)))
-    print("Network Devices: {}".format(len(network_devices)))
+    
+    for type_name in config_types.values():
+        try:
+            data_path = os.path.join(output_dir, "configurations_{}.csv".format(type_name))
+            if os.path.exists(data_path):
+                df = pd.read_csv(data_path)
+                print("{}: {}".format(type_name.replace('_', ' ').title(), len(df)))
+        except Exception:
+            pass
+    
+    for type_name in flexible_asset_types.values():
+        try:
+            data_path = os.path.join(output_dir, "flexible_assets_{}.csv".format(type_name))
+            if os.path.exists(data_path):
+                df = pd.read_csv(data_path)
+                print("{}: {}".format(type_name.replace('_', ' ').title(), len(df)))
+        except Exception:
+            pass
     
     logger.info("Data extraction completed. Files saved to {}".format(output_dir))
     logger.info("You can find the extracted data in CSV and JSON formats in the output directory")

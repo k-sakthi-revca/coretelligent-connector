@@ -1,0 +1,1225 @@
+{
+	"info": {
+		"_postman_id": "6d426c8d-0f06-4b19-9a98-83a0cbc4df18",
+		"name": "ITGLUE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29305202",
+		"_collection_link": "https://new000-9416.postman.co/workspace/new~9d1f754b-6f4e-46be-b777-4a2f6dd6b81d/collection/29305202-6d426c8d-0f06-4b19-9a98-83a0cbc4df18?action=share&source=collection_link&creator=29305202"
+	},
+	"item": [
+		{
+			"name": "Flexible Assets",
+			"item": [
+				{
+					"name": "ITGlue flexible assets type",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/flexible_asset_types",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"flexible_asset_types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Voice/PBX",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/flexible_assets?filter[flexible-asset-type-id]=43489",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"flexible_assets"
+							],
+							"query": [
+								{
+									"key": "filter[flexible-asset-type-id]",
+									"value": "43489"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wireless Networks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/flexible_assets?filter[flexible-asset-type-id]=43822",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"flexible_assets"
+							],
+							"query": [
+								{
+									"key": "filter[flexible-asset-type-id]",
+									"value": "43822"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Line of Business Applications",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/flexible_assets?filter[flexible-asset-type-id]=43815",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"flexible_assets"
+							],
+							"query": [
+								{
+									"key": "filter[flexible-asset-type-id]",
+									"value": "43815"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Email Systems",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/flexible_assets?filter[flexible-asset-type-id]=43816",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"flexible_assets"
+							],
+							"query": [
+								{
+									"key": "filter[flexible-asset-type-id]",
+									"value": "43816"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Identity Services",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/flexible_assets?filter[flexible-asset-type-id]=39796",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"flexible_assets"
+							],
+							"query": [
+								{
+									"key": "filter[flexible-asset-type-id]",
+									"value": "39796"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Backup Solutions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/flexible_assets?filter[flexible-asset-type-id]=45360",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"flexible_assets"
+							],
+							"query": [
+								{
+									"key": "filter[flexible-asset-type-id]",
+									"value": "45360"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Security Systems",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/flexible_assets?filter[flexible-asset-type-id]=44104",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"flexible_assets"
+							],
+							"query": [
+								{
+									"key": "filter[flexible-asset-type-id]",
+									"value": "44104"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Licensing & Renewals",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/flexible_assets?filter[flexible-asset-type-id]=44090",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"flexible_assets"
+							],
+							"query": [
+								{
+									"key": "filter[flexible-asset-type-id]",
+									"value": "44090"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Configuration Items",
+			"item": [
+				{
+					"name": "Configuration Items",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=122628",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "122628"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Servers",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=703409",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "703409"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Workstation",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=328008",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "328008"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Laptops",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=122621",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "122621"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Desktops",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=328015",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "328015"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Network Devices (Routers, Switches, Firewalls)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=124327",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "124327"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Printers",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=122627",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "122627"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mobile Devices",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=328022",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "328022"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Storage Devices",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=124328",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "124328"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Application Servers",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=124324",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "124324"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unified Communications equipment",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=124329",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "124329"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SSL Certificates",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=328026",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "328026"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPS",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-version",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.itglue.com/configurations?filter[configuration_type_id]=328029",
+							"protocol": "https",
+							"host": [
+								"api",
+								"itglue",
+								"com"
+							],
+							"path": [
+								"configurations"
+							],
+							"query": [
+								{
+									"key": "filter[configuration_type_id]",
+									"value": "328029"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vendors",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					},
+					{
+						"key": "x-api-version",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.itglue.com/flexible_assets?filter[flexible-asset-type-id]=43822",
+					"protocol": "https",
+					"host": [
+						"api",
+						"itglue",
+						"com"
+					],
+					"path": [
+						"flexible_assets"
+					],
+					"query": [
+						{
+							"key": "filter[flexible-asset-type-id]",
+							"value": "43822"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Companies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					},
+					{
+						"key": "x-api-version",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.itglue.com/organizations",
+					"protocol": "https",
+					"host": [
+						"api",
+						"itglue",
+						"com"
+					],
+					"path": [
+						"organizations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Domains",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					},
+					{
+						"key": "x-api-version",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.itglue.com/domains",
+					"protocol": "https",
+					"host": [
+						"api",
+						"itglue",
+						"com"
+					],
+					"path": [
+						"domains"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flexible items Attachments",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					},
+					{
+						"key": "x-api-version",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.itglue.com/flexible_assets/1131440?include=attachments",
+					"protocol": "https",
+					"host": [
+						"api",
+						"itglue",
+						"com"
+					],
+					"path": [
+						"flexible_assets",
+						"1131440"
+					],
+					"query": [
+						{
+							"key": "include",
+							"value": "attachments"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Configurations Attachements",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					},
+					{
+						"key": "x-api-version",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.itglue.com/configurations/28761304?include=attachments",
+					"protocol": "https",
+					"host": [
+						"api",
+						"itglue",
+						"com"
+					],
+					"path": [
+						"configurations",
+						"28761304"
+					],
+					"query": [
+						{
+							"key": "include",
+							"value": "attachments"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
