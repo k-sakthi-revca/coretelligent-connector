@@ -60,6 +60,37 @@ matching:
     - pattern: '\s+'
       replacement: ' '
 
+# Virtualization matching settings
+virtualization_matching:
+  # Strategies to use, in order of preference
+  strategies:
+    - exact_name
+    - fuzzy_name
+  
+  # Fuzzy matching settings
+  fuzzy_matching:
+    threshold: 0.8  # Minimum similarity score (0.0 to 1.0)
+    review_threshold: 0.95  # Matches below this require review
+  
+  # Name normalization patterns (regex)
+  normalization_patterns:
+    - pattern: '^(vmware|hyper-v|hyperv|vm|esx|esxi)\s*[-:]\s*'
+      replacement: ''
+    - pattern: '\s*[-:]\s*(host|cluster|vm|vms|server|servers)$'
+      replacement: ''
+    - pattern: '[^\w\s]'
+      replacement: ''
+    - pattern: '\s+'
+      replacement: ' '
+  
+  # Valid hypervisor types
+  valid_hypervisors:
+    - VMware
+    - Hyper-V
+    - Xen
+    - Nutanix
+    - Other
+
 # Valid organization statuses for migration
 valid_statuses:
   - Active

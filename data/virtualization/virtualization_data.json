@@ -1,0 +1,743 @@
+{
+    "data": [
+        {
+            "id": "5857951",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460163,
+                "organization-name": "Cancer CarePoint, Inc",
+                "resource-url": "https://coretelligent.itglue.com/1460163/assets/116496-virtualization/records/5857951",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 116496,
+                "flexible-asset-type-name": "Virtualization",
+                "name": "VMWARE Host - CCP-ESX",
+                "traits": {
+                    "friendly-name": "VMWARE Host - CCP-ESX",
+                    "hypervisor": "VMware",
+                    "hosts": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460163/configurations/5963375",
+                                "id": 5963375,
+                                "name": "VMH: CCP-ESX - (VMWARE HOST) - CSN",
+                                "hostname": "CCP-ESX",
+                                "organization-name": "Cancer CarePoint, Inc",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "guests-vms": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460163/configurations/5963376",
+                                "id": 5963376,
+                                "name": "DCS: CCP-DC1",
+                                "organization-name": "Cancer CarePoint, Inc",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-deleted": true
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460163/configurations/5963377",
+                                "id": 5963377,
+                                "name": "VMG: CCP-TS1",
+                                "hostname": "CCP-TS1",
+                                "organization-name": "Cancer CarePoint, Inc",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "management-login-move-me-to-secret": {
+                        "type": "Passwords",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-03-28T16:45:13.000Z",
+                "updated-at": "2019-03-28T16:45:14.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "6240249",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460180,
+                "organization-name": "Brightworth",
+                "resource-url": "https://coretelligent.itglue.com/1460180/assets/116496-virtualization/records/6240249",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 116496,
+                "flexible-asset-type-name": "Virtualization",
+                "name": "Brightworth Atlanta",
+                "traits": {
+                    "friendly-name": "Brightworth Atlanta",
+                    "hypervisor": "VMware",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/locations/5657344",
+                                "id": 5657344,
+                                "name": "Primary Address (Buckhead)",
+                                "address-1": "3344 Peachtree Rd NE #2000",
+                                "city": "Atlanta",
+                                "organization-name": "Brightworth"
+                            }
+                        ]
+                    },
+                    "hosts": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/10662760",
+                                "id": 10662760,
+                                "name": "VMH: ESX04",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/20442827",
+                                "id": 20442827,
+                                "name": "VMH: ESX05",
+                                "hostname": "esx05.brightworth.com",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/9783702",
+                                "id": 9783702,
+                                "name": "VMH: VCENTER",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "management-login-move-me-to-secret": {
+                        "type": "Passwords",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-04-23T01:03:17.000Z",
+                "updated-at": "2021-01-29T15:40:53.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "6445185",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 2362820,
+                "organization-name": "Credit Union of Atlanta",
+                "resource-url": "https://coretelligent.itglue.com/2362820/assets/116496-virtualization/records/6445185",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 116496,
+                "flexible-asset-type-name": "Virtualization",
+                "name": "HQ - HYPER-V",
+                "traits": {
+                    "friendly-name": "HQ - HYPER-V",
+                    "hypervisor": "Hyper-V",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2362820/locations/5231556",
+                                "id": 5231556,
+                                "name": "Primary Address",
+                                "address-1": "670 Metropolitan Pkwy SW",
+                                "city": "Atlanta",
+                                "organization-name": "Credit Union of Atlanta"
+                            }
+                        ]
+                    },
+                    "hosts": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    },
+                    "guests-vms": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2362820/configurations/20708230",
+                                "id": 20708230,
+                                "name": "DCS: ACECUDC03 - Domain Controller",
+                                "hostname": "ACECUDC03",
+                                "organization-name": "Credit Union of Atlanta",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2362820/configurations/13804793",
+                                "id": 13804793,
+                                "name": "UCS: MiCollab-VoiceMail Phone Server",
+                                "hostname": "MiCollab",
+                                "organization-name": "Credit Union of Atlanta",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-05-06T13:38:36.000Z",
+                "updated-at": "2021-02-26T17:14:10.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "6655458",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460180,
+                "organization-name": "Brightworth",
+                "resource-url": "https://coretelligent.itglue.com/1460180/assets/116496-virtualization/records/6655458",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 116496,
+                "flexible-asset-type-name": "Virtualization",
+                "name": "Brightworth - Charlotte",
+                "traits": {
+                    "friendly-name": "Brightworth - Charlotte",
+                    "hypervisor": "VMware",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/locations/3383312",
+                                "id": 3383312,
+                                "name": "Charlotte Office",
+                                "address-1": "4201 Congress St",
+                                "city": "Charlotte",
+                                "organization-name": "Brightworth"
+                            }
+                        ]
+                    },
+                    "hosts": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/18291523",
+                                "id": 18291523,
+                                "name": "VMH: McGill VMWare host (localhost.sconsulting.net)",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "guests-vms": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/20725726",
+                                "id": 20725726,
+                                "name": "DCS: MADC01",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/17297383",
+                                "id": 17297383,
+                                "name": "APP: POLARIS",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/16975542",
+                                "id": 16975542,
+                                "name": "APP: METIS",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "management-login-move-me-to-secret": {
+                        "type": "Passwords",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-05-29T19:49:20.000Z",
+                "updated-at": "2019-05-29T19:51:21.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7861563",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668934,
+                "organization-name": "Abry Partners",
+                "resource-url": "https://coretelligent.itglue.com/3668934/assets/116496-virtualization/records/7861563",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 116496,
+                "flexible-asset-type-name": "Virtualization",
+                "name": "Abry - VMware: ABRY-BOS",
+                "traits": {
+                    "friendly-name": "Abry - VMware: ABRY-BOS",
+                    "hypervisor": "VMware",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/locations/5152529",
+                                "id": 5152529,
+                                "name": "Primary Location",
+                                "address-1": "888 Boylston St, Suite 1600",
+                                "city": "Boston",
+                                "organization-name": "Abry Partners"
+                            }
+                        ]
+                    },
+                    "hosts": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/31848776",
+                                "id": 31848776,
+                                "name": "ABRY-BOS-ESX02",
+                                "hostname": "ABRY-BOS-ESX02",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "guests-vms": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/22013137",
+                                "id": 22013137,
+                                "name": "bos-peachtree",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/32783294",
+                                "id": 32783294,
+                                "name": "abry-bos-dc03",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Autotask Default"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/33255691",
+                                "id": 33255691,
+                                "name": "abry-bos-dc04",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Autotask Default"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/32160962",
+                                "id": 32160962,
+                                "name": "ABRY-BOS-DB",
+                                "hostname": "ABRY-BOS-DB.abry.internal",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "virtualMachine"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/32264033",
+                                "id": 32264033,
+                                "name": "abry-bos-util02",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Autotask Default"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/33340012",
+                                "id": 33340012,
+                                "name": "abry-bos-mitel",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Autotask Default"
+                            }
+                        ]
+                    },
+                    "virtualization-remote-access-idrac-ilo-imm": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/31848769",
+                                "id": 31848769,
+                                "name": "ABRY-BOS-ESX02-iDRAC",
+                                "hostname": "ABRY-BOS-ESX02-iDRAC",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-07-29T15:42:36.000Z",
+                "updated-at": "2021-03-25T15:56:39.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7867706",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3672325,
+                "organization-name": "Access Intelligence",
+                "resource-url": "https://coretelligent.itglue.com/3672325/assets/116496-virtualization/records/7867706",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 116496,
+                "flexible-asset-type-name": "Virtualization",
+                "name": "Access Intelligence VMs",
+                "traits": {
+                    "friendly-name": "Access Intelligence VMs",
+                    "hypervisor": "VMware",
+                    "notes": "10.10.0.70"
+                },
+                "archived": false,
+                "created-at": "2019-07-29T22:26:02.000Z",
+                "updated-at": "2022-03-29T14:59:17.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7941310",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3669146,
+                "organization-name": "Ovid Therapeutics",
+                "resource-url": "https://coretelligent.itglue.com/3669146/assets/116496-virtualization/records/7941310",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 116496,
+                "flexible-asset-type-name": "Virtualization",
+                "name": "Ovid-NY-ESX01",
+                "traits": {
+                    "friendly-name": "Ovid-NY-ESX01",
+                    "hypervisor": "VMware",
+                    "notes": "Host located in WeWork IDF Closet. To get access to MDF, ticket must be submitted by POC or primary engineer with WeWork. Their staff assigns a tech who can grant access to the room. IDF located on the 16th floor of the building.",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    },
+                    "hosts": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669146/configurations/30644753",
+                                "id": 30644753,
+                                "name": "Ovid-NY-ESX01",
+                                "organization-name": "Ovid Therapeutics",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "guests-vms": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669146/configurations/22003605",
+                                "id": 22003605,
+                                "name": "ovid-util",
+                                "organization-name": "Ovid Therapeutics",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669146/configurations/22004215",
+                                "id": 22004215,
+                                "name": "ovid-data",
+                                "organization-name": "Ovid Therapeutics",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669146/configurations/22004094",
+                                "id": 22004094,
+                                "name": "ovid-winnonlin",
+                                "organization-name": "Ovid Therapeutics",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "virtualization-remote-access-idrac-ilo-imm": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669146/configurations/28424742",
+                                "id": 28424742,
+                                "name": "Ovid-NY-ESX01 - iDrac",
+                                "hostname": "ovid-NY-iDrac",
+                                "organization-name": "Ovid Therapeutics",
+                                "configuration-type-name": "*NETWORK DEVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-07-31T22:06:31.000Z",
+                "updated-at": "2021-05-17T14:50:32.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7950301",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668874,
+                "organization-name": "Guidepost Growth Equity",
+                "resource-url": "https://coretelligent.itglue.com/3668874/assets/116496-virtualization/records/7950301",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 116496,
+                "flexible-asset-type-name": "Virtualization",
+                "name": "Guidepost ESX onsite",
+                "traits": {
+                    "friendly-name": "Guidepost ESX onsite",
+                    "hypervisor": "VMware",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/locations/5231305",
+                                "id": 5231305,
+                                "name": "Primary Location",
+                                "address-1": "800 Boylston Street, Suite 1310",
+                                "city": "Boston",
+                                "organization-name": "Guidepost Growth Equity"
+                            }
+                        ]
+                    },
+                    "hosts": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/31174711",
+                                "id": 31174711,
+                                "name": "GPGE-ESX01",
+                                "hostname": "GPGE-ESX01",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "guests-vms": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22009053",
+                                "id": 22009053,
+                                "name": "gpge-dc01",
+                                "hostname": "gpge-dc01",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22009045",
+                                "id": 22009045,
+                                "name": "gpge-util",
+                                "hostname": "GPGE-UTIL",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22009065",
+                                "id": 22009065,
+                                "name": "gpge-fp01",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-01T16:15:36.000Z",
+                "updated-at": "2020-10-01T14:48:14.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7951702",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668952,
+                "organization-name": "Glouston Capital",
+                "resource-url": "https://coretelligent.itglue.com/3668952/assets/116496-virtualization/records/7951702",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 116496,
+                "flexible-asset-type-name": "Virtualization",
+                "name": "ESXI",
+                "traits": {
+                    "friendly-name": "ESXI",
+                    "hypervisor": "VMware",
+                    "notes": "https://192.168.201.3/ui/#/login",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668952/locations/5152547",
+                                "id": 5152547,
+                                "name": "Primary Location",
+                                "address-1": "800 Boylston Street, Suite 1325",
+                                "city": "Boston",
+                                "organization-name": "Glouston Capital"
+                            }
+                        ]
+                    },
+                    "guests-vms": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668952/configurations/22013808",
+                                "id": 22013808,
+                                "name": "pcmp-dc01",
+                                "organization-name": "Glouston Capital",
+                                "configuration-type-name": "virtualMachine"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668952/configurations/22014115",
+                                "id": 22014115,
+                                "name": "pcmp-util",
+                                "organization-name": "Glouston Capital",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    }
+                },
+                "archived": true,
+                "created-at": "2019-08-01T17:24:00.000Z",
+                "updated-at": "2023-05-26T18:36:04.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7969619",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668959,
+                "organization-name": "Willowridge Partners",
+                "resource-url": "https://coretelligent.itglue.com/3668959/assets/116496-virtualization/records/7969619",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 116496,
+                "flexible-asset-type-name": "Virtualization",
+                "name": "WRP-NY-ESX01",
+                "traits": {
+                    "friendly-name": "WRP-NY-ESX01",
+                    "hypervisor": "VMware",
+                    "notes": "Host Name / IP: 10.20.30.20 Server Type: VMWare Host Notes: ESXi 6.5 Dell PowerEdge R530 Service Tag 7F12QD2 Changed 2020/08/05 from wrp(0br@",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668959/locations/5152554",
+                                "id": 5152554,
+                                "name": "Primary Location",
+                                "address-1": "122 East 42nd Street37th Floor",
+                                "city": "New York",
+                                "organization-name": "Willowridge Partners"
+                            }
+                        ]
+                    },
+                    "guests-vms": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668959/configurations/22013891",
+                                "id": 22013891,
+                                "name": "wrp-ny-util",
+                                "organization-name": "Willowridge Partners",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668959/configurations/22014001",
+                                "id": 22014001,
+                                "name": "wrp-ny-fp01",
+                                "organization-name": "Willowridge Partners",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668959/configurations/22013759",
+                                "id": 22013759,
+                                "name": "wrp-ny-dc01",
+                                "organization-name": "Willowridge Partners",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    }
+                },
+                "archived": true,
+                "created-at": "2019-08-02T16:09:26.000Z",
+                "updated-at": "2025-04-30T13:17:00.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        }
+    ]
+   
+}

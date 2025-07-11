@@ -1,0 +1,392 @@
+[
+  {
+    "sys_id": "a7b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5",
+    "name": "VMWARE Host - CCP-ESX",
+    "company": {
+      "value": "e71d136d870d8d5066be86e5cebb3583",
+      "display_value": "United Technology Group"
+    },
+    "serial_number": "SRV123456789",
+    "asset_tag": "ASSET-VM-001",
+    "ip_address": "192.168.1.100",
+    "mac_address": "00:11:22:33:44:55",
+    "manufacturer": {
+      "value": "vmware_inc",
+      "display_value": "VMware, Inc."
+    },
+    "model_id": {
+      "value": "vmware_esxi_host",
+      "display_value": "VMware ESXi Host"
+    },
+    "os": "VMware ESXi 6.7",
+    "cpu_type": "Intel Xeon",
+    "cpu_count": "2",
+    "cpu_core_count": "8",
+    "ram": "32768",
+    "disk_space": "2048",
+    "virtual": "false",
+    "comments": "Primary VMware host for Cancer CarePoint",
+    "location": {
+      "value": "atl_datacenter",
+      "display_value": "Atlanta Datacenter"
+    },
+    "install_date": "2019-03-28 16:45:13",
+    "operational_status": "1",
+    "sys_class_name": "cmdb_ci_server",
+    "sys_created_by": "itglue_migration",
+    "sys_updated_by": "itglue_migration",
+    "sys_created_on": "2019-03-28 16:45:13",
+    "sys_updated_on": "2019-03-28 16:45:14"
+  },
+  {
+    "sys_id": "b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3",
+    "name": "Brightworth Atlanta",
+    "company": {
+      "value": "7afa5be9db414510bb316462ca9619d0",
+      "display_value": "Courier Express"
+    },
+    "serial_number": "SRV987654321",
+    "asset_tag": "ASSET-VM-002",
+    "ip_address": "192.168.2.100",
+    "mac_address": "AA:BB:CC:DD:EE:FF",
+    "manufacturer": {
+      "value": "vmware_inc",
+      "display_value": "VMware, Inc."
+    },
+    "model_id": {
+      "value": "vmware_esxi_host",
+      "display_value": "VMware ESXi Host"
+    },
+    "os": "VMware ESXi 6.5",
+    "cpu_type": "Intel Xeon",
+    "cpu_count": "2",
+    "cpu_core_count": "12",
+    "ram": "65536",
+    "disk_space": "4096",
+    "virtual": "false",
+    "comments": "Primary VMware host for Brightworth Atlanta office",
+    "location": {
+      "value": "atl_buckhead",
+      "display_value": "Atlanta Buckhead"
+    },
+    "install_date": "2019-04-23 01:03:17",
+    "operational_status": "1",
+    "sys_class_name": "cmdb_ci_server",
+    "sys_created_by": "itglue_migration",
+    "sys_updated_by": "itglue_migration",
+    "sys_created_on": "2019-04-23 01:03:17",
+    "sys_updated_on": "2021-01-29 15:40:53"
+  },
+  {
+    "sys_id": "c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4",
+    "name": "HQ - HYPER-V",
+    "company": {
+      "value": "800b9be9db414510bb316462ca961974",
+      "display_value": "Moncrief Heating & Air"
+    },
+    "serial_number": "SRV567891234",
+    "asset_tag": "ASSET-VM-003",
+    "ip_address": "192.168.3.100",
+    "mac_address": "11:22:33:44:55:66",
+    "manufacturer": {
+      "value": "microsoft_corp",
+      "display_value": "Microsoft Corporation"
+    },
+    "model_id": {
+      "value": "hyper_v_host",
+      "display_value": "Hyper-V Host"
+    },
+    "os": "Windows Server 2019",
+    "cpu_type": "Intel Xeon",
+    "cpu_count": "1",
+    "cpu_core_count": "6",
+    "ram": "16384",
+    "disk_space": "1024",
+    "virtual": "false",
+    "comments": "Hyper-V host for Credit Union of Atlanta",
+    "location": {
+      "value": "atl_metropolitan",
+      "display_value": "Atlanta Metropolitan"
+    },
+    "install_date": "2019-05-06 13:38:36",
+    "operational_status": "1",
+    "sys_class_name": "cmdb_ci_server",
+    "sys_created_by": "itglue_migration",
+    "sys_updated_by": "itglue_migration",
+    "sys_created_on": "2019-05-06 13:38:36",
+    "sys_updated_on": "2021-02-26 17:14:10"
+  },
+  {
+    "sys_id": "d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5",
+    "name": "Brightworth - Charlotte Office",
+    "company": {
+      "value": "e54b9fe9db414510bb316462ca96198d",
+      "display_value": "Turner Enterprises"
+    },
+    "serial_number": "SRV135792468",
+    "asset_tag": "ASSET-VM-004",
+    "ip_address": "192.168.4.100",
+    "mac_address": "22:33:44:55:66:77",
+    "manufacturer": {
+      "value": "vmware_inc",
+      "display_value": "VMware, Inc."
+    },
+    "model_id": {
+      "value": "vmware_esxi_host",
+      "display_value": "VMware ESXi Host"
+    },
+    "os": "VMware ESXi 6.7",
+    "cpu_type": "Intel Xeon",
+    "cpu_count": "2",
+    "cpu_core_count": "8",
+    "ram": "32768",
+    "disk_space": "2048",
+    "virtual": "false",
+    "comments": "VMware host for Brightworth Charlotte office",
+    "location": {
+      "value": "charlotte_office",
+      "display_value": "Charlotte Office"
+    },
+    "install_date": "2019-05-29 19:49:20",
+    "operational_status": "1",
+    "sys_class_name": "cmdb_ci_server",
+    "sys_created_by": "itglue_migration",
+    "sys_updated_by": "itglue_migration",
+    "sys_created_on": "2019-05-29 19:49:20",
+    "sys_updated_on": "2019-05-29 19:51:21"
+  },
+  {
+    "sys_id": "e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6",
+    "name": "Abry - VMware: ABRY-BOS",
+    "company": {
+      "value": "e60bdbe9db414510bb316462ca961906",
+      "display_value": "Empire Tickets"
+    },
+    "serial_number": "SRV246813579",
+    "asset_tag": "ASSET-VM-005",
+    "ip_address": "192.168.5.100",
+    "mac_address": "33:44:55:66:77:88",
+    "manufacturer": {
+      "value": "vmware_inc",
+      "display_value": "VMware, Inc."
+    },
+    "model_id": {
+      "value": "vmware_esxi_host",
+      "display_value": "VMware ESXi Host"
+    },
+    "os": "VMware ESXi 6.7",
+    "cpu_type": "Intel Xeon",
+    "cpu_count": "2",
+    "cpu_core_count": "10",
+    "ram": "49152",
+    "disk_space": "3072",
+    "virtual": "false",
+    "comments": "VMware host for Abry Partners Boston office",
+    "location": {
+      "value": "boston_office",
+      "display_value": "Boston Office"
+    },
+    "install_date": "2019-07-29 15:42:36",
+    "operational_status": "1",
+    "sys_class_name": "cmdb_ci_server",
+    "sys_created_by": "itglue_migration",
+    "sys_updated_by": "itglue_migration",
+    "sys_created_on": "2019-07-29 15:42:36",
+    "sys_updated_on": "2021-03-25 15:56:39"
+  },
+  {
+    "sys_id": "f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7",
+    "name": "Access Intelligence VMs",
+    "company": {
+      "value": "37da57a9870d8d5066be86e5cebb3573",
+      "display_value": "Nakanishi Manufacturing Corporation"
+    },
+    "serial_number": "SRV369258147",
+    "asset_tag": "ASSET-VM-006",
+    "ip_address": "10.10.0.70",
+    "mac_address": "44:55:66:77:88:99",
+    "manufacturer": {
+      "value": "vmware_inc",
+      "display_value": "VMware, Inc."
+    },
+    "model_id": {
+      "value": "vmware_esxi_host",
+      "display_value": "VMware ESXi Host"
+    },
+    "os": "VMware ESXi 6.5",
+    "cpu_type": "Intel Xeon",
+    "cpu_count": "2",
+    "cpu_core_count": "8",
+    "ram": "32768",
+    "disk_space": "2048",
+    "virtual": "false",
+    "comments": "VMware host for Access Intelligence",
+    "location": {
+      "value": "atl_datacenter",
+      "display_value": "Atlanta Datacenter"
+    },
+    "install_date": "2019-07-29 22:26:02",
+    "operational_status": "1",
+    "sys_class_name": "cmdb_ci_server",
+    "sys_created_by": "itglue_migration",
+    "sys_updated_by": "itglue_migration",
+    "sys_created_on": "2019-07-29 22:26:02",
+    "sys_updated_on": "2022-03-29 14:59:17"
+  },
+  {
+    "sys_id": "a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8",
+    "name": "Ovid-NY-ESX01",
+    "company": {
+      "value": "d5fa5be9db414510bb316462ca9619c6",
+      "display_value": "Epic Response"
+    },
+    "serial_number": "SRV159753468",
+    "asset_tag": "ASSET-VM-007",
+    "ip_address": "192.168.7.100",
+    "mac_address": "55:66:77:88:99:AA",
+    "manufacturer": {
+      "value": "vmware_inc",
+      "display_value": "VMware, Inc."
+    },
+    "model_id": {
+      "value": "vmware_esxi_host",
+      "display_value": "VMware ESXi Host"
+    },
+    "os": "VMware ESXi 6.7",
+    "cpu_type": "Intel Xeon",
+    "cpu_count": "2",
+    "cpu_core_count": "8",
+    "ram": "32768",
+    "disk_space": "2048",
+    "virtual": "false",
+    "comments": "VMware host for Ovid Therapeutics NY office",
+    "location": {
+      "value": "ny_office",
+      "display_value": "New York Office"
+    },
+    "install_date": "2019-07-31 22:06:31",
+    "operational_status": "1",
+    "sys_class_name": "cmdb_ci_server",
+    "sys_created_by": "itglue_migration",
+    "sys_updated_by": "itglue_migration",
+    "sys_created_on": "2019-07-31 22:06:31",
+    "sys_updated_on": "2021-05-17 14:50:32"
+  },
+  {
+    "sys_id": "b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9",
+    "name": "Guidepost ESX onsite",
+    "company": {
+      "value": "53da97a9870d8d5066be86e5cebb3589",
+      "display_value": "Southeast Mortgage of Georgia, Inc."
+    },
+    "serial_number": "SRV753159852",
+    "asset_tag": "ASSET-VM-008",
+    "ip_address": "192.168.8.100",
+    "mac_address": "66:77:88:99:AA:BB",
+    "manufacturer": {
+      "value": "vmware_inc",
+      "display_value": "VMware, Inc."
+    },
+    "model_id": {
+      "value": "vmware_esxi_host",
+      "display_value": "VMware ESXi Host"
+    },
+    "os": "VMware ESXi 6.7",
+    "cpu_type": "Intel Xeon",
+    "cpu_count": "2",
+    "cpu_core_count": "8",
+    "ram": "32768",
+    "disk_space": "2048",
+    "virtual": "false",
+    "comments": "VMware host for Guidepost Growth Equity",
+    "location": {
+      "value": "boston_office",
+      "display_value": "Boston Office"
+    },
+    "install_date": "2019-08-01 16:15:36",
+    "operational_status": "1",
+    "sys_class_name": "cmdb_ci_server",
+    "sys_created_by": "itglue_migration",
+    "sys_updated_by": "itglue_migration",
+    "sys_created_on": "2019-08-01 16:15:36",
+    "sys_updated_on": "2020-10-01 14:48:14"
+  },
+  {
+    "sys_id": "c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0",
+    "name": "ESXI",
+    "company": {
+      "value": "0efa1ba9870d8d5066be86e5cebb357b",
+      "display_value": "Wellstreet Urgent Care"
+    },
+    "serial_number": "SRV852741963",
+    "asset_tag": "ASSET-VM-009",
+    "ip_address": "192.168.201.3",
+    "mac_address": "77:88:99:AA:BB:CC",
+    "manufacturer": {
+      "value": "vmware_inc",
+      "display_value": "VMware, Inc."
+    },
+    "model_id": {
+      "value": "vmware_esxi_host",
+      "display_value": "VMware ESXi Host"
+    },
+    "os": "VMware ESXi 6.5",
+    "cpu_type": "Intel Xeon",
+    "cpu_count": "2",
+    "cpu_core_count": "8",
+    "ram": "32768",
+    "disk_space": "2048",
+    "virtual": "false",
+    "comments": "VMware host for Glouston Capital",
+    "location": {
+      "value": "boston_office",
+      "display_value": "Boston Office"
+    },
+    "install_date": "2019-08-01 17:24:00",
+    "operational_status": "1",
+    "sys_class_name": "cmdb_ci_server",
+    "sys_created_by": "itglue_migration",
+    "sys_updated_by": "itglue_migration",
+    "sys_created_on": "2019-08-01 17:24:00",
+    "sys_updated_on": "2023-05-26 18:36:04"
+  },
+  {
+    "sys_id": "d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1",
+    "name": "WRP-NY-ESX01",
+    "company": {
+      "value": "a1fa5be9db414510bb316462ca9619e2",
+      "display_value": "LPBC"
+    },
+    "serial_number": "SRV963852741",
+    "asset_tag": "ASSET-VM-010",
+    "ip_address": "10.20.30.20",
+    "mac_address": "88:99:AA:BB:CC:DD",
+    "manufacturer": {
+      "value": "vmware_inc",
+      "display_value": "VMware, Inc."
+    },
+    "model_id": {
+      "value": "vmware_esxi_host",
+      "display_value": "VMware ESXi Host"
+    },
+    "os": "VMware ESXi 6.5",
+    "cpu_type": "Intel Xeon",
+    "cpu_count": "2",
+    "cpu_core_count": "8",
+    "ram": "32768",
+    "disk_space": "2048",
+    "virtual": "false",
+    "comments": "VMware host for Willowridge Partners NY office",
+    "location": {
+      "value": "ny_office",
+      "display_value": "New York Office"
+    },
+    "install_date": "2019-08-02 16:09:26",
+    "operational_status": "1",
+    "sys_class_name": "cmdb_ci_server",
+    "sys_created_by": "itglue_migration",
+    "sys_updated_by": "itglue_migration",
+    "sys_created_on": "2019-08-02 16:09:26",
+    "sys_updated_on": "2025-04-30 13:17:00"
+  }
+]
