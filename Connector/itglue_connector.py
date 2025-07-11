@@ -1,11 +1,14 @@
 """
 ITGlue Connector - Main module for connecting to ITGlue API
 """
+import os
 import requests
 import json
 import logging
 from typing import Dict, List, Any, Optional, Union
+from dotenv import load_dotenv
 
+load_dotenv()
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -191,7 +194,7 @@ class ITGlueConnector:
 
 if __name__ == "__main__":
     # Example usage
-    API_KEY = "ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP"
+    API_KEY = os.getenv("API_KEY")
     connector = ITGlueConnector(API_KEY)
     
     # Example: Get all organizations

@@ -6,7 +6,9 @@ import json
 import logging
 import pandas as pd
 from itglue_data_extractor import ITGlueDataExtractor
+from dotenv import load_dotenv
 
+load_dotenv()
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -40,6 +42,8 @@ def display_data_sample(data, title, max_items=5):
         print("... and {} more items".format(len(data) - max_items))
     print("{}\n".format('-'*80))
 
+itg_api_key = os.getenv("API_KEY")
+
 def main():
     """
     Main function to run the extraction and display results
@@ -47,7 +51,7 @@ def main():
     # Get API key from environment variable or use the default one
     api_key = os.environ.get(
         'ITGLUE_API_KEY', 
-        'ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP'
+        itg_api_key
     )
     
     # Create output directory for this run

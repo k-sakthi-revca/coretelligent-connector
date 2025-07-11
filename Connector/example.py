@@ -4,13 +4,17 @@ Example script demonstrating how to use the ITGlue data extraction tools
 import os
 import logging
 from itglue_data_extractor import ITGlueDataExtractor
+from dotenv import load_dotenv
 
+load_dotenv()
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger('example')
+
+itg_api_key = os.getenv("API_KEY")
 
 def main():
     """
@@ -19,7 +23,7 @@ def main():
     # Get API key from environment variable or use the default one
     api_key = os.environ.get(
         'ITGLUE_API_KEY', 
-        'ITG.005c32616f608910a8f1dfa40a7bdf73.TaTMBpSXUsJFEKlcJE7BRFL2m-CN4KAJbntZ9iFxpb0SUwteUS3wDjJl4yhkgWpP'
+        itg_api_key
     )
     
     logger.info("Initializing ITGlue data extractor")
