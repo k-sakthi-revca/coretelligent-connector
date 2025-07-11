@@ -1,0 +1,179 @@
+{
+  "report_type": "virtualization_matching",
+  "timestamp": "2025-07-11T13:30:52.259421",
+  "statistics": {
+    "total": 10,
+    "by_match_type": {
+      "Exact Name": {
+        "count": 9,
+        "percentage": 90.0
+      },
+      "Fuzzy Name": {
+        "count": 1,
+        "percentage": 10.0
+      }
+    },
+    "by_recommended_action": {
+      "Use Existing": {
+        "count": 9,
+        "percentage": 90.0
+      },
+      "Review Match": {
+        "count": 1,
+        "percentage": 10.0
+      }
+    },
+    "by_data_quality": {
+      "\u2705 Ready": {
+        "count": 9,
+        "percentage": 90.0
+      },
+      "\u26a0\ufe0f Similar Name": {
+        "count": 1,
+        "percentage": 10.0
+      }
+    },
+    "by_hypervisor": {
+      "VMware": {
+        "count": 9,
+        "percentage": 90.0
+      },
+      "Hyper-V": {
+        "count": 1,
+        "percentage": 10.0
+      }
+    }
+  },
+  "matches": [
+    {
+      "itglue_id": "5857951",
+      "itglue_name": "VMWARE Host - CCP-ESX",
+      "servicenow_id": "a7b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5",
+      "servicenow_name": "VMWARE Host - CCP-ESX",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u2705 Ready",
+      "hypervisor": "VMware",
+      "notes": "Matched by exact normalized name: vmware host ccpesx"
+    },
+    {
+      "itglue_id": "6240249",
+      "itglue_name": "Brightworth Atlanta",
+      "servicenow_id": "b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3",
+      "servicenow_name": "Brightworth Atlanta",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u2705 Ready",
+      "hypervisor": "VMware",
+      "notes": "Matched by exact normalized name: brightworth atlanta"
+    },
+    {
+      "itglue_id": "6445185",
+      "itglue_name": "HQ - HYPER-V",
+      "servicenow_id": "c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4",
+      "servicenow_name": "HQ - HYPER-V",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u2705 Ready",
+      "hypervisor": "Hyper-V",
+      "notes": "Matched by exact normalized name: hq hyperv"
+    },
+    {
+      "itglue_id": "6655458",
+      "itglue_name": "Brightworth - Charlotte",
+      "servicenow_id": "d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5",
+      "servicenow_name": "Brightworth - Charlotte Office",
+      "match_type": "Fuzzy Name",
+      "confidence": 0.8571428571428571,
+      "recommended_action": "Review Match",
+      "data_quality": "\u26a0\ufe0f Similar Name",
+      "hypervisor": "VMware",
+      "notes": "Matched by similar name with moderate confidence: 85.7%"
+    },
+    {
+      "itglue_id": "7861563",
+      "itglue_name": "Abry - VMware: ABRY-BOS",
+      "servicenow_id": "e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6",
+      "servicenow_name": "Abry - VMware: ABRY-BOS",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u2705 Ready",
+      "hypervisor": "VMware",
+      "notes": "Matched by exact normalized name: abry vmware abrybos"
+    },
+    {
+      "itglue_id": "7867706",
+      "itglue_name": "Access Intelligence VMs",
+      "servicenow_id": "f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7",
+      "servicenow_name": "Access Intelligence VMs",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u2705 Ready",
+      "hypervisor": "VMware",
+      "notes": "Matched by exact normalized name: access intelligence vms"
+    },
+    {
+      "itglue_id": "7941310",
+      "itglue_name": "Ovid-NY-ESX01",
+      "servicenow_id": "a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8",
+      "servicenow_name": "Ovid-NY-ESX01",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u2705 Ready",
+      "hypervisor": "VMware",
+      "notes": "Matched by exact normalized name: ovidnyesx01"
+    },
+    {
+      "itglue_id": "7950301",
+      "itglue_name": "Guidepost ESX onsite",
+      "servicenow_id": "b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9",
+      "servicenow_name": "Guidepost ESX onsite",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u2705 Ready",
+      "hypervisor": "VMware",
+      "notes": "Matched by exact normalized name: guidepost esx onsite"
+    },
+    {
+      "itglue_id": "7951702",
+      "itglue_name": "ESXI",
+      "servicenow_id": "c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0",
+      "servicenow_name": "ESXI",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u2705 Ready",
+      "hypervisor": "VMware",
+      "notes": "Matched by exact normalized name: esxi"
+    },
+    {
+      "itglue_id": "7969619",
+      "itglue_name": "WRP-NY-ESX01",
+      "servicenow_id": "d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1",
+      "servicenow_name": "WRP-NY-ESX01",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u2705 Ready",
+      "hypervisor": "VMware",
+      "notes": "Matched by exact normalized name: wrpnyesx01"
+    }
+  ],
+  "quality_issues": [
+    {
+      "asset_id": "6655458",
+      "asset_name": "Brightworth - Charlotte",
+      "issue_type": "Similar Name",
+      "priority": "High",
+      "description": "Asset matched by similar name with 85.7% confidence",
+      "recommendation": "Review match and confirm or create new"
+    }
+  ]
+}

@@ -2,176 +2,39 @@
 Demo script for the virtualization matcher.
 """
 
-import json
-import logging
 import os
-from typing import Dict, List, Any
+import logging
+from datetime import datetime
 
-from virtualization_matcher import VirtualizationMatcher
-
-
-def setup_logging():
-    """Set up logging configuration."""
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.StreamHandler()
-        ]
-    )
-
-
-def load_json_file(file_path: str) -> Any:
-    """
-    Load JSON data from a file.
-    
-    Args:
-        file_path: Path to the JSON file
-        
-    Returns:
-        Parsed JSON data
-    """
-    try:
-        with open(file_path, 'r') as f:
-            return json.load(f)
-    except Exception as e:
-        logging.error(f"Failed to load JSON file {file_path}: {e}")
-        return None
-
-
-def print_match_results(matches, quality_issues, stats):
-    """
-    Print match results in a readable format.
-    
-    Args:
-        matches: List of match results
-        quality_issues: List of data quality issues
-        stats: Matching statistics
-    """
-    print("\n" + "=" * 80)
-    print(f"VIRTUALIZATION ASSET MATCHING RESULTS ({stats['total']} assets)")
-    print("=" * 80)
-    
-    # Print match type statistics
-    print("\nMATCH TYPES:")
-    for match_type, data in stats['by_match_type'].items():
-        print(f"  {match_type}: {data['count']} ({data['percentage']:.1f}%)")
-    
-    # Print recommended action statistics
-    print("\nRECOMMENDED ACTIONS:")
-    for action, data in stats['by_recommended_action'].items():
-        print(f"  {action}: {data['count']} ({data['percentage']:.1f}%)")
-    
-    # Print data quality statistics
-    print("\nDATA QUALITY:")
-    for quality, data in stats['by_data_quality'].items():
-        print(f"  {quality}: {data['count']} ({data['percentage']:.1f}%)")
-    
-    # Print hypervisor statistics
-    print("\nHYPERVISORS:")
-    for hypervisor, data in stats['by_hypervisor'].items():
-        print(f"  {hypervisor}: {data['count']} ({data['percentage']:.1f}%)")
-    
-    # Print match details
-    print("\nMATCH DETAILS:")
-    for i, match in enumerate(matches, 1):
-        print(f"\n{i}. {match.itglue_name} ({match.hypervisor})")
-        print(f"   Match Type: {match.match_type}")
-        print(f"   Confidence: {match.confidence:.1%}")
-        print(f"   Action: {match.recommended_action}")
-        print(f"   Quality: {match.data_quality}")
-        
-        if match.servicenow_id:
-            print(f"   ServiceNow: {match.servicenow_name} (ID: {match.servicenow_id})")
-        
-        if match.notes:
-            print(f"   Notes: {match.notes}")
-    
-    # Print quality issues
-    if quality_issues:
-        print("\nDATA QUALITY ISSUES:")
-        for i, issue in enumerate(quality_issues, 1):
-            print(f"\n{i}. {issue.asset_name}")
-            print(f"   Issue Type: {issue.issue_type}")
-            print(f"   Priority: {issue.priority}")
-            print(f"   Description: {issue.description}")
-            print(f"   Recommendation: {issue.recommendation}")
-
-
-def save_report_to_file(matches, quality_issues, stats, file_path="virtualization_migration_report.json"):
-    """
-    Save match results to a JSON file.
-    
-    Args:
-        matches: List of match results
-        quality_issues: List of data quality issues
-        stats: Matching statistics
-        file_path: Path to save the report
-    """
-    # Convert dataclass objects to dictionaries
-    matches_dict = [
-        {
-            "itglue_id": match.itglue_id,
-            "itglue_name": match.itglue_name,
-            "servicenow_id": match.servicenow_id,
-            "servicenow_name": match.servicenow_name,
-            "match_type": match.match_type,
-            "confidence": match.confidence,
-            "recommended_action": match.recommended_action,
-            "data_quality": match.data_quality,
-            "hypervisor": match.hypervisor,
-            "notes": match.notes
-        }
-        for match in matches
-    ]
-    
-    issues_dict = [
-        {
-            "asset_id": issue.asset_id,
-            "asset_name": issue.asset_name,
-            "issue_type": issue.issue_type,
-            "priority": issue.priority,
-            "description": issue.description,
-            "recommendation": issue.recommendation
-        }
-        for issue in quality_issues
-    ]
-    
-    # Create report dictionary
-    report = {
-        "timestamp": logging.Formatter().converter(),
-        "statistics": stats,
-        "matches": matches_dict,
-        "quality_issues": issues_dict
-    }
-    
-    # Save to file
-    try:
-        with open(file_path, 'w') as f:
-            json.dump(report, f, indent=2, default=str)
-        logging.info(f"Report saved to {file_path}")
-    except Exception as e:
-        logging.error(f"Failed to save report to {file_path}: {e}")
+from utils.logging_utils import setup_logging, get_timestamped_log_file
+from utils.file_utils import load_itglue_assets, load_servicenow_data
+from matchers.virtualization_matcher import VirtualizationMatcher
+from reports.report_generator import ReportGenerator
 
 
 def main():
     """Main function."""
-    setup_logging()
+    # Set up logging
+    log_file = get_timestamped_log_file("virtualization_matcher")
+    setup_logging(log_level="INFO", log_file=log_file)
     logger = logging.getLogger(__name__)
+    
+    # Create reports directory if it doesn't exist
+    os.makedirs("reports", exist_ok=True)
     
     # Load virtualization data
     logger.info("Loading virtualization data...")
     virtualization_data_path = os.path.join("data", "virtualization", "virtualization_data.json")
-    virtualization_data = load_json_file(virtualization_data_path)
+    virtualization_data = load_itglue_assets(virtualization_data_path)
     
-    if not virtualization_data or "data" not in virtualization_data:
-        logger.error("Failed to load virtualization data or invalid format")
+    if not virtualization_data:
+        logger.error("Failed to load virtualization data")
         return
     
     # Load ServiceNow server data
     logger.info("Loading ServiceNow server data...")
     servicenow_servers_path = "mock_servicenow_servers.json"
-    servicenow_servers = load_json_file(servicenow_servers_path)
+    servicenow_servers = load_servicenow_data(servicenow_servers_path)
     
     if not servicenow_servers:
         logger.error("Failed to load ServiceNow server data")
@@ -190,13 +53,20 @@ def main():
     # Generate statistics
     stats = matcher.generate_matching_statistics(matches)
     
-    # Print results
-    print_match_results(matches, quality_issues, stats)
+    # Initialize report generator
+    report_generator = ReportGenerator(output_dir="reports")
     
-    # Save report to file
-    save_report_to_file(matches, quality_issues, stats, "virtualization_migration_report.json")
+    # Print report summary
+    report_generator.print_virtualization_report_summary(matches, quality_issues, stats)
     
-    logger.info("Virtualization matching demo completed")
+    # Generate report file
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    report_file = f"virtualization_migration_report_{timestamp}.json"
+    report_path = report_generator.generate_virtualization_report(
+        matches, quality_issues, stats, report_file
+    )
+    
+    logger.info(f"Virtualization matching demo completed. Report saved to {report_path}")
 
 
 if __name__ == "__main__":
