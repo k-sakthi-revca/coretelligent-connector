@@ -30,6 +30,14 @@ field_mappings:
   created-at: sys_created_on
   updated-at: sys_updated_on
 
+# Email field mappings from IT Glue to ServiceNow
+email_field_mappings:
+  # Additional email-specific fields
+  coresecret-url: u_coresecret_url
+  spf-record: u_spf_record
+  journaling-provider: u_journaling_provider
+  dr-failover-plan: u_dr_failover_plan
+
 # Organization matching settings
 matching:
   # Strategies to use, in order of preference
@@ -59,6 +67,39 @@ matching:
       replacement: ''
     - pattern: '\s+'
       replacement: ' '
+
+# Email matching settings
+email_matching:
+  # Strategies to use, in order of preference
+  strategies:
+    - exact_name
+    - fuzzy_name
+  
+  # Fuzzy matching settings
+  fuzzy_matching:
+    threshold: 0.8  # Minimum similarity score (0.0 to 1.0)
+    review_threshold: 0.95  # Matches below this require review
+  
+  # Name normalization patterns (regex)
+  normalization_patterns:
+    - pattern: '\b(email|mail)\s*[-:]\s*'
+      replacement: ''
+    - pattern: '\s*[-:]\s*(service|server|system)$'
+      replacement: ''
+    - pattern: '[^\w\s]'
+      replacement: ''
+    - pattern: '\s+'
+      replacement: ' '
+  
+  # Valid email types
+  valid_email_types:
+    - Microsoft 365
+    - Google Apps
+    - Exchange 2019
+    - Exchange 2016
+    - Exchange 2013
+    - Office 365
+    - Other
 
 # Virtualization matching settings
 virtualization_matching:
@@ -107,5 +148,6 @@ valid_statuses:
 # Output settings
 output:
   report_file: migration_report.json
+  email_report_file: email_migration_report.json
   console_output: true
   detailed_logging: true

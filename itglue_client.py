@@ -32,6 +32,7 @@ class ITGlueClient:
         # Mock data file paths - hardcoded to the specific path
         self.mock_organizations_file = "/Users/swapnilmhatre/migration/organizations.json"
         self.mock_site_summaries_file = "mock_site_summaries.json"
+        self.mock_emails_file = os.path.join("data", "virtualization", "emails.json")
         
         # If using mock data, check if files exist
         if self.use_mock_data:
@@ -212,6 +213,47 @@ class ITGlueClient:
             return data
         except Exception as e:
             self.logger.error(f"Failed to load mock site summaries: {e}")
+            return []
+    
+    def get_emails(self) -> List[Dict]:
+        """
+        Get email assets from IT Glue.
+        
+        Returns:
+            List of email asset data
+        """
+        self.logger.info("Fetching email assets from IT Glue...")
+        
+        if self.use_mock_data:
+            return self._load_mock_emails()
+        
+        # In a real implementation, this would fetch email assets from the IT Glue API
+        # For now, we'll just return an empty list for non-mock mode
+        self.logger.warning("Real API implementation for get_emails() not implemented")
+        return []
+    
+    def _load_mock_emails(self) -> List[Dict]:
+        """
+        Load mock email data from file.
+        
+        Returns:
+            List of email asset data
+        """
+        if not os.path.exists(self.mock_emails_file):
+            self.logger.warning(f"Mock emails file not found: {self.mock_emails_file}")
+            return []
+        
+        try:
+            with open(self.mock_emails_file, 'r') as f:
+                data = json.load(f)
+            
+            # Extract the data array
+            emails = data.get("data", [])
+            
+            self.logger.info(f"Loaded {len(emails)} email assets from mock file: {self.mock_emails_file}")
+            return emails
+        except Exception as e:
+            self.logger.error(f"Failed to load mock emails: {e}")
             return []
     
     def get_organizations(self) -> List[Dict]:

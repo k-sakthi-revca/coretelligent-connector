@@ -1,0 +1,529 @@
+{
+    "data": [
+        {
+            "id": "1151258",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460141,
+                "organization-name": "Epic Response",
+                "resource-url": "https://coretelligent.itglue.com/1460141/assets/43816-email/records/1151258",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43816,
+                "flexible-asset-type-name": "Email",
+                "name": "Google Apps",
+                "traits": {
+                    "type": "Google Apps",
+                    "hosting-location": "Cloud",
+                    "webmail-url": "www.gmail.com",
+                    "inbound-delivery-method-retired": "Other",
+                    "domain-s": {
+                        "type": "Domains",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460141/domains/166823",
+                                "id": 166823,
+                                "name": "epicresponse.com",
+                                "organization-name": "Epic Response"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-01-16T15:46:02.000Z",
+                "updated-at": "2017-01-16T15:46:02.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1291400",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460111,
+                "organization-name": "Moncrief Heating & Air",
+                "resource-url": "https://coretelligent.itglue.com/1460111/assets/43816-email/records/1291400",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43816,
+                "flexible-asset-type-name": "Email",
+                "name": "Office 365",
+                "traits": {
+                    "type": "Office 365",
+                    "webmail-url": "https://portal.microsoftonline.com",
+                    "domain-s": {
+                        "type": "Domains",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460111/domains/191957",
+                                "id": 191957,
+                                "name": "moncriefair.com",
+                                "organization-name": "Moncrief Heating & Air"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460111/domains/191960",
+                                "id": 191960,
+                                "name": "bollscomfort.com",
+                                "organization-name": "Moncrief Heating & Air"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460111/domains/191961",
+                                "id": 191961,
+                                "name": "lexunique.com",
+                                "organization-name": "Moncrief Heating & Air"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460111/domains/191962",
+                                "id": 191962,
+                                "name": "uniqueindoorcomfort.com",
+                                "organization-name": "Moncrief Heating & Air"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-02-27T21:05:24.000Z",
+                "updated-at": "2017-02-27T21:05:24.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1540882",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460180,
+                "organization-name": "Brightworth",
+                "resource-url": "https://coretelligent.itglue.com/1460180/assets/43816-email/records/1540882",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43816,
+                "flexible-asset-type-name": "Email",
+                "name": "Microsoft 365",
+                "traits": {
+                    "type": "Microsoft 365",
+                    "hosting-location": "Cloud",
+                    "webmail-url": "http://office.microsoft.com/en-us/",
+                    "administrator-url": "https://admin.microsoft.com",
+                    "spf-enabled": true,
+                    "dkim-enabled": true,
+                    "notes": "<div>Users should be added to the Office365 \"Default MDM group\" to enable mobile device management policy.</div><div>ny user that wants email on their phone or mobile device must use InTune Company Portal app.<br></div><div><br></div><div>Client also uses Duo MFA. A/D user account must be added to DUO_Users group, synced to DUO admin portal, app installed and provisioned before they can login to Office365.</div><div><br></div><div>Azure AD Connect sync component is installed on BWDC05</div><div>SMTP relay is also running on BWDC05. If you need to relay email, you'll need to use IIS to add the IP address of the source to the connection &amp; relay allowed list.<br></div><div><br></div>",
+                    "inbound-delivery-method-retired": "Direct",
+                    "inbound-delivery-retired": "Office365",
+                    "outbound-delivery-method-retired": "Direct",
+                    "domain-s": {
+                        "type": "Domains",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/domains/218677",
+                                "id": 218677,
+                                "name": "brightworth.com",
+                                "organization-name": "Brightworth"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/domains/536760",
+                                "id": 536760,
+                                "name": "mcgilladvisors.com",
+                                "organization-name": "Brightworth"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-04-26T19:38:45.000Z",
+                "updated-at": "2022-10-07T00:19:21.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1562969",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1691564,
+                "organization-name": "Banks, Finley, White & Co",
+                "resource-url": "https://coretelligent.itglue.com/1691564/assets/43816-email/records/1562969",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43816,
+                "flexible-asset-type-name": "Email",
+                "name": "Microsoft 365",
+                "traits": {
+                    "type": "Microsoft 365",
+                    "hosting-location": "Cloud",
+                    "webmail-url": "https://login.microsoftonline.com",
+                    "administrator-url": "https://portal.office.com",
+                    "coresecret-url": "https://secret.core.tech/pid=44247",
+                    "inbound-delivery-method-retired": "Filtered",
+                    "outbound-delivery-method-retired": "Direct",
+                    "domain-s": {
+                        "type": "Domains",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1691564/domains/220430",
+                                "id": 220430,
+                                "name": "bfwcpa.com",
+                                "organization-name": "Banks, Finley, White & Co"
+                            }
+                        ]
+                    },
+                    "spam-filtering": {
+                        "type": "FlexibleAssetTypes",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1691564/assets/43822-vendors/records/41974920",
+                                "id": 41974920,
+                                "name": "Microsoft",
+                                "organization-name": "Banks, Finley, White & Co",
+                                "asset-type-id": 43822
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-02T15:54:12.000Z",
+                "updated-at": "2023-06-09T17:56:33.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1566498",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460107,
+                "organization-name": "Courier Express",
+                "resource-url": "https://coretelligent.itglue.com/1460107/assets/43816-email/records/1566498",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43816,
+                "flexible-asset-type-name": "Email",
+                "name": "Exchange 2019",
+                "traits": {
+                    "type": "Exchange 2019",
+                    "hosting-location": "On-Premises",
+                    "webmail-url": "https://mail.courierexpress.net/owa/",
+                    "administrator-url": "https://mail.courierexpress.net/ecp/",
+                    "notes": "<p>**Decommissioned 5/2022**</p><p>Spam handled by Onsite MailCleaner:</p><p><br></p><p><br></p><p><br></p>",
+                    "inbound-delivery-method-retired": "Filtered",
+                    "outbound-delivery-method-retired": "Direct",
+                    "domain-s": {
+                        "type": "Domains",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/domains/220773",
+                                "id": 220773,
+                                "name": "courierexpress.net",
+                                "organization-name": "Courier Express"
+                            }
+                        ]
+                    },
+                    "email-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/configurations/32118573",
+                                "id": 32118573,
+                                "name": "EML: CXMAIL - EXCHANGE 2019 SERVER",
+                                "hostname": "CXMAIL",
+                                "organization-name": "Courier Express",
+                                "configuration-type-name": "virtualMachine"
+                            }
+                        ]
+                    },
+                    "spam-filtering": {
+                        "type": "FlexibleAssetTypes",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/assets/43822-vendors/records/18084556",
+                                "id": 18084556,
+                                "name": "Mailcleaner",
+                                "organization-name": "Courier Express",
+                                "asset-type-id": 43822
+                            }
+                        ]
+                    }
+                },
+                "archived": true,
+                "created-at": "2017-05-03T01:43:39.000Z",
+                "updated-at": "2022-05-11T16:34:01.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1592957",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460168,
+                "organization-name": "Gateway Center",
+                "resource-url": "https://coretelligent.itglue.com/1460168/assets/43816-email/records/1592957",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43816,
+                "flexible-asset-type-name": "Email",
+                "name": "Office 365",
+                "traits": {
+                    "type": "Office 365",
+                    "webmail-url": "https://portal.microsoftonline.com",
+                    "notes": "<p>Smart host: gatewayctr-org.mail.protection.outlook.com</p>",
+                    "domain-s": {
+                        "type": "Domains",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460168/domains/223307",
+                                "id": 223307,
+                                "name": "gatewayctr.org",
+                                "organization-name": "Gateway Center"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-10T15:53:28.000Z",
+                "updated-at": "2017-05-10T15:53:28.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1592973",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460168,
+                "organization-name": "Gateway Center",
+                "resource-url": "https://coretelligent.itglue.com/1460168/assets/43816-email/records/1592973",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43816,
+                "flexible-asset-type-name": "Email",
+                "name": "Other",
+                "traits": {
+                    "type": "Other",
+                    "notes": "<p>check related item for more info</p>",
+                    "domain-s": {
+                        "type": "Domains",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460168/domains/223307",
+                                "id": 223307,
+                                "name": "gatewayctr.org",
+                                "organization-name": "Gateway Center"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-10T15:56:29.000Z",
+                "updated-at": "2017-05-10T15:56:29.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1643416",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 4089575,
+                "organization-name": "Jordan Outdoor Enterprises, LTD",
+                "resource-url": "https://coretelligent.itglue.com/4089575/assets/43816-email/records/1643416",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43816,
+                "flexible-asset-type-name": "Email",
+                "name": "Microsoft 365",
+                "traits": {
+                    "type": "Microsoft 365",
+                    "hosting-location": "Cloud",
+                    "webmail-url": "https://login.microsoftonline.com",
+                    "administrator-url": "https://portal.office.com",
+                    "inbound-delivery-method-retired": "Filtered",
+                    "outbound-delivery-method-retired": "Filtered",
+                    "domain-s": {
+                        "type": "Domains",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/4089575/domains/225377",
+                                "id": 225377,
+                                "name": "realtree.com",
+                                "organization-name": "Jordan Outdoor Enterprises, LTD"
+                            }
+                        ]
+                    },
+                    "spam-filtering": {
+                        "type": "FlexibleAssetTypes",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/4089575/assets/43822-vendors/records/55214666",
+                                "id": 55214666,
+                                "name": "Mimecast",
+                                "organization-name": "Jordan Outdoor Enterprises, LTD",
+                                "asset-type-id": 43822
+                            }
+                        ]
+                    },
+                    "outbound-filtering-retired": {
+                        "type": "FlexibleAssetTypes",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/4089575/assets/43822-vendors/records/55214666",
+                                "id": 55214666,
+                                "name": "Mimecast",
+                                "organization-name": "Jordan Outdoor Enterprises, LTD",
+                                "asset-type-id": 43822
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-15T18:44:07.000Z",
+                "updated-at": "2022-11-22T14:30:38.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1647865",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460116,
+                "organization-name": "LPBC",
+                "resource-url": "https://coretelligent.itglue.com/1460116/assets/43816-email/records/1647865",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43816,
+                "flexible-asset-type-name": "Email",
+                "name": "Exchange 2010",
+                "traits": {
+                    "type": "Exchange 2010",
+                    "hosting-location": "On-Premises",
+                    "webmail-url": "https://mail.lpbatlanta.com/owa",
+                    "administrator-url": "https://mail.lpbatlanta.com/ecp",
+                    "notes": "<div>Mailbox archives are configured through Exchange for specific users that have in-place archive configured. Archived emails can be reviewed/exported by doing an in-place eDiscovery on the \"Compliance Management\" tab in EMC. <br></div>",
+                    "domain-s": {
+                        "type": "Domains",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460116/domains/225860",
+                                "id": 225860,
+                                "name": "lpbatlanta.com",
+                                "organization-name": "LPBC"
+                            }
+                        ]
+                    },
+                    "email-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460116/configurations/6934143",
+                                "id": 6934143,
+                                "name": "EML: LPB-LVL-EXC-001- Exchange 2016 Server",
+                                "organization-name": "LPBC",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-16T17:23:38.000Z",
+                "updated-at": "2020-03-19T17:21:09.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1658075",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460143,
+                "organization-name": "Wellstreet Urgent Care",
+                "resource-url": "https://coretelligent.itglue.com/1460143/assets/43816-email/records/1658075",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43816,
+                "flexible-asset-type-name": "Email",
+                "name": "Office 365",
+                "traits": {
+                    "type": "Office 365",
+                    "hosting-location": "Cloud",
+                    "webmail-url": "https://outlook.office365.com/owa",
+                    "inbound-delivery-method-retired": "Office 365",
+                    "domain-s": {
+                        "type": "Domains",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460143/domains/226015",
+                                "id": 226015,
+                                "name": "wellstreet.com",
+                                "organization-name": "Wellstreet Urgent Care"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460143/domains/226016",
+                                "id": 226016,
+                                "name": "fourwindshealth.com",
+                                "organization-name": "Wellstreet Urgent Care"
+                            }
+                        ]
+                    },
+                    "email-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460143/configurations/6839530",
+                                "id": 6839530,
+                                "name": "Office365 - Documentation For Four Winds Health Environment - (hosted email)",
+                                "organization-name": "Wellstreet Urgent Care",
+                                "configuration-type-name": "_CREDENTIALS"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-17T01:13:37.000Z",
+                "updated-at": "2017-05-17T01:13:37.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        }
+    ]
+}

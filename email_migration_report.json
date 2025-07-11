@@ -1,0 +1,232 @@
+{
+  "statistics": {
+    "total_emails": 10,
+    "successful": 10,
+    "failed": 0,
+    "created": 7,
+    "updated": 3,
+    "skipped": 0,
+    "timestamp": "2025-07-11T14:35:50.740039",
+    "matching": {
+      "total": 10,
+      "by_match_type": {
+        "No Match": {
+          "count": 7,
+          "percentage": 70.0
+        },
+        "Exact Name": {
+          "count": 3,
+          "percentage": 30.0
+        }
+      },
+      "by_recommended_action": {
+        "Create New": {
+          "count": 7,
+          "percentage": 70.0
+        },
+        "Use Existing": {
+          "count": 3,
+          "percentage": 30.0
+        }
+      },
+      "by_data_quality": {
+        "\u2705 Ready": {
+          "count": 8,
+          "percentage": 80.0
+        },
+        "\u274c Missing Data": {
+          "count": 1,
+          "percentage": 10.0
+        },
+        "\u26a0\ufe0f Invalid Email Type": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      },
+      "by_email_type": {
+        "Google Apps": {
+          "count": 1,
+          "percentage": 10.0
+        },
+        "Office 365": {
+          "count": 3,
+          "percentage": 30.0
+        },
+        "Microsoft 365": {
+          "count": 3,
+          "percentage": 30.0
+        },
+        "Exchange 2019": {
+          "count": 1,
+          "percentage": 10.0
+        },
+        "Other": {
+          "count": 1,
+          "percentage": 10.0
+        },
+        "Exchange 2010": {
+          "count": 1,
+          "percentage": 10.0
+        }
+      }
+    },
+    "data_quality": {
+      "total_issues": 2,
+      "by_issue_type": {
+        "Missing Required Field": 1,
+        "Invalid Email Type": 1
+      },
+      "by_priority": {
+        "High": 1,
+        "Medium": 1
+      }
+    },
+    "field_mappings": {
+      "org:name -> name": "Organization name",
+      "org:description -> notes": "Organization description",
+      "org:short-name -> short_description": "Short name/abbreviation",
+      "org:organization-status-name -> state": "Active/Inactive status",
+      "org:organization-type-name -> category": "Organization type",
+      "org:created-at -> sys_created_on": "Creation date",
+      "org:updated-at -> sys_updated_on": "Last update date",
+      "email:coresecret-url -> u_coresecret_url": "Custom email field mapping",
+      "email:spf-record -> u_spf_record": "Custom email field mapping",
+      "email:journaling-provider -> u_journaling_provider": "Custom email field mapping",
+      "email:dr-failover-plan -> u_dr_failover_plan": "Custom email field mapping",
+      "email:name -> name": "Email service name",
+      "email:type -> service_classification": "Email service type",
+      "email:hosting-location -> u_hosting_location": "Where email is hosted",
+      "email:webmail-url -> u_webmail_url": "URL for webmail access",
+      "email:administrator-url -> u_admin_url": "URL for admin portal",
+      "email:spf-enabled -> u_spf_enabled": "SPF enabled flag",
+      "email:dkim-enabled -> u_dkim_enabled": "DKIM enabled flag",
+      "email:dmarc-enabled -> u_dmarc_enabled": "DMARC enabled flag",
+      "email:notes -> comments": "Additional notes",
+      "email:domain-s -> u_domains": "Associated domains",
+      "email:email-server-s -> u_email_servers": "Email servers",
+      "email:spam-filtering -> u_spam_filtering": "Spam filtering vendor"
+    }
+  },
+  "results": [
+    {
+      "itglue_id": "1151258",
+      "itglue_name": "Google Apps",
+      "servicenow_id": "email_57930cb6",
+      "servicenow_name": "Google Apps",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new email service: No matching email service found in ServiceNow"
+    },
+    {
+      "itglue_id": "1291400",
+      "itglue_name": "Office 365",
+      "servicenow_id": "email_07e07b1b",
+      "servicenow_name": "Office 365",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new email service: No matching email service found in ServiceNow"
+    },
+    {
+      "itglue_id": "1540882",
+      "itglue_name": "Microsoft 365",
+      "servicenow_id": "email_1001",
+      "servicenow_name": "Microsoft 365",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing email service: Matched by exact normalized name: microsoft 365"
+    },
+    {
+      "itglue_id": "1562969",
+      "itglue_name": "Microsoft 365",
+      "servicenow_id": "email_1001",
+      "servicenow_name": "Microsoft 365",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing email service: Matched by exact normalized name: microsoft 365"
+    },
+    {
+      "itglue_id": "1566498",
+      "itglue_name": "Exchange 2019",
+      "servicenow_id": "email_5de66651",
+      "servicenow_name": "Exchange 2019",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new email service: No matching email service found in ServiceNow"
+    },
+    {
+      "itglue_id": "1592957",
+      "itglue_name": "Office 365",
+      "servicenow_id": "email_5b5baa4c",
+      "servicenow_name": "Office 365",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new email service: No matching email service found in ServiceNow"
+    },
+    {
+      "itglue_id": "1592973",
+      "itglue_name": "Other",
+      "servicenow_id": "email_036c1d2c",
+      "servicenow_name": "Other",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new email service: No matching email service found in ServiceNow"
+    },
+    {
+      "itglue_id": "1643416",
+      "itglue_name": "Microsoft 365",
+      "servicenow_id": "email_1001",
+      "servicenow_name": "Microsoft 365",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing email service: Matched by exact normalized name: microsoft 365"
+    },
+    {
+      "itglue_id": "1647865",
+      "itglue_name": "Exchange 2010",
+      "servicenow_id": "email_ac6c48e1",
+      "servicenow_name": "Exchange 2010",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new email service: No matching email service found in ServiceNow"
+    },
+    {
+      "itglue_id": "1658075",
+      "itglue_name": "Office 365",
+      "servicenow_id": "email_d8f26b6f",
+      "servicenow_name": "Office 365",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new email service: No matching email service found in ServiceNow"
+    }
+  ]
+}
