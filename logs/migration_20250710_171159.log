@@ -1,0 +1,26 @@
+2025-07-10 17:11:59,802 - itglue_client - INFO - Using mock data instead of making API calls
+2025-07-10 17:11:59,802 - itglue_client - INFO - Initialized IT Glue client with API URL: https://api.itglue.com
+2025-07-10 17:11:59,803 - servicenow_mock - INFO - Loaded mock data from mock_servicenow_companies.json
+2025-07-10 17:11:59,803 - servicenow_mock - INFO - Initialized ServiceNow mock client with 10 companies
+2025-07-10 17:11:59,803 - organization_matcher - INFO - Organization Matcher initialized with strategies: coreid, exact_name, fuzzy_name
+2025-07-10 17:11:59,803 - field_mapper - INFO - Field Mapper initialized with 7 field mappings
+2025-07-10 17:11:59,803 - organization_migrator - INFO - Organization Migrator initialized (use_mock_data=True)
+2025-07-10 17:11:59,803 - organization_migrator - INFO - Starting organization migration
+2025-07-10 17:11:59,803 - organization_migrator - INFO - Connection tests successful
+2025-07-10 17:11:59,803 - itglue_client - INFO - Fetching organizations from IT Glue...
+2025-07-10 17:11:59,804 - itglue_client - ERROR - Failed to parse JSON: Expecting ',' delimiter: line 447 column 4 (char 12158)
+2025-07-10 17:11:59,804 - itglue_client - WARNING - Using default mock data instead
+2025-07-10 17:11:59,804 - itglue_client - INFO - Using default mock organization data
+2025-07-10 17:11:59,805 - itglue_client - INFO - Loaded 10 site summaries from mock file: mock_site_summaries.json
+2025-07-10 17:11:59,805 - organization_matcher - INFO - Matching 4 IT Glue organizations to 10 ServiceNow companies
+2025-07-10 17:11:59,805 - organization_matcher - INFO - Extracting CoreIDs from 10 Site Summary assets...
+2025-07-10 17:11:59,805 - organization_matcher - INFO - Extracted 2 CoreIDs from Site Summary assets
+2025-07-10 17:11:59,806 - organization_matcher - INFO - Matched 4 organizations with 2 data quality issues
+2025-07-10 17:11:59,806 - organization_migrator - INFO - Migrating organization 1/4: United Technology Group
+2025-07-10 17:11:59,806 - organization_migrator - INFO - Migrating organization 2/4: Courier Express
+2025-07-10 17:11:59,807 - servicenow_mock - INFO - Saved updated mock data to mock_servicenow_companies.json
+2025-07-10 17:11:59,807 - organization_migrator - INFO - Migrating organization 3/4: Moncrief Heating & Air
+2025-07-10 17:11:59,808 - servicenow_mock - INFO - Saved updated mock data to mock_servicenow_companies.json
+2025-07-10 17:11:59,808 - organization_migrator - INFO - Migrating organization 4/4: Southeast Mortgage of Georgia, Inc.
+2025-07-10 17:11:59,809 - servicenow_mock - INFO - Saved updated mock data to mock_servicenow_companies.json
+2025-07-10 17:11:59,810 - organization_migrator - INFO - Migration report saved to migration_report.json

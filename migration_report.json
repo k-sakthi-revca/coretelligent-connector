@@ -1,0 +1,188 @@
+{
+  "statistics": {
+    "total_organizations": 10,
+    "successful": 10,
+    "failed": 0,
+    "created": 0,
+    "updated": 9,
+    "skipped": 1,
+    "timestamp": "2025-07-10T17:18:52.218185",
+    "matching": {
+      "total": 10,
+      "by_match_type": {
+        "Skipped": {
+          "count": 1,
+          "percentage": 10.0
+        },
+        "Exact CoreID": {
+          "count": 2,
+          "percentage": 20.0
+        },
+        "Exact Name": {
+          "count": 7,
+          "percentage": 70.0
+        }
+      },
+      "by_recommended_action": {
+        "Skip": {
+          "count": 1,
+          "percentage": 10.0
+        },
+        "Use Existing": {
+          "count": 9,
+          "percentage": 90.0
+        }
+      },
+      "by_data_quality": {
+        "\u26a0\ufe0f No CoreID": {
+          "count": 8,
+          "percentage": 80.0
+        },
+        "\u2705 Ready": {
+          "count": 2,
+          "percentage": 20.0
+        }
+      }
+    },
+    "data_quality": {
+      "total_issues": 8,
+      "by_issue_type": {
+        "Missing CoreID": 8
+      },
+      "by_priority": {
+        "Medium": 8
+      }
+    },
+    "field_mappings": {
+      "name -> name": "Organization name",
+      "description -> notes": "Organization description",
+      "short-name -> short_description": "Short name/abbreviation",
+      "organization-status-name -> state": "Active/Inactive status",
+      "organization-type-name -> category": "Organization type",
+      "created-at -> sys_created_on": "Creation date",
+      "updated-at -> sys_updated_on": "Last update date"
+    }
+  },
+  "results": [
+    {
+      "itglue_id": "1447768",
+      "itglue_name": "United Technology Group",
+      "servicenow_id": null,
+      "servicenow_name": null,
+      "match_type": "Skipped",
+      "confidence": 0.0,
+      "action": "skipped",
+      "status": "success",
+      "error_message": null,
+      "notes": "Skipped: Skipped due to status: Inactive"
+    },
+    {
+      "itglue_id": "1460107",
+      "itglue_name": "Courier Express",
+      "servicenow_id": "7afa5be9db414510bb316462ca9619d0",
+      "servicenow_name": "Courier Express",
+      "match_type": "Exact CoreID",
+      "confidence": 1.0,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing company: Matched by CoreID: CORE80"
+    },
+    {
+      "itglue_id": "1460111",
+      "itglue_name": "Moncrief Heating & Air",
+      "servicenow_id": "800b9be9db414510bb316462ca961974",
+      "servicenow_name": "Moncrief Heating & Air",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing company: Matched by exact normalized name: moncrief heating air"
+    },
+    {
+      "itglue_id": "1460115",
+      "itglue_name": "Turner Enterprises",
+      "servicenow_id": "e54b9fe9db414510bb316462ca96198d",
+      "servicenow_name": "Turner Enterprises",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing company: Matched by exact normalized name: turner enterprises"
+    },
+    {
+      "itglue_id": "1460116",
+      "itglue_name": "LPBC",
+      "servicenow_id": "a1fa5be9db414510bb316462ca9619e2",
+      "servicenow_name": "LPBC",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing company: Matched by exact normalized name: lpbc"
+    },
+    {
+      "itglue_id": "1460117",
+      "itglue_name": "Empire Tickets",
+      "servicenow_id": "e60bdbe9db414510bb316462ca961906",
+      "servicenow_name": "Empire Tickets",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing company: Matched by exact normalized name: empire tickets"
+    },
+    {
+      "itglue_id": "1460140",
+      "itglue_name": "Nakanishi Manufacturing Corporation",
+      "servicenow_id": "37da57a9870d8d5066be86e5cebb3573",
+      "servicenow_name": "Nakanishi Manufacturing Corporation",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing company: Matched by exact normalized name: nakanishi manufacturing"
+    },
+    {
+      "itglue_id": "1460141",
+      "itglue_name": "Epic Response",
+      "servicenow_id": "d5fa5be9db414510bb316462ca9619c6",
+      "servicenow_name": "Epic Response",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing company: Matched by exact normalized name: epic response"
+    },
+    {
+      "itglue_id": "1460142",
+      "itglue_name": "Southeast Mortgage of Georgia, Inc.",
+      "servicenow_id": "53da97a9870d8d5066be86e5cebb3589",
+      "servicenow_name": "Southeast Mortgage of Georgia, Inc.",
+      "match_type": "Exact CoreID",
+      "confidence": 1.0,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing company: Matched by CoreID: CORE51"
+    },
+    {
+      "itglue_id": "1460143",
+      "itglue_name": "Wellstreet Urgent Care",
+      "servicenow_id": "0efa1ba9870d8d5066be86e5cebb357b",
+      "servicenow_name": "Wellstreet Urgent Care",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing company: Matched by exact normalized name: wellstreet urgent care"
+    }
+  ]
+}

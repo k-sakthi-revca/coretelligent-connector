@@ -1,0 +1,32 @@
+2025-07-10 16:45:22,733 - itglue_client - INFO - Using mock data instead of making API calls
+2025-07-10 16:45:22,733 - itglue_client - INFO - Initialized IT Glue client with API URL: https://api.itglue.com
+2025-07-10 16:45:22,734 - servicenow_mock - INFO - Loaded mock data from mock_servicenow_companies.json
+2025-07-10 16:45:22,734 - servicenow_mock - INFO - Initialized ServiceNow mock client with 10 companies
+2025-07-10 16:45:22,734 - organization_matcher - INFO - Organization Matcher initialized
+2025-07-10 16:45:22,734 - field_mapper - INFO - Field Mapper initialized with 7 field mappings
+2025-07-10 16:45:22,734 - organization_migrator - INFO - Organization Migrator initialized (use_mock_data=True)
+2025-07-10 16:45:22,735 - organization_migrator - INFO - Starting organization migration
+2025-07-10 16:45:22,735 - organization_migrator - INFO - Connection tests successful
+2025-07-10 16:45:22,735 - itglue_client - INFO - Fetching organizations from IT Glue...
+2025-07-10 16:45:22,736 - itglue_client - ERROR - Failed to load mock organizations: Expecting ',' delimiter: line 447 column 4 (char 12158)
+2025-07-10 16:45:22,736 - itglue_client - INFO - Loaded 10 site summaries from mock file: mock_site_summaries.json
+2025-07-10 16:45:22,737 - organization_matcher - INFO - Matching 0 IT Glue organizations to 10 ServiceNow companies
+2025-07-10 16:45:22,737 - organization_matcher - INFO - Extracting CoreIDs from 10 Site Summary assets...
+2025-07-10 16:45:22,737 - organization_matcher - INFO - Extracted 2 CoreIDs from Site Summary assets
+2025-07-10 16:45:22,737 - organization_matcher - INFO - Organization Matching Summary:
+2025-07-10 16:45:22,737 - organization_matcher - INFO -   Total Organizations: 0
+2025-07-10 16:45:22,737 - organization_matcher - INFO -   Match Types:
+2025-07-10 16:45:22,737 - organization_matcher - INFO -   Recommended Actions:
+2025-07-10 16:45:22,738 - organization_migrator - INFO - Migration report saved to migration_report.json
+2025-07-10 16:45:22,738 - __main__ - ERROR - Unexpected error during migration
+Traceback (most recent call last):
+  File "/Users/swapnilmhatre/migration/itglue_to_servicenow_demo/main.py", line 96, in main
+    results, statistics = migrator.migrate_organizations()
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/swapnilmhatre/migration/itglue_to_servicenow_demo/organization_migrator.py", line 110, in migrate_organizations
+    self._print_migration_summary(statistics)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/swapnilmhatre/migration/itglue_to_servicenow_demo/organization_migrator.py", line 372, in _print_migration_summary
+    print(f"Successful: {successful} ({successful/total*100:.1f}%)")
+                                       ~~~~~~~~~~^~~~~~
+ZeroDivisionError: division by zero

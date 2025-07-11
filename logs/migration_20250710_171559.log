@@ -1,0 +1,18 @@
+2025-07-10 17:15:59,996 - itglue_client - INFO - Using mock data instead of making API calls
+2025-07-10 17:15:59,996 - itglue_client - INFO - Initialized IT Glue client with API URL: https://api.itglue.com
+2025-07-10 17:15:59,997 - servicenow_mock - INFO - Loaded mock data from mock_servicenow_companies.json
+2025-07-10 17:15:59,997 - servicenow_mock - INFO - Initialized ServiceNow mock client with 10 companies
+2025-07-10 17:15:59,997 - organization_matcher - INFO - Organization Matcher initialized with strategies: coreid, exact_name, fuzzy_name
+2025-07-10 17:15:59,997 - field_mapper - INFO - Field Mapper initialized with 7 field mappings
+2025-07-10 17:15:59,997 - organization_migrator - INFO - Organization Migrator initialized (use_mock_data=True)
+2025-07-10 17:15:59,997 - organization_migrator - INFO - Starting organization migration
+2025-07-10 17:15:59,997 - organization_migrator - INFO - Connection tests successful
+2025-07-10 17:15:59,997 - itglue_client - INFO - Fetching organizations from IT Glue...
+2025-07-10 17:15:59,998 - itglue_client - ERROR - Failed to load mock organizations: Expecting ',' delimiter: line 447 column 4 (char 12158)
+2025-07-10 17:15:59,999 - itglue_client - INFO - Loaded 10 site summaries from mock file: mock_site_summaries.json
+2025-07-10 17:15:59,999 - organization_matcher - INFO - Matching 0 IT Glue organizations to 10 ServiceNow companies
+2025-07-10 17:15:59,999 - organization_matcher - INFO - Extracting CoreIDs from 10 Site Summary assets...
+2025-07-10 17:15:59,999 - organization_matcher - INFO - Extracted 2 CoreIDs from Site Summary assets
+2025-07-10 17:15:59,999 - organization_matcher - INFO - Matched 0 organizations with 0 data quality issues
+2025-07-10 17:16:00,000 - organization_migrator - WARNING - No organizations found to migrate
+2025-07-10 17:16:00,001 - organization_migrator - INFO - Migration report saved to migration_report.json

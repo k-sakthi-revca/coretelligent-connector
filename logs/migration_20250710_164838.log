@@ -1,0 +1,29 @@
+2025-07-10 16:48:38,857 - itglue_client - INFO - Using mock data instead of making API calls
+2025-07-10 16:48:38,857 - itglue_client - INFO - Initialized IT Glue client with API URL: https://api.itglue.com
+2025-07-10 16:48:38,859 - servicenow_mock - INFO - Loaded mock data from mock_servicenow_companies.json
+2025-07-10 16:48:38,859 - servicenow_mock - INFO - Initialized ServiceNow mock client with 10 companies
+2025-07-10 16:48:38,859 - organization_matcher - INFO - Organization Matcher initialized with strategies: coreid, exact_name, fuzzy_name
+2025-07-10 16:48:38,859 - field_mapper - INFO - Field Mapper initialized with 7 field mappings
+2025-07-10 16:48:38,859 - organization_migrator - INFO - Organization Migrator initialized (use_mock_data=True)
+2025-07-10 16:48:38,860 - organization_migrator - INFO - Starting organization migration
+2025-07-10 16:48:38,860 - organization_migrator - INFO - Connection tests successful
+2025-07-10 16:48:38,860 - itglue_client - INFO - Fetching organizations from IT Glue...
+2025-07-10 16:48:38,862 - itglue_client - ERROR - Failed to load mock organizations: Expecting ',' delimiter: line 447 column 4 (char 12158)
+2025-07-10 16:48:38,863 - itglue_client - INFO - Loaded 10 site summaries from mock file: mock_site_summaries.json
+2025-07-10 16:48:38,864 - organization_matcher - INFO - Matching 0 IT Glue organizations to 10 ServiceNow companies
+2025-07-10 16:48:38,865 - organization_matcher - INFO - Extracting CoreIDs from 10 Site Summary assets...
+2025-07-10 16:48:38,865 - organization_matcher - INFO - Extracted 2 CoreIDs from Site Summary assets
+2025-07-10 16:48:38,868 - organization_matcher - INFO - Matched 0 organizations with 0 data quality issues
+2025-07-10 16:48:38,869 - organization_migrator - INFO - Migration report saved to migration_report.json
+2025-07-10 16:48:38,869 - __main__ - ERROR - Unexpected error during migration
+Traceback (most recent call last):
+  File "/Users/swapnilmhatre/migration/itglue_to_servicenow_demo/main.py", line 96, in main
+    results, statistics = migrator.migrate_organizations()
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/swapnilmhatre/migration/itglue_to_servicenow_demo/organization_migrator.py", line 110, in migrate_organizations
+    self._print_migration_summary(statistics)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/swapnilmhatre/migration/itglue_to_servicenow_demo/organization_migrator.py", line 372, in _print_migration_summary
+    print(f"Successful: {successful} ({successful/total*100:.1f}%)")
+                                       ~~~~~~~~~~^~~~~~
+ZeroDivisionError: division by zero

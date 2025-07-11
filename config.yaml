@@ -1,0 +1,80 @@
+# IT Glue to ServiceNow Migration Demo Configuration
+
+# IT Glue API settings
+itglue:
+  # These will be overridden by environment variables if present
+  api_url: https://api.itglue.com
+  api_key: your_api_key_here
+  rate_limit: 1000  # Maximum requests per minute
+  timeout: 30  # Request timeout in seconds
+
+# Mock ServiceNow settings
+servicenow:
+  # In a real implementation, this would contain ServiceNow API credentials
+  # For the demo, we'll use mock data
+  mock_data_file: mock_servicenow_companies.json
+  create_missing: true  # Create companies that don't exist in ServiceNow
+
+# Field mappings from IT Glue to ServiceNow
+field_mappings:
+  # Basic information
+  name: name
+  description: notes
+  short-name: short_description
+  
+  # Status and type information
+  organization-status-name: state
+  organization-type-name: category
+  
+  # Additional information
+  created-at: sys_created_on
+  updated-at: sys_updated_on
+
+# Organization matching settings
+matching:
+  # Strategies to use, in order of preference
+  strategies:
+    - coreid
+    - exact_name
+    - fuzzy_name
+  
+  # Fuzzy matching settings
+  fuzzy_matching:
+    threshold: 0.8  # Minimum similarity score (0.0 to 1.0)
+    review_threshold: 0.95  # Matches below this require review
+  
+  # Name normalization patterns (regex)
+  normalization_patterns:
+    - pattern: '\b(inc|incorporated)\b\.?$'
+      replacement: ''
+    - pattern: '\b(llc|ltd|limited)\b\.?$'
+      replacement: ''
+    - pattern: '\b(corp|corporation)\b\.?$'
+      replacement: ''
+    - pattern: '\b(company|co)\b\.?$'
+      replacement: ''
+    - pattern: '\b(the)\b'
+      replacement: ''
+    - pattern: '[^\w\s]'
+      replacement: ''
+    - pattern: '\s+'
+      replacement: ' '
+
+# Valid organization statuses for migration
+valid_statuses:
+  - Active
+  - Active - Popup
+  - Credit Hold
+  - Product Only
+  - Presales
+  - Service Hold Phase 1
+  - Service Hold Phase 2
+  - Service Hold Phase 3
+  - Pre-Pay Only
+  - Staff Augmentation
+
+# Output settings
+output:
+  report_file: migration_report.json
+  console_output: true
+  detailed_logging: true

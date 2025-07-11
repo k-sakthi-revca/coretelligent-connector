@@ -1,0 +1,144 @@
+[
+  {
+    "id": "100001",
+    "type": "flexible-assets",
+    "attributes": {
+      "name": "Courier Express - Main Office",
+      "organization-id": "1460107",
+      "traits": {
+        "CoreID": "CORE80",
+        "Location": "Headquarters",
+        "Address": "456 Delivery Way, Atlanta, GA 30328",
+        "Contact": "John Smith",
+        "Phone": "555-987-6543"
+      }
+    }
+  },
+  {
+    "id": "100002",
+    "type": "flexible-assets",
+    "attributes": {
+      "name": "Southeast Mortgage - Main Office",
+      "organization-id": "1460142",
+      "traits": {
+        "CoreID": "CORE51",
+        "Location": "Headquarters",
+        "Address": "5th Avenue, Atlanta, GA 30308",
+        "Contact": "Jane Doe",
+        "Phone": "555-777-8888"
+      }
+    }
+  },
+  {
+    "id": "100003",
+    "type": "flexible-assets",
+    "attributes": {
+      "name": "Empire Tickets - Main Office",
+      "organization-id": "1460117",
+      "traits": {
+        "Location": "Headquarters",
+        "Address": "200 Event Plaza, Atlanta, GA 30305",
+        "Contact": "Mike Johnson",
+        "Phone": "555-888-9999"
+      }
+    }
+  },
+  {
+    "id": "100004",
+    "type": "flexible-assets",
+    "attributes": {
+      "name": "Moncrief Heating & Air - Main Office",
+      "organization-id": "1460111",
+      "traits": {
+        "Location": "Headquarters",
+        "Address": "789 Climate Dr, Atlanta, GA 30342",
+        "Contact": "Robert Williams",
+        "Phone": "555-555-5555"
+      }
+    }
+  },
+  {
+    "id": "100005",
+    "type": "flexible-assets",
+    "attributes": {
+      "name": "Turner Enterprises - Main Office",
+      "organization-id": "1460115",
+      "traits": {
+        "Location": "Headquarters",
+        "Address": "101 Media Circle, Atlanta, GA 30303",
+        "Contact": "Sarah Turner",
+        "Phone": "555-666-7777"
+      }
+    }
+  },
+  {
+    "id": "100006",
+    "type": "flexible-assets",
+    "attributes": {
+      "name": "Nakanishi Manufacturing - Main Office",
+      "organization-id": "1460140",
+      "traits": {
+        "Location": "Headquarters",
+        "Address": "1007 Industrial Parkway, Macon, GA 31201",
+        "Contact": "Hiroshi Nakanishi",
+        "Phone": "555-111-2222"
+      }
+    }
+  },
+  {
+    "id": "100007",
+    "type": "flexible-assets",
+    "attributes": {
+      "name": "Epic Response - Main Office",
+      "organization-id": "1460141",
+      "traits": {
+        "Location": "Headquarters",
+        "Address": "18144 Emergency Road, Atlanta, GA 30327",
+        "Contact": "David Miller",
+        "Phone": "555-333-4444"
+      }
+    }
+  },
+  {
+    "id": "100008",
+    "type": "flexible-assets",
+    "attributes": {
+      "name": "Wellstreet Urgent Care - Main Office",
+      "organization-id": "1460143",
+      "traits": {
+        "Location": "Headquarters",
+        "Address": "Broadway, Atlanta, GA 30318",
+        "Contact": "Dr. Emily Chen",
+        "Phone": "555-999-0000"
+      }
+    }
+  },
+  {
+    "id": "100009",
+    "type": "flexible-assets",
+    "attributes": {
+      "name": "LPBC - Main Office",
+      "organization-id": "1460116",
+      "traits": {
+        "Location": "Headquarters",
+        "Address": "Market Street, Atlanta, GA 30326",
+        "Contact": "Margie McClary",
+        "Phone": "555-222-3333"
+      }
+    }
+  },
+  {
+    "id": "100010",
+    "type": "flexible-assets",
+    "attributes": {
+      "name": "United Technology Group - Main Office",
+      "organization-id": "1447768",
+      "traits": {
+        "Location": "Headquarters",
+        "Address": "123 Tech Blvd, Atlanta, GA 30339",
+        "Contact": "Nathan Thompson",
+        "Phone": "555-123-4567"
+      }
+    }
+  }
+]
