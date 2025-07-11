@@ -11,7 +11,7 @@ from dataclasses import dataclass, asdict
 
 from itglue_client import ITGlueClient
 from servicenow_mock import ServiceNowMock
-from email_matcher import EmailMatcher, EmailMatch, DataQualityIssue
+from matchers.email_matcher import EmailMatcher, EmailMatch, DataQualityIssue
 from field_mapper import FieldMapper
 from config import config
 
@@ -54,7 +54,7 @@ class EmailMigrator:
         
         # Output settings
         self.output_settings = config.get("output", {})
-        self.report_file = self.output_settings.get("email_report_file", "email_migration_report.json")
+        self.report_file = self.output_settings.get("email_report_file", "reports/email_migration_report.json")
         self.console_output = self.output_settings.get("console_output", True)
         
         self.logger.info(f"Email Migrator initialized (use_mock_data={use_mock_data})")
@@ -320,6 +320,9 @@ class EmailMigrator:
         }
         
         try:
+            # Ensure directory exists
+            os.makedirs(os.path.dirname(self.report_file), exist_ok=True)
+            
             with open(self.report_file, 'w') as f:
                 json.dump(report, f, indent=2)
             

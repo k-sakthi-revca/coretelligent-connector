@@ -7,7 +7,7 @@ import os
 from datetime import datetime
 
 from utils.logging_utils import setup_logging, get_timestamped_log_file
-from email_migrator import EmailMigrator
+from migrators.email_migrator import EmailMigrator
 
 
 def main():
