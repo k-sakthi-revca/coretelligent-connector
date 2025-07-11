@@ -17,8 +17,9 @@ class FieldMapper:
         self.logger = logging.getLogger(__name__)
         self.field_mappings = config.get_field_mappings()
         self.email_field_mappings = config.get("email_field_mappings", {})
+        self.lob_application_field_mappings = config.get("lob_application_field_mappings", {})
         
-        self.logger.info(f"Field Mapper initialized with {len(self.field_mappings)} field mappings and {len(self.email_field_mappings)} email field mappings")
+        self.logger.info(f"Field Mapper initialized with {len(self.field_mappings)} field mappings, {len(self.email_field_mappings)} email field mappings, and {len(self.lob_application_field_mappings)} LoB application field mappings")
     
     def map_organization(self, itglue_org: Dict[str, Any], match_result: Any = None) -> Dict[str, Any]:
         """
@@ -214,6 +215,147 @@ class FieldMapper:
         
         return servicenow_data
     
+    def map_lob_application(self, itglue_application: Dict[str, Any], match_result: Any = None) -> Dict[str, Any]:
+        """
+        Map IT Glue LoB application asset to ServiceNow application CI.
+        
+        Args:
+            itglue_application: IT Glue LoB application asset data
+            match_result: Optional match result for additional context
+            
+        Returns:
+            ServiceNow application CI data
+        """
+        attributes = itglue_application.get("attributes", {})
+        traits = attributes.get("traits", {})
+        
+        # Initialize ServiceNow application CI data
+        servicenow_data = {
+            "sys_class_name": "cmdb_ci_appl",
+            "sys_created_by": "itglue_migration",
+            "sys_updated_by": "itglue_migration"
+        }
+        
+        # If we have a match, use the existing sys_id
+        if match_result and match_result.servicenow_id:
+            servicenow_data["sys_id"] = match_result.servicenow_id
+        
+        # Map basic fields
+        servicenow_data["name"] = attributes.get("name", "Unknown Application")
+        
+        # Map organization
+        org_id = attributes.get("organization-id")
+        org_name = attributes.get("organization-name", "Unknown Organization")
+        if org_id:
+            servicenow_data["company"] = org_id
+            servicenow_data["u_organization_name"] = org_name
+        
+        # Map version
+        version = traits.get("version")
+        if version:
+            servicenow_data["version"] = version
+        
+        # Map category and subcategory
+        category = traits.get("category")
+        if category:
+            servicenow_data["category"] = category
+        
+        # Map importance to business criticality
+        importance = traits.get("importance")
+        if importance:
+            # Map importance to operational status
+            importance_map = {
+                "Critical": "1",  # 1 = Operational/High
+                "High": "1",      # 1 = Operational/High
+                "Medium": "2",    # 2 = Non-operational/Medium
+                "Low": "3"        # 3 = Retired/Low
+            }
+            servicenow_data["operational_status"] = importance_map.get(importance, "1")
+            
+            # Add importance to short description
+            servicenow_data["short_description"] = f"{attributes.get('name', 'Application')} - {importance} Importance"
+        else:
+            servicenow_data["short_description"] = f"{attributes.get('name', 'Application')}"
+        
+        # Map business impact
+        business_impact = traits.get("business-impact")
+        if business_impact:
+            if "short_description" in servicenow_data:
+                servicenow_data["short_description"] += f" - {business_impact}"
+            else:
+                servicenow_data["short_description"] = business_impact
+        
+        # Map application champion to owned by
+        application_champion = self._extract_application_champion(traits.get("application-champion", {}))
+        if application_champion:
+            servicenow_data["owned_by"] = application_champion
+        
+        # Map application manager
+        application_manager = traits.get("application-manager")
+        if application_manager:
+            servicenow_data["managed_by"] = application_manager
+        
+        # Map hosting location
+        hosting_location = traits.get("hosting-location")
+        if hosting_location:
+            servicenow_data["environment"] = hosting_location
+        
+        # Map application URL
+        application_url = traits.get("application-url")
+        if application_url:
+            servicenow_data["u_application_url"] = application_url
+        
+        # Map vendor
+        vendor = self._extract_vendor(traits.get("vendor", {}))
+        if vendor:
+            servicenow_data["vendor"] = vendor
+            servicenow_data["manufacturer"] = vendor
+        
+        # Map notes and install instructions
+        notes = traits.get("notes", "")
+        install_instructions = traits.get("install-instructions", "")
+        
+        comments = ""
+        if notes:
+            comments += f"Notes:\n{notes}\n\n"
+        
+        if install_instructions:
+            comments += f"Install Instructions:\n{install_instructions}\n\n"
+        
+        if comments:
+            servicenow_data["comments"] = comments
+        
+        # Map application servers
+        application_servers = self._extract_application_servers(traits.get("application-server-s", {}))
+        if application_servers:
+            servicenow_data["u_application_servers"] = ", ".join(application_servers)
+        
+        # Map additional fields according to the defined mappings
+        for itglue_field, servicenow_field in self.lob_application_field_mappings.items():
+            if itglue_field in traits:
+                value = traits[itglue_field]
+                
+                if value is not None:
+                    servicenow_data[servicenow_field] = value
+        
+        # Add creation and update timestamps
+        created_at = attributes.get("created-at")
+        if created_at:
+            servicenow_data["sys_created_on"] = self._format_date(created_at)
+            servicenow_data["install_date"] = self._format_date(created_at)
+        
+        updated_at = attributes.get("updated-at")
+        if updated_at:
+            servicenow_data["sys_updated_on"] = self._format_date(updated_at)
+        
+        # Set install status based on archived flag
+        if attributes.get("archived", False):
+            servicenow_data["install_status"] = "7"  # 7 = Retired
+        else:
+            servicenow_data["install_status"] = "1"  # 1 = Installed
+        
+        return servicenow_data
+    
     def _extract_domains(self, domain_data: Dict[str, Any]) -> List[str]:
         """
         Extract domain names from IT Glue domain tag data.
@@ -257,6 +399,66 @@ class FieldMapper:
                 servers.append(value["name"])
         
         return servers
+    
+    def _extract_application_servers(self, server_data: Dict[str, Any]) -> List[str]:
+        """
+        Extract application server names from IT Glue server tag data.
+        
+        Args:
+            server_data: IT Glue server tag data
+            
+        Returns:
+            List of server names
+        """
+        servers = []
+        
+        if not server_data:
+            return servers
+        
+        values = server_data.get("values", [])
+        for value in values:
+            if isinstance(value, dict) and "name" in value:
+                servers.append(value["name"])
+        
+        return servers
+    
+    def _extract_application_champion(self, champion_data: Dict[str, Any]) -> Optional[str]:
+        """
+        Extract application champion from IT Glue contact tag data.
+        
+        Args:
+            champion_data: IT Glue contact tag data
+            
+        Returns:
+            Contact ID or None
+        """
+        if not champion_data:
+            return None
+        
+        values = champion_data.get("values", [])
+        if values and isinstance(values[0], dict) and "id" in values[0]:
+            return values[0]["id"]
+        
+        return None
+    
+    def _extract_vendor(self, vendor_data: Dict[str, Any]) -> Optional[str]:
+        """
+        Extract vendor from IT Glue vendor tag data.
+        
+        Args:
+            vendor_data: IT Glue vendor tag data
+            
+        Returns:
+            Vendor ID or None
+        """
+        if not vendor_data:
+            return None
+        
+        values = vendor_data.get("values", [])
+        if values and isinstance(values[0], dict) and "id" in values[0]:
+            return values[0]["id"]
+        
+        return None
     
     def _extract_spam_filtering(self, spam_data: Dict[str, Any]) -> str:
         """
@@ -368,6 +570,31 @@ class FieldMapper:
         for mapping, description in email_built_in_mappings.items():
             mapping_details[f"email:{mapping}"] = description
         
+        # LoB application field mappings
+        for itglue_field, servicenow_field in self.lob_application_field_mappings.items():
+            description = self._get_lob_application_field_description(itglue_field, servicenow_field)
+            mapping_details[f"lob_application:{itglue_field} -> {servicenow_field}"] = description
+        
+        # Add built-in LoB application mappings
+        lob_application_built_in_mappings = {
+            "name -> name": "Application name",
+            "version -> version": "Application version",
+            "category -> category": "Application category",
+            "importance -> operational_status": "Application importance/criticality",
+            "business-impact -> short_description": "Business impact description",
+            "application-champion -> owned_by": "Application owner/champion",
+            "application-manager -> managed_by": "Application manager",
+            "hosting-location -> environment": "Where application is hosted",
+            "application-url -> u_application_url": "URL for application access",
+            "vendor -> vendor": "Application vendor",
+            "notes -> comments": "Additional notes",
+            "install-instructions -> comments": "Installation instructions",
+            "application-server-s -> u_application_servers": "Application servers"
+        }
+        
+        for mapping, description in lob_application_built_in_mappings.items():
+            mapping_details[f"lob_application:{mapping}"] = description
+        
         return mapping_details
     
     def _get_field_description(self, itglue_field: str, servicenow_field: str) -> str:
@@ -421,3 +648,33 @@ class FieldMapper:
         }
         
         return descriptions.get(itglue_field, "Custom email field mapping")
+    
+    def _get_lob_application_field_description(self, itglue_field: str, servicenow_field: str) -> str:
+        """
+        Get description for a LoB application field mapping.
+        
+        Args:
+            itglue_field: IT Glue field name
+            servicenow_field: ServiceNow field name
+            
+        Returns:
+            Description of the field mapping
+        """
+        # Basic descriptions for common LoB application fields
+        descriptions = {
+            "name": "Application name",
+            "version": "Application version",
+            "category": "Application category",
+            "importance": "Application importance/criticality",
+            "business-impact": "Business impact description",
+            "application-champion": "Application owner/champion",
+            "application-manager": "Application manager",
+            "hosting-location": "Where application is hosted",
+            "application-url": "URL for application access",
+            "vendor": "Application vendor",
+            "notes": "Additional notes",
+            "install-instructions": "Installation instructions",
+            "application-server-s": "Application servers"
+        }
+        
+        return descriptions.get(itglue_field, "Custom LoB application field mapping")

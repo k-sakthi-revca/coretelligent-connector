@@ -1,0 +1,41 @@
+2025-07-11 16:22:22,589 - __main__ - INFO - Starting LoB applications migration process...
+2025-07-11 16:22:22,589 - itglue_client - INFO - Using mock data instead of making API calls
+2025-07-11 16:22:22,590 - itglue_client - WARNING - Mock organizations file not found: /Users/swapnilmhatre/migration/organizations.json
+2025-07-11 16:22:22,590 - itglue_client - INFO - Initialized IT Glue client with API URL: https://api.itglue.com
+2025-07-11 16:22:22,590 - servicenow_mock - INFO - Loaded mock data from mock_servicenow_companies.json
+2025-07-11 16:22:22,591 - servicenow_mock - INFO - Loaded mock email services from mock_servicenow_email_services.json
+2025-07-11 16:22:22,591 - servicenow_mock - INFO - Loaded mock applications from mock_servicenow_applications.json
+2025-07-11 16:22:22,591 - servicenow_mock - INFO - Initialized ServiceNow mock client with 10 companies, 10 email services, and 4 applications
+2025-07-11 16:22:22,592 - matchers.lob_applications_matcher - INFO - LoB Applications Matcher initialized with strategies: exact_name, fuzzy_name
+2025-07-11 16:22:22,592 - field_mapper - INFO - Field Mapper initialized with 7 field mappings, 4 email field mappings, and 0 LoB application field mappings
+2025-07-11 16:22:22,592 - migrators.lob_applications_migrator - INFO - LoB Applications Migrator initialized (use_mock_data=True)
+2025-07-11 16:22:22,592 - __main__ - INFO - Running LoB applications migration...
+2025-07-11 16:22:22,593 - migrators.lob_applications_migrator - INFO - Starting LoB applications migration
+2025-07-11 16:22:22,593 - migrators.lob_applications_migrator - INFO - Connection tests successful
+2025-07-11 16:22:22,593 - itglue_client - INFO - Fetching LoB application assets from IT Glue...
+2025-07-11 16:22:22,595 - itglue_client - INFO - Loaded 10 LoB application assets from mock file: data\lob\lob_applications.json
+2025-07-11 16:22:22,595 - matchers.lob_applications_matcher - INFO - Matching 10 IT Glue LoB application assets to 4 ServiceNow application CIs
+2025-07-11 16:22:22,600 - matchers.lob_applications_matcher - INFO - Matched 10 LoB application assets with 10 data quality issues
+2025-07-11 16:22:22,601 - migrators.lob_applications_migrator - INFO - Migrating application 1/10: 7-Zip
+2025-07-11 16:22:22,602 - servicenow_mock - INFO - Saved updated mock applications to mock_servicenow_applications.json
+2025-07-11 16:22:22,603 - migrators.lob_applications_migrator - INFO - Migrating application 2/10: S2000 Field Service Applcation -- (LOB Application)
+2025-07-11 16:22:22,605 - servicenow_mock - INFO - Saved updated mock applications to mock_servicenow_applications.json
+2025-07-11 16:22:22,607 - migrators.lob_applications_migrator - INFO - Migrating application 3/10: Sophos Cloud portal
+2025-07-11 16:22:22,609 - servicenow_mock - INFO - Saved updated mock applications to mock_servicenow_applications.json
+2025-07-11 16:22:22,611 - migrators.lob_applications_migrator - INFO - Migrating application 4/10: Trend Micro
+2025-07-11 16:22:22,613 - servicenow_mock - INFO - Saved updated mock applications to mock_servicenow_applications.json
+2025-07-11 16:22:22,614 - migrators.lob_applications_migrator - INFO - Migrating application 5/10: Citrix Xenapp
+2025-07-11 16:22:22,616 - servicenow_mock - INFO - Saved updated mock applications to mock_servicenow_applications.json
+2025-07-11 16:22:22,617 - migrators.lob_applications_migrator - INFO - Migrating application 6/10: SunSystems - INFOR
+2025-07-11 16:22:22,620 - servicenow_mock - INFO - Saved updated mock applications to mock_servicenow_applications.json
+2025-07-11 16:22:22,621 - migrators.lob_applications_migrator - INFO - Migrating application 7/10: (VAM - Accounting)
+2025-07-11 16:22:22,624 - servicenow_mock - INFO - Saved updated mock applications to mock_servicenow_applications.json
+2025-07-11 16:22:22,624 - migrators.lob_applications_migrator - INFO - Migrating application 8/10: (MPULSE - Inventory App)
+2025-07-11 16:22:22,627 - servicenow_mock - INFO - Saved updated mock applications to mock_servicenow_applications.json
+2025-07-11 16:22:22,627 - migrators.lob_applications_migrator - INFO - Migrating application 9/10: Caseware/TIME
+2025-07-11 16:22:22,630 - servicenow_mock - INFO - Saved updated mock applications to mock_servicenow_applications.json
+2025-07-11 16:22:22,631 - migrators.lob_applications_migrator - INFO - Migrating application 10/10: Sage 50 Peachtree
+2025-07-11 16:22:22,634 - servicenow_mock - INFO - Saved updated mock applications to mock_servicenow_applications.json
+2025-07-11 16:22:22,637 - migrators.lob_applications_migrator - INFO - Migration report saved to reports/lob_applications_migration_report.json
+2025-07-11 16:22:22,640 - __main__ - INFO - LoB applications migration completed. Total: 10, Successful: 10, Failed: 0
+2025-07-11 16:22:22,640 - __main__ - INFO - Report saved to: reports/lob_applications_migration_report.json

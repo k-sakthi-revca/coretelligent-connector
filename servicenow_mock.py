@@ -18,14 +18,16 @@ class ServiceNowMock:
         self.mock_data_file = config.get("servicenow.mock_data_file", "mock_servicenow_companies.json")
         self.mock_servers_file = config.get("servicenow.mock_servers_file", "mock_servicenow_servers.json")
         self.mock_email_services_file = "mock_servicenow_email_services.json"
+        self.mock_applications_file = "mock_servicenow_applications.json"
         self.create_missing = config.get("servicenow.create_missing", True)
         self.logger = logging.getLogger(__name__)
         
         # Load or create mock data
         self.companies = self._load_mock_data()
         self.email_services = self._load_mock_email_services()
+        self.applications = self._load_mock_applications()
         
-        self.logger.info(f"Initialized ServiceNow mock client with {len(self.companies)} companies")
+        self.logger.info(f"Initialized ServiceNow mock client with {len(self.companies)} companies, {len(self.email_services)} email services, and {len(self.applications)} applications")
     
     def _load_mock_data(self) -> List[Dict]:
         """
@@ -84,6 +86,36 @@ class ServiceNowMock:
             self.logger.info(f"Saved mock email services to {self.mock_email_services_file}")
         except Exception as e:
             self.logger.error(f"Error saving mock email services: {e}")
+        
+        return mock_data
+    
+    def _load_mock_applications(self) -> List[Dict]:
+        """
+        Load mock applications data from file or create default data.
+        
+        Returns:
+            List of mock application data
+        """
+        if os.path.exists(self.mock_applications_file):
+            try:
+                with open(self.mock_applications_file, 'r') as f:
+                    data = json.load(f)
+                self.logger.info(f"Loaded mock applications from {self.mock_applications_file}")
+                return data
+            except Exception as e:
+                self.logger.error(f"Error loading mock applications: {e}")
+        
+        # Create default mock applications
+        self.logger.info(f"Creating default mock applications")
+        mock_data = self._create_default_mock_applications()
+        
+        # Save mock data
+        try:
+            with open(self.mock_applications_file, 'w') as f:
+                json.dump(mock_data, f, indent=2)
+            self.logger.info(f"Saved mock applications to {self.mock_applications_file}")
+        except Exception as e:
+            self.logger.error(f"Error saving mock applications: {e}")
         
         return mock_data
     
@@ -229,6 +261,82 @@ class ServiceNowMock:
             }
         ]
     
+    def _create_default_mock_applications(self) -> List[Dict]:
+        """
+        Create default mock application data.
+        
+        Returns:
+            List of mock application data
+        """
+        return [
+            {
+                "sys_id": "app_1001",
+                "name": "Microsoft Office",
+                "sys_class_name": "cmdb_ci_appl",
+                "company": "sn_1001",
+                "version": "2019",
+                "category": "Productivity",
+                "subcategory": "Office Suite",
+                "operational_status": "1",
+                "install_status": "1",
+                "comments": "Mock application for demo purposes",
+                "short_description": "Microsoft Office productivity suite",
+                "vendor": "Microsoft",
+                "manufacturer": "Microsoft",
+                "environment": "On-Premises"
+            },
+            {
+                "sys_id": "app_1002",
+                "name": "QuickBooks",
+                "sys_class_name": "cmdb_ci_appl",
+                "company": "sn_1002",
+                "version": "2022",
+                "category": "Finance",
+                "subcategory": "Accounting",
+                "operational_status": "1",
+                "install_status": "1",
+                "comments": "Mock application for demo purposes",
+                "short_description": "QuickBooks accounting software",
+                "vendor": "Intuit",
+                "manufacturer": "Intuit",
+                "environment": "On-Premises"
+            },
+            {
+                "sys_id": "app_1003",
+                "name": "Salesforce",
+                "sys_class_name": "cmdb_ci_appl",
+                "company": "sn_1003",
+                "version": "Enterprise",
+                "category": "CRM",
+                "subcategory": "Sales",
+                "operational_status": "1",
+                "install_status": "1",
+                "comments": "Mock application for demo purposes",
+                "short_description": "Salesforce CRM platform",
+                "vendor": "Salesforce",
+                "manufacturer": "Salesforce",
+                "environment": "Cloud",
+                "u_application_url": "https://login.salesforce.com"
+            },
+            {
+                "sys_id": "app_1004",
+                "name": "Adobe Creative Cloud",
+                "sys_class_name": "cmdb_ci_appl",
+                "company": "sn_1004",
+                "version": "2023",
+                "category": "Productivity",
+                "subcategory": "Design",
+                "operational_status": "1",
+                "install_status": "1",
+                "comments": "Mock application for demo purposes",
+                "short_description": "Adobe Creative Cloud suite",
+                "vendor": "Adobe",
+                "manufacturer": "Adobe",
+                "environment": "Cloud",
+                "u_application_url": "https://account.adobe.com"
+            }
+        ]
+    
     def get_companies(self, name_filter: str = None) -> List[Dict]:
         """
         Get companies with optional name filter.
@@ -351,6 +459,15 @@ class ServiceNowMock:
         """
         return self.email_services
     
+    def get_applications(self) -> List[Dict]:
+        """
+        Get applications from ServiceNow.
+        
+        Returns:
+            List of application data
+        """
+        return self.applications
+    
     def create_email_service(self, email_service_data: Dict) -> Dict:
         """
         Create a new email service.
@@ -383,6 +500,38 @@ class ServiceNowMock:
         
         return new_email_service
     
+    def create_application(self, application_data: Dict) -> Dict:
+        """
+        Create a new application.
+        
+        Args:
+            application_data: Application data
+            
+        Returns:
+            Created application data
+        """
+        # Generate a new sys_id
+        sys_id = f"app_{uuid.uuid4().hex[:8]}"
+        
+        # Create new application
+        new_application = {
+            "sys_id": sys_id,
+            **application_data
+        }
+        
+        # Add to applications list
+        self.applications.append(new_application)
+        
+        # Save updated mock data
+        try:
+            with open(self.mock_applications_file, 'w') as f:
+                json.dump(self.applications, f, indent=2)
+            self.logger.info(f"Saved updated mock applications to {self.mock_applications_file}")
+        except Exception as e:
+            self.logger.error(f"Error saving updated mock applications: {e}")
+        
+        return new_application
+    
     def update_email_service(self, sys_id: str, email_service_data: Dict) -> Optional[Dict]:
         """
         Update an existing email service.
@@ -412,6 +561,38 @@ class ServiceNowMock:
                     self.logger.error(f"Error saving updated mock email services: {e}")
                 
                 return updated_email_service
+        
+        return None
+    
+    def update_application(self, sys_id: str, application_data: Dict) -> Optional[Dict]:
+        """
+        Update an existing application.
+        
+        Args:
+            sys_id: Application sys_id
+            application_data: Updated application data
+            
+        Returns:
+            Updated application data or None if not found
+        """
+        for i, application in enumerate(self.applications):
+            if application.get("sys_id") == sys_id:
+                # Update application data
+                updated_application = {
+                    **application,
+                    **application_data
+                }
+                self.applications[i] = updated_application
+                
+                # Save updated mock data
+                try:
+                    with open(self.mock_applications_file, 'w') as f:
+                        json.dump(self.applications, f, indent=2)
+                    self.logger.info(f"Saved updated mock applications to {self.mock_applications_file}")
+                except Exception as e:
+                    self.logger.error(f"Error saving updated mock applications: {e}")
+                
+                return updated_application
         
         return None
     

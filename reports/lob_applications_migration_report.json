@@ -1,0 +1,221 @@
+{
+  "statistics": {
+    "total_applications": 10,
+    "successful": 10,
+    "failed": 0,
+    "created": 10,
+    "updated": 0,
+    "skipped": 0,
+    "timestamp": "2025-07-11T16:22:22.635361",
+    "matching": {
+      "total": 10,
+      "by_match_type": {
+        "No Match": {
+          "count": 10,
+          "percentage": 100.0
+        }
+      },
+      "by_recommended_action": {
+        "Create New": {
+          "count": 10,
+          "percentage": 100.0
+        }
+      },
+      "by_data_quality": {
+        "\u26a0\ufe0f Invalid Category": {
+          "count": 5,
+          "percentage": 50.0
+        },
+        "\u274c Missing Data": {
+          "count": 5,
+          "percentage": 50.0
+        }
+      },
+      "by_application_type": {
+        "Unknown": {
+          "count": 5,
+          "percentage": 50.0
+        },
+        "Other": {
+          "count": 2,
+          "percentage": 20.0
+        },
+        "Finance": {
+          "count": 3,
+          "percentage": 30.0
+        }
+      }
+    },
+    "data_quality": {
+      "total_issues": 10,
+      "by_issue_type": {
+        "Invalid Application Type": 5,
+        "Missing Required Field": 5
+      },
+      "by_priority": {
+        "Medium": 5,
+        "High": 5
+      }
+    },
+    "field_mappings": {
+      "org:name -> name": "Organization name",
+      "org:description -> notes": "Organization description",
+      "org:short-name -> short_description": "Short name/abbreviation",
+      "org:organization-status-name -> state": "Active/Inactive status",
+      "org:organization-type-name -> category": "Organization type",
+      "org:created-at -> sys_created_on": "Creation date",
+      "org:updated-at -> sys_updated_on": "Last update date",
+      "email:coresecret-url -> u_coresecret_url": "Custom email field mapping",
+      "email:spf-record -> u_spf_record": "Custom email field mapping",
+      "email:journaling-provider -> u_journaling_provider": "Custom email field mapping",
+      "email:dr-failover-plan -> u_dr_failover_plan": "Custom email field mapping",
+      "email:name -> name": "Email service name",
+      "email:type -> service_classification": "Email service type",
+      "email:hosting-location -> u_hosting_location": "Where email is hosted",
+      "email:webmail-url -> u_webmail_url": "URL for webmail access",
+      "email:administrator-url -> u_admin_url": "URL for admin portal",
+      "email:spf-enabled -> u_spf_enabled": "SPF enabled flag",
+      "email:dkim-enabled -> u_dkim_enabled": "DKIM enabled flag",
+      "email:dmarc-enabled -> u_dmarc_enabled": "DMARC enabled flag",
+      "email:notes -> comments": "Additional notes",
+      "email:domain-s -> u_domains": "Associated domains",
+      "email:email-server-s -> u_email_servers": "Email servers",
+      "email:spam-filtering -> u_spam_filtering": "Spam filtering vendor",
+      "lob_application:name -> name": "Application name",
+      "lob_application:version -> version": "Application version",
+      "lob_application:category -> category": "Application category",
+      "lob_application:importance -> operational_status": "Application importance/criticality",
+      "lob_application:business-impact -> short_description": "Business impact description",
+      "lob_application:application-champion -> owned_by": "Application owner/champion",
+      "lob_application:application-manager -> managed_by": "Application manager",
+      "lob_application:hosting-location -> environment": "Where application is hosted",
+      "lob_application:application-url -> u_application_url": "URL for application access",
+      "lob_application:vendor -> vendor": "Application vendor",
+      "lob_application:notes -> comments": "Additional notes",
+      "lob_application:install-instructions -> comments": "Installation instructions",
+      "lob_application:application-server-s -> u_application_servers": "Application servers"
+    }
+  },
+  "results": [
+    {
+      "itglue_id": "1144719",
+      "itglue_name": "7-Zip",
+      "servicenow_id": "app_472295be",
+      "servicenow_name": "7-Zip",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new application CI: No matching application found in ServiceNow"
+    },
+    {
+      "itglue_id": "1288847",
+      "itglue_name": "S2000 Field Service Applcation -- (LOB Application)",
+      "servicenow_id": "app_43da9858",
+      "servicenow_name": "S2000 Field Service Applcation -- (LOB Application)",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new application CI: No matching application found in ServiceNow"
+    },
+    {
+      "itglue_id": "1297950",
+      "itglue_name": "Sophos Cloud portal",
+      "servicenow_id": "app_bfe18966",
+      "servicenow_name": "Sophos Cloud portal",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new application CI: No matching application found in ServiceNow"
+    },
+    {
+      "itglue_id": "1647883",
+      "itglue_name": "Trend Micro",
+      "servicenow_id": "app_c6a20118",
+      "servicenow_name": "Trend Micro",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new application CI: No matching application found in ServiceNow"
+    },
+    {
+      "itglue_id": "1658200",
+      "itglue_name": "Citrix Xenapp",
+      "servicenow_id": "app_a78434ea",
+      "servicenow_name": "Citrix Xenapp",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new application CI: No matching application found in ServiceNow"
+    },
+    {
+      "itglue_id": "1668139",
+      "itglue_name": "SunSystems - INFOR",
+      "servicenow_id": "app_ea62e5ca",
+      "servicenow_name": "SunSystems - INFOR",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new application CI: No matching application found in ServiceNow"
+    },
+    {
+      "itglue_id": "1675898",
+      "itglue_name": "(VAM - Accounting)",
+      "servicenow_id": "app_b3e2632b",
+      "servicenow_name": "(VAM - Accounting)",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new application CI: No matching application found in ServiceNow"
+    },
+    {
+      "itglue_id": "1675903",
+      "itglue_name": "(MPULSE - Inventory App)",
+      "servicenow_id": "app_dba2482d",
+      "servicenow_name": "(MPULSE - Inventory App)",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new application CI: No matching application found in ServiceNow"
+    },
+    {
+      "itglue_id": "1975802",
+      "itglue_name": "Caseware/TIME",
+      "servicenow_id": "app_9f609450",
+      "servicenow_name": "Caseware/TIME",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new application CI: No matching application found in ServiceNow"
+    },
+    {
+      "itglue_id": "1975807",
+      "itglue_name": "Sage 50 Peachtree",
+      "servicenow_id": "app_92ecf3f9",
+      "servicenow_name": "Sage 50 Peachtree",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new application CI: No matching application found in ServiceNow"
+    }
+  ]
+}

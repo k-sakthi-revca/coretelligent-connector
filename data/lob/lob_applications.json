@@ -1,0 +1,469 @@
+{
+    "data": [
+        {
+            "id": "1144719",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460141,
+                "organization-name": "Epic Response",
+                "resource-url": "https://coretelligent.itglue.com/1460141/assets/43815-lob-applications/records/1144719",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43815,
+                "flexible-asset-type-name": "LoB Applications",
+                "name": "7-Zip",
+                "traits": {
+                    "name": "7-Zip",
+                    "version": "15.12",
+                    "application-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-01-12T22:01:25.000Z",
+                "updated-at": "2017-01-12T22:01:25.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1288847",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460111,
+                "organization-name": "Moncrief Heating & Air",
+                "resource-url": "https://coretelligent.itglue.com/1460111/assets/43815-lob-applications/records/1288847",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43815,
+                "flexible-asset-type-name": "LoB Applications",
+                "name": "S2000 Field Service Applcation -- (LOB Application)",
+                "traits": {
+                    "name": "S2000 Field Service Applcation -- (LOB Application)",
+                    "version": "6.00.016",
+                    "application-manager": "Vendor-Managed",
+                    "install-instructions": "<p>Network drive mapping uses the credentials listed below for local drive mappings to S:\\\\monc-app\\fss share on remote site client machines<br></p><p>PSQL Server v10 SP3<br></p><p>Cisco AnyConnect Client is required for remote sites to connect back to HQ/App server and access network drive mapping</p>",
+                    "notes": "<p>Server application installed on <a href=\"https://coretelligent.itglue.com/1460111/configurations/22007719\">MONC-APP</a><br>Server application share: <a href=\"https://coretelligent.itglue.com/1460111/assets/43817-file-storage-sharing/records/11345934\">App Share S:</a><br><br>Applications requires PSQL v10 or v11 client to run S2000win client</p>",
+                    "coresecret-url": "https://secret.core.tech/pid=75285 - Mapped Drive Credentials",
+                    "vendor": {
+                        "type": "FlexibleAssetTypes",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460111/assets/43822-vendors/records/74312865",
+                                "id": 74312865,
+                                "name": "Davisware",
+                                "organization-name": "Moncrief Heating & Air",
+                                "asset-type-id": 43822
+                            }
+                        ]
+                    },
+                    "licensing-information": {
+                        "type": "FlexibleAssetTypes",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460111/assets/44090-licensing-renewals/records/1288811",
+                                "id": 1288811,
+                                "name": "Other S2000 Field Service Applcation -- (LOB Application) 6.00.016",
+                                "organization-name": "Moncrief Heating & Air",
+                                "asset-type-id": 44090
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-02-27T13:58:25.000Z",
+                "updated-at": "2024-02-29T19:52:43.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1297950",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460111,
+                "organization-name": "Moncrief Heating & Air",
+                "resource-url": "https://coretelligent.itglue.com/1460111/assets/43815-lob-applications/records/1297950",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43815,
+                "flexible-asset-type-name": "LoB Applications",
+                "name": "Sophos Cloud portal",
+                "traits": {
+                    "name": "Sophos Cloud portal",
+                    "install-instructions": "<p>Geoff Bernard Mon 10/31/2016 1:11 PM UTC-04 - Moncrief does not use UTG internally hosted Sophos like other customers.</p>\n\n<p>To remove Symantec, do the following:<br>\n1.    First Log into Sophos Central Portal to confirm if computer has the Sophos client installed<br>\nUse creds below.<br>\n2.    If computer name shows up on list, go to Symantec Cloud to begin remote removal<br>\nhttps://hostedendpoint.spn.com/home.aspx<br>\nUsername dgray@moncriefair.com pw 5Danielle!<br>\n3.    Once inside the Symantec portal click on the “computers’ tab at the top and click on the machine that you have confirmed has the Sophos client installed.  <br>\n4.    Once you have clicked the computer you want to remove Symantec on you will be taken to the Computer Profile page.  In here at the bottom right side you will see “Remove service” in red  Click on this to remove the Symantec cloud agent.  After this you can go back and click “Delete Computer” in red at the upper right hand side.<br>\nThere are currently only 14 machines left with Symantec on the network.  The DC and TS servers will be done after hours during a maintenance window.  Out of the 14, 3 computer seem to have no longer connected to the network in a very long time and can probably be deleted.  Just confirm with Alex Hartley before removal.  Still follow the process of removing the service FIRST then delete the computer.<br>\n-----------------------------------------------------------------------------------------------------<br>\n </p>"
+                },
+                "archived": false,
+                "created-at": "2017-03-01T14:38:35.000Z",
+                "updated-at": "2017-03-01T14:38:35.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1647883",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460116,
+                "organization-name": "LPBC",
+                "resource-url": "https://coretelligent.itglue.com/1460116/assets/43815-lob-applications/records/1647883",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43815,
+                "flexible-asset-type-name": "LoB Applications",
+                "name": "Trend Micro",
+                "traits": {
+                    "name": "Trend Micro",
+                    "category": "Other",
+                    "importance": "High",
+                    "business-impact": "Low",
+                    "notes": "<blockquote>\n<p>Installed on all servers</p>\n\n<p>https://lpb-lvl-dcs-005.lpbatlanta.com:4343</p>\n</blockquote>",
+                    "application-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460116/configurations/6839346",
+                                "id": 6839346,
+                                "name": "APP: Trend Micro - Antivirus Software - (Servers Only)",
+                                "organization-name": "LPBC",
+                                "configuration-type-name": "_CREDENTIALS"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-16T17:27:03.000Z",
+                "updated-at": "2017-05-16T17:27:03.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1658200",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460143,
+                "organization-name": "Wellstreet Urgent Care",
+                "resource-url": "https://coretelligent.itglue.com/1460143/assets/43815-lob-applications/records/1658200",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43815,
+                "flexible-asset-type-name": "LoB Applications",
+                "name": "Citrix Xenapp",
+                "traits": {
+                    "name": "Citrix Xenapp",
+                    "category": "Other",
+                    "importance": "Critical",
+                    "application-champion": {
+                        "type": "Contacts",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460143/contacts/4463571",
+                                "id": 4463571,
+                                "first-name": "Joshua",
+                                "last-name": "Ledbetter",
+                                "contact-type-name": "Decision Maker",
+                                "organization-name": "Wellstreet Urgent Care"
+                            }
+                        ]
+                    },
+                    "application-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460143/configurations/5963051",
+                                "id": 5963051,
+                                "name": "VMG: FWHXAP01",
+                                "organization-name": "Wellstreet Urgent Care",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460143/configurations/6839519",
+                                "id": 6839519,
+                                "name": "Citrix XenApp Licensing Console",
+                                "organization-name": "Wellstreet Urgent Care",
+                                "configuration-type-name": "_CREDENTIALS"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-17T02:32:53.000Z",
+                "updated-at": "2017-05-17T02:32:53.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1668139",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460171,
+                "organization-name": "International Auto Logistics",
+                "resource-url": "https://coretelligent.itglue.com/1460171/assets/43815-lob-applications/records/1668139",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43815,
+                "flexible-asset-type-name": "LoB Applications",
+                "name": "SunSystems - INFOR",
+                "traits": {
+                    "name": "SunSystems - INFOR",
+                    "category": "Finance",
+                    "importance": "Critical",
+                    "notes": "<p>Contact IAL IT for any issues they cant put you in contact with vendor if needed.</p>",
+                    "application-champion": {
+                        "type": "Contacts",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/contacts/4464592",
+                                "id": 4464592,
+                                "first-name": "Andrew",
+                                "last-name": "Cargile",
+                                "contact-type-name": "Decision Maker",
+                                "organization-name": "International Auto Logistics"
+                            }
+                        ]
+                    },
+                    "application-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/6935231",
+                                "id": 6935231,
+                                "name": "APP: IAL-SUNAPPS (Azure hosted)",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-19T01:49:50.000Z",
+                "updated-at": "2021-07-26T20:18:04.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1675898",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460140,
+                "organization-name": "Nakanishi Manufacturing Corporation",
+                "resource-url": "https://coretelligent.itglue.com/1460140/assets/43815-lob-applications/records/1675898",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43815,
+                "flexible-asset-type-name": "LoB Applications",
+                "name": "(VAM - Accounting)",
+                "traits": {
+                    "name": "(VAM - Accounting)",
+                    "application-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460140/configurations/5963018",
+                                "id": 5963018,
+                                "name": "APP: SV-NMC15 - (VAM - Accounting) - CSN",
+                                "organization-name": "Nakanishi Manufacturing Corporation",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-22T15:45:27.000Z",
+                "updated-at": "2017-05-22T15:45:28.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1675903",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460140,
+                "organization-name": "Nakanishi Manufacturing Corporation",
+                "resource-url": "https://coretelligent.itglue.com/1460140/assets/43815-lob-applications/records/1675903",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43815,
+                "flexible-asset-type-name": "LoB Applications",
+                "name": "(MPULSE - Inventory App)",
+                "traits": {
+                    "name": "(MPULSE - Inventory App)",
+                    "application-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460140/configurations/5963016",
+                                "id": 5963016,
+                                "name": "APP: SV-NMC16 - (MPULSE - Inventory App) - CSN",
+                                "organization-name": "Nakanishi Manufacturing Corporation",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-22T15:45:49.000Z",
+                "updated-at": "2017-05-22T15:45:50.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1975802",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1691564,
+                "organization-name": "Banks, Finley, White & Co",
+                "resource-url": "https://coretelligent.itglue.com/1691564/assets/43815-lob-applications/records/1975802",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43815,
+                "flexible-asset-type-name": "LoB Applications",
+                "name": "Caseware/TIME",
+                "traits": {
+                    "name": "Caseware/TIME",
+                    "category": "Finance",
+                    "version": "2016",
+                    "importance": "Critical",
+                    "application-url": "client#1939",
+                    "install-instructions": "<div><br></div><p><br></p><p>Installer is in the C:\\Shares\\CASEWARE</p><p>To have workstations install navigate to <a>\\\\BFW-CCE-FS01\\Netsetup</a></p><p>After the program is installed open company file and navigate to Tools -&gt; Options -&gt; Default Paths -&gt; Website URL -&gt; https://us.casewarecloud.com/bfwcwcloud</p>",
+                    "notes": "<p>Support: <a href=\"https://www.caseware.com/support/time\">https://www.caseware.com/support/time</a></p><p></p><div>TICKET - T20200805.0256 - Map T Drive share on desktop / Review Caseware time (2016) install on laptop (Banks, Finley, White...)</div><div>The database was moved from Amy's Desktop to the Server (FS01) </div><p>Extensive work done by CaseWare</p><p>See attached settings to install to another workstation</p><p>The program resides on the FS01 server</p><p>------------------------------------------------------</p><p><br>Support Page: https://www.caseware.com/support/time</p><p>client#1939</p><p><a href=\"https://my.caseware.com/\">https://my.caseware.com</a></p><p><br></p><p>CaseWare Cloud integration: us.casewarecloud.com/bfwcloudcw</p><p><br>-----------------------------------------------------------------------------------------------<br>Working Papers: 2015.00.192 (release 3) 32bit<br>Authrization code: 8aa3311fa7accbbef026<br>License and Repair Lock Code: C-*1B8TY2Q5M6FSEGY<br>License file: C:\\ProgramData\\CaseWare\\CWLS\\lservrc close<br>Last time license file written: 2016-09-26 13:42:39<br>CaseWare Cloud integration: us.casewarecloud.com/bfwcloudcw<br>Personal store location: C:\\Users\\BFW613B\\AppData\\Local\\CaseWare\\Data Store\\<br>Server: us.casewarecloud.com/bfwatl<br>--------------------------------------------------------------------------------------<br>account number: 19391 (provided by James)<br>support number: 1-(800)-267-1317  (Time - opt 3,2) (Caseware Working Papers, opt 3,1)</p>",
+                    "application-champion": {
+                        "type": "Contacts",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1691564/contacts/5149741",
+                                "id": 5149741,
+                                "first-name": "Amy",
+                                "last-name": "Davis",
+                                "contact-type-name": "End User",
+                                "organization-name": "Banks, Finley, White & Co"
+                            }
+                        ]
+                    },
+                    "application-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1691564/configurations/28916993",
+                                "id": 28916993,
+                                "name": "bfw-cce-fs01",
+                                "hostname": "bfw-cce-fs01",
+                                "organization-name": "Banks, Finley, White & Co",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "vendor": {
+                        "type": "FlexibleAssetTypes",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1691564/assets/43822-vendors/records/14031422",
+                                "id": 14031422,
+                                "name": "CaseWare",
+                                "organization-name": "Banks, Finley, White & Co",
+                                "asset-type-id": 43822
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-08-10T23:07:11.000Z",
+                "updated-at": "2021-11-22T21:50:51.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1975807",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1691564,
+                "organization-name": "Banks, Finley, White & Co",
+                "resource-url": "https://coretelligent.itglue.com/1691564/assets/43815-lob-applications/records/1975807",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 43815,
+                "flexible-asset-type-name": "LoB Applications",
+                "name": "Sage 50 Peachtree",
+                "traits": {
+                    "name": "Sage 50 Peachtree",
+                    "category": "Finance",
+                    "version": "2017",
+                    "importance": "Critical",
+                    "notes": "<p>Godfrey Baity Thu 06/29/2017 5:32 PM UTC-04 </p><p><br></p><p>Release: Sage 50 Premium Accounting 2017 </p><p>Build: 24.2.00.0230 </p><p>Serial Number: A5C54-5740-D2C0-7C41 </p><p>Customer ID: 4001066227 </p><p>Installed Tax Service: 20160102 </p><p>Plan Level: Sage Business Care, Auto-renews on: 12/21/2017 </p><p>Serial number: BD61A-0753-CAF6-073F</p><p>Activation key:591523223</p><p>--</p><p><br></p><p>NOTE: </p><p>If Sage does not open please remote to the DC server and make sure the Pervasive PSQL Workgroup Engine</p><p><br></p>",
+                    "application-champion": {
+                        "type": "Contacts",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    },
+                    "application-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    }
+                },
+                "archived": true,
+                "created-at": "2017-08-10T23:09:51.000Z",
+                "updated-at": "2022-03-01T14:24:30.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        }
+    ]
+}

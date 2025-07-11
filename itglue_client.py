@@ -33,6 +33,7 @@ class ITGlueClient:
         self.mock_organizations_file = "/Users/swapnilmhatre/migration/organizations.json"
         self.mock_site_summaries_file = "mock_site_summaries.json"
         self.mock_emails_file = os.path.join("data", "emails", "emails.json")
+        self.mock_lob_applications_file = os.path.join("data", "lob", "lob_applications.json")
         
         # If using mock data, check if files exist
         if self.use_mock_data:
@@ -232,6 +233,23 @@ class ITGlueClient:
         self.logger.warning("Real API implementation for get_emails() not implemented")
         return []
     
+    def get_lob_applications(self) -> List[Dict]:
+        """
+        Get LoB application assets from IT Glue.
+        
+        Returns:
+            List of LoB application asset data
+        """
+        self.logger.info("Fetching LoB application assets from IT Glue...")
+        
+        if self.use_mock_data:
+            return self._load_mock_lob_applications()
+        
+        # In a real implementation, this would fetch LoB application assets from the IT Glue API
+        # For now, we'll just return an empty list for non-mock mode
+        self.logger.warning("Real API implementation for get_lob_applications() not implemented")
+        return []
+    
     def _load_mock_emails(self) -> List[Dict]:
         """
         Load mock email data from file.
@@ -254,6 +272,31 @@ class ITGlueClient:
             return emails
         except Exception as e:
             self.logger.error(f"Failed to load mock emails: {e}")
+            return []
+    
+    def _load_mock_lob_applications(self) -> List[Dict]:
+        """
+        Load mock LoB application data from file.
+        
+        Returns:
+            List of LoB application asset data
+        """
+        if not os.path.exists(self.mock_lob_applications_file):
+            self.logger.warning(f"Mock LoB applications file not found: {self.mock_lob_applications_file}")
+            return []
+        
+        try:
+            # Use UTF-8 encoding to handle special characters
+            with open(self.mock_lob_applications_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            # Extract the data array
+            lob_applications = data.get("data", [])
+            
+            self.logger.info(f"Loaded {len(lob_applications)} LoB application assets from mock file: {self.mock_lob_applications_file}")
+            return lob_applications
+        except Exception as e:
+            self.logger.error(f"Failed to load mock LoB applications: {e}")
             return []
     
     def get_organizations(self) -> List[Dict]:

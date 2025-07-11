@@ -1,0 +1,22 @@
+2025-07-11 16:19:44,009 - __main__ - INFO - Starting LoB applications migration process...
+2025-07-11 16:19:44,009 - itglue_client - INFO - Using mock data instead of making API calls
+2025-07-11 16:19:44,010 - itglue_client - WARNING - Mock organizations file not found: /Users/swapnilmhatre/migration/organizations.json
+2025-07-11 16:19:44,010 - itglue_client - INFO - Initialized IT Glue client with API URL: https://api.itglue.com
+2025-07-11 16:19:44,010 - servicenow_mock - INFO - Loaded mock data from mock_servicenow_companies.json
+2025-07-11 16:19:44,011 - servicenow_mock - INFO - Loaded mock email services from mock_servicenow_email_services.json
+2025-07-11 16:19:44,012 - servicenow_mock - INFO - Loaded mock applications from mock_servicenow_applications.json
+2025-07-11 16:19:44,012 - servicenow_mock - INFO - Initialized ServiceNow mock client with 10 companies, 10 email services, and 4 applications
+2025-07-11 16:19:44,012 - matchers.lob_applications_matcher - INFO - LoB Applications Matcher initialized with strategies: exact_name, fuzzy_name
+2025-07-11 16:19:44,012 - field_mapper - INFO - Field Mapper initialized with 7 field mappings, 4 email field mappings, and 0 LoB application field mappings
+2025-07-11 16:19:44,013 - migrators.lob_applications_migrator - INFO - LoB Applications Migrator initialized (use_mock_data=True)
+2025-07-11 16:19:44,013 - __main__ - INFO - Running LoB applications migration...
+2025-07-11 16:19:44,013 - migrators.lob_applications_migrator - INFO - Starting LoB applications migration
+2025-07-11 16:19:44,013 - migrators.lob_applications_migrator - INFO - Connection tests successful
+2025-07-11 16:19:44,013 - itglue_client - INFO - Fetching LoB application assets from IT Glue...
+2025-07-11 16:19:44,014 - itglue_client - ERROR - Failed to load mock LoB applications: 'charmap' codec can't decode byte 0x9d in position 6328: character maps to <undefined>
+2025-07-11 16:19:44,014 - matchers.lob_applications_matcher - INFO - Matching 0 IT Glue LoB application assets to 4 ServiceNow application CIs
+2025-07-11 16:19:44,014 - matchers.lob_applications_matcher - INFO - Matched 0 LoB application assets with 0 data quality issues
+2025-07-11 16:19:44,014 - migrators.lob_applications_migrator - WARNING - No LoB application assets found to migrate
+2025-07-11 16:19:44,016 - migrators.lob_applications_migrator - INFO - Migration report saved to reports/lob_applications_migration_report.json
+2025-07-11 16:19:44,016 - __main__ - INFO - LoB applications migration completed. Total: 0, Successful: 0, Failed: 0
+2025-07-11 16:19:44,016 - __main__ - INFO - Report saved to: reports/lob_applications_migration_report.json
