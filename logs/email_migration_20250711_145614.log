@@ -1,0 +1,40 @@
+2025-07-11 14:56:14,201 - __main__ - INFO - Starting email migration process...
+2025-07-11 14:56:14,202 - itglue_client - INFO - Using mock data instead of making API calls
+2025-07-11 14:56:14,202 - itglue_client - WARNING - Mock organizations file not found: /Users/swapnilmhatre/migration/organizations.json
+2025-07-11 14:56:14,202 - itglue_client - INFO - Initialized IT Glue client with API URL: https://api.itglue.com
+2025-07-11 14:56:14,203 - servicenow_mock - INFO - Loaded mock data from mock_servicenow_companies.json
+2025-07-11 14:56:14,203 - servicenow_mock - INFO - Loaded mock email services from mock_servicenow_email_services.json
+2025-07-11 14:56:14,203 - servicenow_mock - INFO - Initialized ServiceNow mock client with 10 companies
+2025-07-11 14:56:14,204 - email_matcher - INFO - Email Matcher initialized with strategies: exact_name, fuzzy_name
+2025-07-11 14:56:14,204 - field_mapper - INFO - Field Mapper initialized with 7 field mappings and 4 email field mappings
+2025-07-11 14:56:14,204 - email_migrator - INFO - Email Migrator initialized (use_mock_data=True)
+2025-07-11 14:56:14,204 - __main__ - INFO - Running email migration...
+2025-07-11 14:56:14,204 - email_migrator - INFO - Starting email migration
+2025-07-11 14:56:14,205 - email_migrator - INFO - Connection tests successful
+2025-07-11 14:56:14,205 - itglue_client - INFO - Fetching email assets from IT Glue...
+2025-07-11 14:56:14,205 - itglue_client - INFO - Loaded 10 email assets from mock file: data\emails\emails.json
+2025-07-11 14:56:14,206 - email_matcher - INFO - Matching 10 IT Glue email assets to 10 ServiceNow email services
+2025-07-11 14:56:14,207 - email_matcher - INFO - Matched 10 email assets with 2 data quality issues
+2025-07-11 14:56:14,207 - email_migrator - INFO - Migrating email 1/10: Google Apps
+2025-07-11 14:56:14,209 - servicenow_mock - INFO - Saved updated mock email services to mock_servicenow_email_services.json
+2025-07-11 14:56:14,210 - email_migrator - INFO - Migrating email 2/10: Office 365
+2025-07-11 14:56:14,212 - servicenow_mock - INFO - Saved updated mock email services to mock_servicenow_email_services.json
+2025-07-11 14:56:14,213 - email_migrator - INFO - Migrating email 3/10: Microsoft 365
+2025-07-11 14:56:14,215 - servicenow_mock - INFO - Saved updated mock email services to mock_servicenow_email_services.json
+2025-07-11 14:56:14,216 - email_migrator - INFO - Migrating email 4/10: Microsoft 365
+2025-07-11 14:56:14,219 - servicenow_mock - INFO - Saved updated mock email services to mock_servicenow_email_services.json
+2025-07-11 14:56:14,219 - email_migrator - INFO - Migrating email 5/10: Exchange 2019
+2025-07-11 14:56:14,222 - servicenow_mock - INFO - Saved updated mock email services to mock_servicenow_email_services.json
+2025-07-11 14:56:14,222 - email_migrator - INFO - Migrating email 6/10: Office 365
+2025-07-11 14:56:14,224 - servicenow_mock - INFO - Saved updated mock email services to mock_servicenow_email_services.json
+2025-07-11 14:56:14,225 - email_migrator - INFO - Migrating email 7/10: Other
+2025-07-11 14:56:14,227 - servicenow_mock - INFO - Saved updated mock email services to mock_servicenow_email_services.json
+2025-07-11 14:56:14,228 - email_migrator - INFO - Migrating email 8/10: Microsoft 365
+2025-07-11 14:56:14,231 - servicenow_mock - INFO - Saved updated mock email services to mock_servicenow_email_services.json
+2025-07-11 14:56:14,232 - email_migrator - INFO - Migrating email 9/10: Exchange 2010
+2025-07-11 14:56:14,234 - servicenow_mock - INFO - Saved updated mock email services to mock_servicenow_email_services.json
+2025-07-11 14:56:14,235 - email_migrator - INFO - Migrating email 10/10: Office 365
+2025-07-11 14:56:14,237 - servicenow_mock - INFO - Saved updated mock email services to mock_servicenow_email_services.json
+2025-07-11 14:56:14,239 - email_migrator - INFO - Migration report saved to email_migration_report.json
+2025-07-11 14:56:14,242 - __main__ - INFO - Email migration completed. Total: 10, Successful: 10, Failed: 0
+2025-07-11 14:56:14,242 - __main__ - INFO - Report saved to: email_migration_report.json

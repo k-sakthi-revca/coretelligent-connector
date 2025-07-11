@@ -3,30 +3,22 @@
     "total_emails": 10,
     "successful": 10,
     "failed": 0,
-    "created": 7,
-    "updated": 3,
+    "created": 0,
+    "updated": 10,
     "skipped": 0,
-    "timestamp": "2025-07-11T14:35:50.740039",
+    "timestamp": "2025-07-11T14:56:14.238046",
     "matching": {
       "total": 10,
       "by_match_type": {
-        "No Match": {
-          "count": 7,
-          "percentage": 70.0
-        },
         "Exact Name": {
-          "count": 3,
-          "percentage": 30.0
+          "count": 10,
+          "percentage": 100.0
         }
       },
       "by_recommended_action": {
-        "Create New": {
-          "count": 7,
-          "percentage": 70.0
-        },
         "Use Existing": {
-          "count": 3,
-          "percentage": 30.0
+          "count": 10,
+          "percentage": 100.0
         }
       },
       "by_data_quality": {
@@ -113,24 +105,24 @@
       "itglue_name": "Google Apps",
       "servicenow_id": "email_57930cb6",
       "servicenow_name": "Google Apps",
-      "match_type": "No Match",
-      "confidence": 0.0,
-      "action": "created",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
       "status": "success",
       "error_message": null,
-      "notes": "Created new email service: No matching email service found in ServiceNow"
+      "notes": "Updated existing email service: Matched by exact normalized name: google apps"
     },
     {
       "itglue_id": "1291400",
       "itglue_name": "Office 365",
       "servicenow_id": "email_07e07b1b",
       "servicenow_name": "Office 365",
-      "match_type": "No Match",
-      "confidence": 0.0,
-      "action": "created",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
       "status": "success",
       "error_message": null,
-      "notes": "Created new email service: No matching email service found in ServiceNow"
+      "notes": "Updated existing email service: Matched by exact normalized name: office 365"
     },
     {
       "itglue_id": "1540882",
@@ -161,36 +153,36 @@
       "itglue_name": "Exchange 2019",
       "servicenow_id": "email_5de66651",
       "servicenow_name": "Exchange 2019",
-      "match_type": "No Match",
-      "confidence": 0.0,
-      "action": "created",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
       "status": "success",
       "error_message": null,
-      "notes": "Created new email service: No matching email service found in ServiceNow"
+      "notes": "Updated existing email service: Matched by exact normalized name: exchange 2019"
     },
     {
       "itglue_id": "1592957",
       "itglue_name": "Office 365",
-      "servicenow_id": "email_5b5baa4c",
+      "servicenow_id": "email_07e07b1b",
       "servicenow_name": "Office 365",
-      "match_type": "No Match",
-      "confidence": 0.0,
-      "action": "created",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
       "status": "success",
       "error_message": null,
-      "notes": "Created new email service: No matching email service found in ServiceNow"
+      "notes": "Updated existing email service: Matched by exact normalized name: office 365"
     },
     {
       "itglue_id": "1592973",
       "itglue_name": "Other",
       "servicenow_id": "email_036c1d2c",
       "servicenow_name": "Other",
-      "match_type": "No Match",
-      "confidence": 0.0,
-      "action": "created",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
       "status": "success",
       "error_message": null,
-      "notes": "Created new email service: No matching email service found in ServiceNow"
+      "notes": "Updated existing email service: Matched by exact normalized name: other"
     },
     {
       "itglue_id": "1643416",
@@ -209,24 +201,24 @@
       "itglue_name": "Exchange 2010",
       "servicenow_id": "email_ac6c48e1",
       "servicenow_name": "Exchange 2010",
-      "match_type": "No Match",
-      "confidence": 0.0,
-      "action": "created",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
       "status": "success",
       "error_message": null,
-      "notes": "Created new email service: No matching email service found in ServiceNow"
+      "notes": "Updated existing email service: Matched by exact normalized name: exchange 2010"
     },
     {
       "itglue_id": "1658075",
       "itglue_name": "Office 365",
-      "servicenow_id": "email_d8f26b6f",
+      "servicenow_id": "email_07e07b1b",
       "servicenow_name": "Office 365",
-      "match_type": "No Match",
-      "confidence": 0.0,
-      "action": "created",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "action": "updated",
       "status": "success",
       "error_message": null,
-      "notes": "Created new email service: No matching email service found in ServiceNow"
+      "notes": "Updated existing email service: Matched by exact normalized name: office 365"
     }
   ]
 }

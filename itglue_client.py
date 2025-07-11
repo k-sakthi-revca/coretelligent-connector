@@ -32,7 +32,7 @@ class ITGlueClient:
         # Mock data file paths - hardcoded to the specific path
         self.mock_organizations_file = "/Users/swapnilmhatre/migration/organizations.json"
         self.mock_site_summaries_file = "mock_site_summaries.json"
-        self.mock_emails_file = os.path.join("data", "virtualization", "emails.json")
+        self.mock_emails_file = os.path.join("data", "emails", "emails.json")
         
         # If using mock data, check if files exist
         if self.use_mock_data:
