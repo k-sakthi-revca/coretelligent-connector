@@ -1,0 +1,699 @@
+[
+    {
+        "id": "1129822",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1460141,
+            "organization-name": "Epic Response",
+            "resource-url": "https://coretelligent.itglue.com/1460141/assets/43821-site-summary/records/1129822",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43821,
+            "flexible-asset-type-name": "Site Summary",
+            "name": "HQ",
+            "traits": {
+                "title": "HQ",
+                "website": "http://www.epicresponse.com/",
+                "primary-contact-phone": "(770) 516-3491",
+                "location": {
+                    "type": "Locations",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460141/locations/5152920",
+                            "id": 5152920,
+                            "name": "Primary Address",
+                            "address-1": "3045 Chastain Meadows Pkwy",
+                            "city": "Marietta",
+                            "organization-name": "Epic Response"
+                        }
+                    ]
+                },
+                "out-of-hours-access": {
+                    "type": "Documents",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460141/docs/623058",
+                            "id": 623058,
+                            "name": "After Hours Access Policy",
+                            "organization-name": "Epic Response"
+                        }
+                    ]
+                },
+                "primary-contact": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460141/contacts/4463506",
+                            "id": 4463506,
+                            "first-name": "Scott",
+                            "last-name": "Dowdy",
+                            "contact-type-name": "GONE no longer with company",
+                            "organization-name": "Epic Response"
+                        }
+                    ]
+                },
+                "solution-architect": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-deleted": true
+                        }
+                    ]
+                }
+            },
+            "archived": false,
+            "created-at": "2017-01-09T13:47:24.000Z",
+            "updated-at": "2020-01-16T19:00:36.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "1298167",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1460111,
+            "organization-name": "Moncrief Heating & Air",
+            "resource-url": "https://coretelligent.itglue.com/1460111/assets/43821-site-summary/records/1298167",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43821,
+            "flexible-asset-type-name": "Site Summary",
+            "name": "HQ",
+            "traits": {
+                "title": "HQ",
+                "website": "https://www.moncriefair.com/",
+                "primary-contact-phone": "(404) 350-2304",
+                "location": {
+                    "type": "Locations",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460111/locations/1946181",
+                            "id": 1946181,
+                            "name": "Primary Address",
+                            "address-1": "935 Chattahoochee Avenue",
+                            "city": "Atlanta",
+                            "organization-name": "Moncrief Heating & Air"
+                        }
+                    ]
+                },
+                "primary-contact": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460111/contacts/4460968",
+                            "id": 4460968,
+                            "first-name": "David",
+                            "last-name": "Gray",
+                            "contact-type-name": "Decision Maker",
+                            "organization-name": "Moncrief Heating & Air"
+                        }
+                    ]
+                },
+                "account-manager": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/3668872/contacts/16589604",
+                            "id": 16589604,
+                            "first-name": "Brian",
+                            "last-name": "Bassham",
+                            "organization-name": "Coretelligent LLC"
+                        }
+                    ]
+                }
+            },
+            "archived": false,
+            "created-at": "2017-03-01T15:14:53.000Z",
+            "updated-at": "2019-10-29T14:52:08.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "1540515",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1460180,
+            "organization-name": "Brightworth",
+            "resource-url": "https://coretelligent.itglue.com/1460180/assets/43821-site-summary/records/1540515",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43821,
+            "flexible-asset-type-name": "Site Summary",
+            "name": "HQ (Buckhead)",
+            "traits": {
+                "title": "HQ (Buckhead)",
+                "website": "www.brightworth.com",
+                "primary-contact-phone": "404-760-9000 x 3779",
+                "location": {
+                    "type": "Locations",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460180/locations/5657344",
+                            "id": 5657344,
+                            "name": "Primary Address (Buckhead)",
+                            "address-1": "3344 Peachtree Rd NE #2000",
+                            "city": "Atlanta",
+                            "organization-name": "Brightworth"
+                        }
+                    ]
+                },
+                "primary-contact": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-deleted": true
+                        },
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460180/contacts/16220468",
+                            "id": 16220468,
+                            "first-name": "Geoff",
+                            "last-name": "Bernard",
+                            "organization-name": "Brightworth"
+                        }
+                    ]
+                },
+                "purchasing-authority": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460180/contacts/5956872",
+                            "id": 5956872,
+                            "first-name": "Justin",
+                            "last-name": "Husson",
+                            "contact-type-name": "Approver",
+                            "organization-name": "Brightworth"
+                        }
+                    ]
+                },
+                "onsite-assistance": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460180/contacts/16220468",
+                            "id": 16220468,
+                            "first-name": "Geoff",
+                            "last-name": "Bernard",
+                            "organization-name": "Brightworth"
+                        }
+                    ]
+                }
+            },
+            "archived": false,
+            "created-at": "2017-04-26T18:41:11.000Z",
+            "updated-at": "2020-11-20T13:43:37.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "1561405",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1691564,
+            "organization-name": "Banks, Finley, White & Co",
+            "resource-url": "https://coretelligent.itglue.com/1691564/assets/43821-site-summary/records/1561405",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43821,
+            "flexible-asset-type-name": "Site Summary",
+            "name": "Birmingham - HQ",
+            "traits": {
+                "title": "Birmingham - HQ",
+                "coreid": "CORE31",
+                "website": "http://bfwcpa.com/",
+                "primary-contact-phone": "(205) 326-6660 ext. 123",
+                "location": {
+                    "type": "Locations",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1691564/locations/5814493",
+                            "id": 5814493,
+                            "name": "Birmingham",
+                            "address-1": "617 Thirty-Seventh Street South",
+                            "city": "Birmingham",
+                            "organization-name": "Banks, Finley, White & Co"
+                        }
+                    ]
+                },
+                "primary-contact": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-deleted": true
+                        }
+                    ]
+                },
+                "account-manager": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/3668872/contacts/19596301",
+                            "id": 19596301,
+                            "first-name": "Rebecca",
+                            "last-name": "Arbery",
+                            "organization-name": "Coretelligent LLC"
+                        }
+                    ]
+                },
+                "solution-architect": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/3668872/contacts/31371718",
+                            "id": 31371718,
+                            "first-name": "Nathan",
+                            "last-name": "Minor",
+                            "organization-name": "Coretelligent LLC"
+                        }
+                    ]
+                }
+            },
+            "archived": false,
+            "created-at": "2017-05-02T12:19:29.000Z",
+            "updated-at": "2023-02-27T19:48:24.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "1569257",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1460163,
+            "organization-name": "Cancer CarePoint, Inc",
+            "resource-url": "https://coretelligent.itglue.com/1460163/assets/43821-site-summary/records/1569257",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43821,
+            "flexible-asset-type-name": "Site Summary",
+            "name": "HQ",
+            "traits": {
+                "title": "HQ",
+                "website": "www.cancercarepoint.com",
+                "primary-contact-phone": "(800) 998-5859 ext. 100",
+                "location": {
+                    "type": "Locations",
+                    "values": [
+                        {
+                            "resource-deleted": true
+                        }
+                    ]
+                },
+                "primary-contact": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460163/contacts/4461537",
+                            "id": 4461537,
+                            "first-name": "Christina",
+                            "last-name": "Chirinos",
+                            "contact-type-name": "Decision Maker",
+                            "organization-name": "Cancer CarePoint, Inc"
+                        }
+                    ]
+                }
+            },
+            "archived": false,
+            "created-at": "2017-05-03T17:12:09.000Z",
+            "updated-at": "2017-05-03T17:12:10.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "1583683",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1460198,
+            "organization-name": "Classic Window Coverings",
+            "resource-url": "https://coretelligent.itglue.com/1460198/assets/43821-site-summary/records/1583683",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43821,
+            "flexible-asset-type-name": "Site Summary",
+            "name": "Classic Window Coverings",
+            "traits": {
+                "title": "Classic Window Coverings",
+                "known-issues": "<div>Small office<br></div><div>No special parking arrangements</div>",
+                "coreid": "CORE428",
+                "website": "https://classicwindowcoverings.com/",
+                "primary-contact-phone": "(770) 886-0400",
+                "project-id": "P20201113.0007",
+                "location": {
+                    "type": "Locations",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460198/locations/5153341",
+                            "id": 5153341,
+                            "name": "Primary Address",
+                            "address-1": "4837 Newton Terrace",
+                            "city": "Buford",
+                            "organization-name": "Classic Window Coverings"
+                        }
+                    ]
+                },
+                "primary-contact": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460198/contacts/4463626",
+                            "id": 4463626,
+                            "first-name": "Chris",
+                            "last-name": "McKendrick",
+                            "organization-name": "Classic Window Coverings"
+                        }
+                    ]
+                },
+                "onsite-assistance": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460198/contacts/4463626",
+                            "id": 4463626,
+                            "first-name": "Chris",
+                            "last-name": "McKendrick",
+                            "organization-name": "Classic Window Coverings"
+                        }
+                    ]
+                },
+                "solution-architect": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/3668872/contacts/38996957",
+                            "id": 38996957,
+                            "first-name": "Todd",
+                            "last-name": "DeVaul",
+                            "contact-type-name": "User",
+                            "organization-name": "Coretelligent LLC"
+                        }
+                    ]
+                }
+            },
+            "archived": false,
+            "created-at": "2017-05-08T17:17:55.000Z",
+            "updated-at": "2023-02-16T20:52:38.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "1586697",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1460117,
+            "organization-name": "Empire Tickets",
+            "resource-url": "https://coretelligent.itglue.com/1460117/assets/43821-site-summary/records/1586697",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43821,
+            "flexible-asset-type-name": "Site Summary",
+            "name": "HQ",
+            "traits": {
+                "title": "HQ",
+                "website": "www.empiretickets.com",
+                "primary-contact-phone": "(678) 468-3619",
+                "location": {
+                    "type": "Locations",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460117/locations/5152820",
+                            "id": 5152820,
+                            "name": "HQ",
+                            "address-1": "3 West Paces Ferry Rd, Suite 203",
+                            "city": "Atlanta",
+                            "organization-name": "Empire Tickets"
+                        }
+                    ]
+                },
+                "primary-contact": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460117/contacts/4460993",
+                            "id": 4460993,
+                            "first-name": "Jim",
+                            "last-name": "Dougherty",
+                            "contact-type-name": "Approver",
+                            "organization-name": "Empire Tickets"
+                        }
+                    ]
+                }
+            },
+            "archived": false,
+            "created-at": "2017-05-09T12:22:06.000Z",
+            "updated-at": "2020-07-21T20:56:09.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "1592711",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1460168,
+            "organization-name": "Gateway Center",
+            "resource-url": "https://coretelligent.itglue.com/1460168/assets/43821-site-summary/records/1592711",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43821,
+            "flexible-asset-type-name": "Site Summary",
+            "name": "HQ",
+            "traits": {
+                "title": "HQ",
+                "coreid": "dwoods@gatewayctr.org",
+                "website": "http://www.gatewayctr.org",
+                "primary-contact-phone": "(404) 215-6617",
+                "technical-on-site": "User On-Site is capable of assisting",
+                "location": {
+                    "type": "Locations",
+                    "values": [
+                        {
+                            "resource-deleted": true
+                        }
+                    ]
+                }
+            },
+            "archived": false,
+            "created-at": "2017-05-10T15:23:59.000Z",
+            "updated-at": "2025-01-30T14:49:13.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "1642994",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 4089575,
+            "organization-name": "Jordan Outdoor Enterprises, LTD",
+            "resource-url": "https://coretelligent.itglue.com/4089575/assets/43821-site-summary/records/1642994",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43821,
+            "flexible-asset-type-name": "Site Summary",
+            "name": "Jordan Outdoor Enterprises Main",
+            "traits": {
+                "title": "Jordan Outdoor Enterprises Main",
+                "website": "http://www.realtree.com",
+                "primary-contact-phone": "(706) 562-7227",
+                "location": {
+                    "type": "Locations",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/4089575/locations/1946180",
+                            "id": 1946180,
+                            "name": "Jordan Outside Enterprises,LTD OLD",
+                            "address-1": "1390 Box Circle",
+                            "city": "Columbus",
+                            "organization-name": "Jordan Outdoor Enterprises, LTD"
+                        }
+                    ]
+                },
+                "primary-contact": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/4089575/contacts/4460966",
+                            "id": 4460966,
+                            "first-name": "Russ",
+                            "last-name": "Cooper",
+                            "organization-name": "Jordan Outdoor Enterprises, LTD"
+                        }
+                    ]
+                },
+                "account-manager": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1447768/contacts/4461176",
+                            "id": 4461176,
+                            "first-name": "Brian",
+                            "last-name": "Bassham",
+                            "organization-name": "United Technology Group"
+                        }
+                    ]
+                }
+            },
+            "archived": false,
+            "created-at": "2017-05-15T17:19:26.000Z",
+            "updated-at": "2020-03-11T18:01:33.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "1647841",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1460116,
+            "organization-name": "LPBC",
+            "resource-url": "https://coretelligent.itglue.com/1460116/assets/43821-site-summary/records/1647841",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43821,
+            "flexible-asset-type-name": "Site Summary",
+            "name": "New Office",
+            "traits": {
+                "title": "New Office",
+                "primary-contact-phone": "7704075740",
+                "location": {
+                    "type": "Locations",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460116/locations/1946186",
+                            "id": 1946186,
+                            "name": "Primary Address",
+                            "address-1": "344 West Pike Street",
+                            "city": "Lawrenceville",
+                            "organization-name": "LPBC"
+                        }
+                    ]
+                },
+                "primary-contact": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460116/contacts/30321679",
+                            "id": 30321679,
+                            "first-name": "Benjamin",
+                            "last-name": "McClary",
+                            "organization-name": "LPBC"
+                        }
+                    ]
+                },
+                "purchasing-authority": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460116/contacts/4460994",
+                            "id": 4460994,
+                            "first-name": "Becky",
+                            "last-name": "Pope",
+                            "contact-type-name": "Decision Maker",
+                            "organization-name": "LPBC"
+                        },
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460116/contacts/30321679",
+                            "id": 30321679,
+                            "first-name": "Benjamin",
+                            "last-name": "McClary",
+                            "organization-name": "LPBC"
+                        }
+                    ]
+                },
+                "onsite-assistance": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460116/contacts/30321679",
+                            "id": 30321679,
+                            "first-name": "Benjamin",
+                            "last-name": "McClary",
+                            "organization-name": "LPBC"
+                        }
+                    ]
+                },
+                "account-manager": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/3668872/contacts/21469961",
+                            "id": 21469961,
+                            "first-name": "Rebecca",
+                            "last-name": "Arbery",
+                            "organization-name": "Coretelligent LLC"
+                        }
+                    ]
+                },
+                "security-authorization-moved-to-client-policy": {
+                    "type": "Contacts",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460116/contacts/4460994",
+                            "id": 4460994,
+                            "first-name": "Becky",
+                            "last-name": "Pope",
+                            "contact-type-name": "Decision Maker",
+                            "organization-name": "LPBC"
+                        },
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460116/contacts/30321679",
+                            "id": 30321679,
+                            "first-name": "Benjamin",
+                            "last-name": "McClary",
+                            "organization-name": "LPBC"
+                        }
+                    ]
+                }
+            },
+            "archived": false,
+            "created-at": "2017-05-16T17:19:34.000Z",
+            "updated-at": "2022-08-14T21:22:32.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    }
+]

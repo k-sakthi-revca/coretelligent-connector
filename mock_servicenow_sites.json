@@ -1,0 +1,97 @@
+[
+  {
+    "sys_id": "1a2b3c4d5e6f7g8h9i0j",
+    "name": "HQ",
+    "company": {
+      "value": "2a3b4c5d6e7f8g9h0i1j",
+      "display_value": "Epic Response"
+    },
+    "short_description": "Main headquarters location",
+    "site_identifier": "CORE1057",
+    "location": {
+      "value": "3a4b5c6d7e8f9g0h1i2j",
+      "display_value": "3045 Chastain Meadows Pkwy, Marietta"
+    },
+    "comments": "Primary business location",
+    "operational_status": "1",
+    "u_primary_contact": "Scott Dowdy",
+    "u_primary_contact_phone": "(770) 516-3491",
+    "u_website": "http://www.epicresponse.com/"
+  },
+  {
+    "sys_id": "2b3c4d5e6f7g8h9i0j1k",
+    "name": "HQ",
+    "company": {
+      "value": "3b4c5d6e7f8g9h0i1j2k",
+      "display_value": "Moncrief Heating & Air"
+    },
+    "short_description": "Main headquarters location",
+    "site_identifier": "CORE80",
+    "location": {
+      "value": "4b5c6d7e8f9g0h1i2j3k",
+      "display_value": "935 Chattahoochee Avenue, Atlanta"
+    },
+    "comments": "Primary business location",
+    "operational_status": "1",
+    "u_primary_contact": "David Gray",
+    "u_primary_contact_phone": "(404) 350-2304",
+    "u_website": "https://www.moncriefair.com/"
+  },
+  {
+    "sys_id": "3c4d5e6f7g8h9i0j1k2l",
+    "name": "HQ (Buckhead)",
+    "company": {
+      "value": "4c5d6e7f8g9h0i1j2k3l",
+      "display_value": "Brightworth"
+    },
+    "short_description": "Main headquarters location",
+    "site_identifier": "CORE51",
+    "location": {
+      "value": "5c6d7e8f9g0h1i2j3k4l",
+      "display_value": "3344 Peachtree Rd NE #2000, Atlanta"
+    },
+    "comments": "Primary business location",
+    "operational_status": "1",
+    "u_primary_contact": "Geoff Bernard",
+    "u_primary_contact_phone": "404-760-9000 x 3779",
+    "u_website": "www.brightworth.com"
+  },
+  {
+    "sys_id": "4d5e6f7g8h9i0j1k2l3m",
+    "name": "Birmingham - HQ",
+    "company": {
+      "value": "5d6e7f8g9h0i1j2k3l4m",
+      "display_value": "Banks, Finley, White & Co"
+    },
+    "short_description": "Main headquarters location",
+    "site_identifier": "CORE31",
+    "location": {
+      "value": "6d7e8f9g0h1i2j3k4l5m",
+      "display_value": "617 Thirty-Seventh Street South, Birmingham"
+    },
+    "comments": "Primary business location",
+    "operational_status": "1",
+    "u_primary_contact": "",
+    "u_primary_contact_phone": "(205) 326-6660 ext. 123",
+    "u_website": "http://bfwcpa.com/"
+  },
+  {
+    "sys_id": "5e6f7g8h9i0j1k2l3m4n",
+    "name": "HQ",
+    "company": {
+      "value": "6e7f8g9h0i1j2k3l4m5n",
+      "display_value": "Cancer CarePoint, Inc"
+    },
+    "short_description": "Main headquarters location",
+    "site_identifier": "",
+    "location": {
+      "value": "7e8f9g0h1i2j3k4l5m6n",
+      "display_value": ""
+    },
+    "comments": "Primary business location",
+    "operational_status": "1",
+    "u_primary_contact": "Christina Chirinos",
+    "u_primary_contact_phone": "(800) 998-5859 ext. 100",
+    "u_website": "www.cancercarepoint.com"
+  }
+]

@@ -1,0 +1,226 @@
+{
+  "matches": [
+    {
+      "itglue_id": "1129822",
+      "itglue_name": "HQ",
+      "servicenow_id": "1a2b3c4d5e6f7g8h9i0j",
+      "servicenow_name": "HQ",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u26a0\ufe0f No CoreID",
+      "coreid": "CORE1057",
+      "notes": "Matched by exact name and company: HQ / Epic Response"
+    },
+    {
+      "itglue_id": "1298167",
+      "itglue_name": "HQ",
+      "servicenow_id": "2b3c4d5e6f7g8h9i0j1k",
+      "servicenow_name": "HQ",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u26a0\ufe0f No CoreID",
+      "coreid": "CORE80",
+      "notes": "Matched by exact name and company: HQ / Moncrief Heating & Air"
+    },
+    {
+      "itglue_id": "1540515",
+      "itglue_name": "HQ (Buckhead)",
+      "servicenow_id": "3c4d5e6f7g8h9i0j1k2l",
+      "servicenow_name": "HQ (Buckhead)",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u26a0\ufe0f No CoreID",
+      "coreid": "CORE51",
+      "notes": "Matched by exact name and company: HQ (Buckhead) / Brightworth"
+    },
+    {
+      "itglue_id": "1561405",
+      "itglue_name": "Birmingham - HQ",
+      "servicenow_id": "4d5e6f7g8h9i0j1k2l3m",
+      "servicenow_name": "Birmingham - HQ",
+      "match_type": "Exact CoreID",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u2705 Ready",
+      "coreid": "CORE31",
+      "notes": "Matched by CoreID: CORE31"
+    },
+    {
+      "itglue_id": "1569257",
+      "itglue_name": "HQ",
+      "servicenow_id": "5e6f7g8h9i0j1k2l3m4n",
+      "servicenow_name": "HQ",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u26a0\ufe0f No CoreID",
+      "coreid": "",
+      "notes": "Matched by exact name and company: HQ / Cancer CarePoint, Inc"
+    },
+    {
+      "itglue_id": "1583683",
+      "itglue_name": "Classic Window Coverings",
+      "servicenow_id": null,
+      "servicenow_name": null,
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "recommended_action": "Create New",
+      "data_quality": "\u2705 Ready",
+      "coreid": "CORE428",
+      "notes": "No matching site found in ServiceNow for Classic Window Coverings"
+    },
+    {
+      "itglue_id": "1586697",
+      "itglue_name": "HQ",
+      "servicenow_id": null,
+      "servicenow_name": null,
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "recommended_action": "Create New",
+      "data_quality": "\u26a0\ufe0f No CoreID",
+      "coreid": null,
+      "notes": "No matching site found in ServiceNow for Empire Tickets"
+    },
+    {
+      "itglue_id": "1592711",
+      "itglue_name": "HQ",
+      "servicenow_id": null,
+      "servicenow_name": null,
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "recommended_action": "Create New",
+      "data_quality": "\u2705 Ready",
+      "coreid": "dwoods@gatewayctr.org",
+      "notes": "No matching site found in ServiceNow for Gateway Center"
+    },
+    {
+      "itglue_id": "1642994",
+      "itglue_name": "Jordan Outdoor Enterprises Main",
+      "servicenow_id": null,
+      "servicenow_name": null,
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "recommended_action": "Create New",
+      "data_quality": "\u26a0\ufe0f No CoreID",
+      "coreid": null,
+      "notes": "No matching site found in ServiceNow for Jordan Outdoor Enterprises, LTD"
+    },
+    {
+      "itglue_id": "1647841",
+      "itglue_name": "New Office",
+      "servicenow_id": null,
+      "servicenow_name": null,
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "recommended_action": "Create New",
+      "data_quality": "\u26a0\ufe0f No CoreID",
+      "coreid": null,
+      "notes": "No matching site found in ServiceNow for LPBC"
+    }
+  ],
+  "quality_issues": [
+    {
+      "site_id": "1129822",
+      "site_name": "HQ",
+      "organization_name": "Epic Response",
+      "issue_type": "Missing CoreID",
+      "priority": "Medium",
+      "description": "Site Summary does not have a CoreID",
+      "recommendation": "Add CoreID to Site Summary or manually map"
+    },
+    {
+      "site_id": "1298167",
+      "site_name": "HQ",
+      "organization_name": "Moncrief Heating & Air",
+      "issue_type": "Missing CoreID",
+      "priority": "Medium",
+      "description": "Site Summary does not have a CoreID",
+      "recommendation": "Add CoreID to Site Summary or manually map"
+    },
+    {
+      "site_id": "1540515",
+      "site_name": "HQ (Buckhead)",
+      "organization_name": "Brightworth",
+      "issue_type": "Missing CoreID",
+      "priority": "Medium",
+      "description": "Site Summary does not have a CoreID",
+      "recommendation": "Add CoreID to Site Summary or manually map"
+    },
+    {
+      "site_id": "1569257",
+      "site_name": "HQ",
+      "organization_name": "Cancer CarePoint, Inc",
+      "issue_type": "Missing CoreID",
+      "priority": "Medium",
+      "description": "Site Summary does not have a CoreID",
+      "recommendation": "Add CoreID to Site Summary or manually map"
+    },
+    {
+      "site_id": "1586697",
+      "site_name": "HQ",
+      "organization_name": "Empire Tickets",
+      "issue_type": "Missing CoreID",
+      "priority": "Medium",
+      "description": "Site Summary does not have a CoreID",
+      "recommendation": "Add CoreID to Site Summary or manually map"
+    },
+    {
+      "site_id": "1642994",
+      "site_name": "Jordan Outdoor Enterprises Main",
+      "organization_name": "Jordan Outdoor Enterprises, LTD",
+      "issue_type": "Missing CoreID",
+      "priority": "Medium",
+      "description": "Site Summary does not have a CoreID",
+      "recommendation": "Add CoreID to Site Summary or manually map"
+    },
+    {
+      "site_id": "1647841",
+      "site_name": "New Office",
+      "organization_name": "LPBC",
+      "issue_type": "Missing CoreID",
+      "priority": "Medium",
+      "description": "Site Summary does not have a CoreID",
+      "recommendation": "Add CoreID to Site Summary or manually map"
+    }
+  ],
+  "statistics": {
+    "total": 10,
+    "by_match_type": {
+      "Exact Name": {
+        "count": 4,
+        "percentage": 40.0
+      },
+      "Exact CoreID": {
+        "count": 1,
+        "percentage": 10.0
+      },
+      "No Match": {
+        "count": 5,
+        "percentage": 50.0
+      }
+    },
+    "by_recommended_action": {
+      "Use Existing": {
+        "count": 5,
+        "percentage": 50.0
+      },
+      "Create New": {
+        "count": 5,
+        "percentage": 50.0
+      }
+    },
+    "by_data_quality": {
+      "\u26a0\ufe0f No CoreID": {
+        "count": 7,
+        "percentage": 70.0
+      },
+      "\u2705 Ready": {
+        "count": 3,
+        "percentage": 30.0
+      }
+    }
+  }
+}

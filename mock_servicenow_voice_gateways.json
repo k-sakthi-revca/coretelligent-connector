@@ -1,0 +1,83 @@
+[
+  {
+    "sys_id": "1v2o3i4c5e6g7a8t9e0w",
+    "name": "Epic Response Phone System",
+    "company": {
+      "value": "2a3b4c5d6e7f8g9h0i1j",
+      "display_value": "Epic Response"
+    },
+    "short_description": "Cisco Unified Communications Manager",
+    "manufacturer": {
+      "value": "3v4o5i6c7e8g9a0t1e2w",
+      "display_value": "Cisco"
+    },
+    "model_id": {
+      "value": "4v5o6i7c8e9g0a1t2e3w",
+      "display_value": "Unified Communications Manager"
+    },
+    "version": "12.5",
+    "serial_number": "CSCO12345678",
+    "ip_address": "10.10.10.50",
+    "mac_address": "00:11:22:33:44:55",
+    "operational_status": "1",
+    "u_system_type": "Hosted PBX",
+    "u_phone_numbers": "770-516-3491 (Main)",
+    "u_service_provider": "AT&T",
+    "u_support_contact": "AT&T Business Support (800-222-0400)",
+    "u_admin_portal": "https://admin.att.com",
+    "comments": "System was upgraded in January 2025"
+  },
+  {
+    "sys_id": "2v3o4i5c6e7g8a9t0e1w",
+    "name": "Moncrief Office Phone System",
+    "company": {
+      "value": "3b4c5d6e7f8g9h0i1j2k",
+      "display_value": "Moncrief Heating & Air"
+    },
+    "short_description": "Avaya IP Office",
+    "manufacturer": {
+      "value": "5v6o7i8c9e0g1a2t3e4w",
+      "display_value": "Avaya"
+    },
+    "model_id": {
+      "value": "6v7o8i9c0e1g2a3t4e5w",
+      "display_value": "IP Office"
+    },
+    "version": "11.0",
+    "serial_number": "AVYA987654321",
+    "ip_address": "192.168.1.10",
+    "mac_address": "AA:BB:CC:DD:EE:FF",
+    "operational_status": "1",
+    "u_system_type": "On-Premise PBX",
+    "u_phone_numbers": "404-350-2304 (Main)",
+    "u_service_provider": "Comcast Business",
+    "u_support_contact": "Comcast Business Support (800-391-3000)",
+    "u_admin_portal": "https://192.168.1.10/admin",
+    "comments": "System installed in March 2023"
+  },
+  {
+    "sys_id": "3v4o5i6c7e8g9a0t1e2w",
+    "name": "RingCentral Office",
+    "company": {
+      "value": "4c5d6e7f8g9h0i1j2k3l",
+      "display_value": "Brightworth"
+    },
+    "short_description": "RingCentral Cloud VoIP System",
+    "manufacturer": {
+      "value": "7v8o9i0c1e2g3a4t5e6w",
+      "display_value": "RingCentral"
+    },
+    "model_id": {
+      "value": "8v9o0i1c2e3g4a5t6e7w",
+      "display_value": "Office"
+    },
+    "version": "2024.1",
+    "operational_status": "1",
+    "u_system_type": "Cloud VoIP",
+    "u_phone_numbers": "404-760-9000 (Main)",
+    "u_service_provider": "RingCentral",
+    "u_support_contact": "RingCentral Support (888-528-7464)",
+    "u_admin_portal": "https://service.ringcentral.com",
+    "comments": "Migrated from on-premise system in 2024"
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "matches": [
+    {
+      "itglue_id": "2001001",
+      "itglue_name": "Epic Response Phone System",
+      "servicenow_id": "1v2o3i4c5e6g7a8t9e0w",
+      "servicenow_name": "Epic Response Phone System",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u2705 Ready",
+      "serial_number": "CSCO12345678",
+      "notes": "Matched by exact name and company: Epic Response Phone System / Epic Response"
+    },
+    {
+      "itglue_id": "2001002",
+      "itglue_name": "Moncrief Office Phone System",
+      "servicenow_id": "2v3o4i5c6e7g8a9t0e1w",
+      "servicenow_name": "Moncrief Office Phone System",
+      "match_type": "Exact Name",
+      "confidence": 1.0,
+      "recommended_action": "Use Existing",
+      "data_quality": "\u2705 Ready",
+      "serial_number": "AVYA987654321",
+      "notes": "Matched by exact name and company: Moncrief Office Phone System / Moncrief Heating & Air"
+    },
+    {
+      "itglue_id": "2001003",
+      "itglue_name": "Brightworth VoIP System",
+      "servicenow_id": null,
+      "servicenow_name": null,
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "recommended_action": "Create New",
+      "data_quality": "\u26a0\ufe0f No Serial",
+      "serial_number": null,
+      "notes": "No matching voice gateway found in ServiceNow for Brightworth"
+    },
+    {
+      "itglue_id": "2001004",
+      "itglue_name": "Birmingham Office Phone System",
+      "servicenow_id": null,
+      "servicenow_name": null,
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "recommended_action": "Create New",
+      "data_quality": "\u2705 Ready",
+      "serial_number": "MITL123456789",
+      "notes": "No matching voice gateway found in ServiceNow for Banks, Finley, White & Co"
+    },
+    {
+      "itglue_id": "2001005",
+      "itglue_name": "Cancer CarePoint Phone System",
+      "servicenow_id": null,
+      "servicenow_name": null,
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "recommended_action": "Create New",
+      "data_quality": "\u26a0\ufe0f No Serial",
+      "serial_number": null,
+      "notes": "No matching voice gateway found in ServiceNow for Cancer CarePoint, Inc"
+    }
+  ],
+  "quality_issues": [
+    {
+      "asset_id": "2001003",
+      "asset_name": "Brightworth VoIP System",
+      "organization_name": "Brightworth",
+      "issue_type": "Missing Serial",
+      "priority": "Medium",
+      "description": "Voice/PBX asset does not have a serial number",
+      "recommendation": "Add serial number to Voice/PBX asset or manually map"
+    },
+    {
+      "asset_id": "2001005",
+      "asset_name": "Cancer CarePoint Phone System",
+      "organization_name": "Cancer CarePoint, Inc",
+      "issue_type": "Missing Serial",
+      "priority": "Medium",
+      "description": "Voice/PBX asset does not have a serial number",
+      "recommendation": "Add serial number to Voice/PBX asset or manually map"
+    }
+  ],
+  "statistics": {
+    "total": 5,
+    "by_match_type": {
+      "Exact Name": {
+        "count": 2,
+        "percentage": 40.0
+      },
+      "No Match": {
+        "count": 3,
+        "percentage": 60.0
+      }
+    },
+    "by_recommended_action": {
+      "Use Existing": {
+        "count": 2,
+        "percentage": 40.0
+      },
+      "Create New": {
+        "count": 3,
+        "percentage": 60.0
+      }
+    },
+    "by_data_quality": {
+      "\u2705 Ready": {
+        "count": 3,
+        "percentage": 60.0
+      },
+      "\u26a0\ufe0f No Serial": {
+        "count": 2,
+        "percentage": 40.0
+      }
+    }
+  }
+}

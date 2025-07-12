@@ -1,0 +1,24 @@
+2025-07-12 17:12:29,025 - __main__ - INFO - Running site summary matcher...
+2025-07-12 17:12:29,026 - __main__ - INFO - Loading IT Glue Site Summary data...
+2025-07-12 17:12:29,027 - __main__ - INFO - Loading ServiceNow site data...
+2025-07-12 17:12:29,028 - __main__ - INFO - Initializing site summary matcher...
+2025-07-12 17:12:29,028 - site_summary_matcher - INFO - Site Summary Matcher initialized with strategies: coreid, exact_name, fuzzy_name
+2025-07-12 17:12:29,028 - __main__ - INFO - Matching site summaries...
+2025-07-12 17:12:29,028 - site_summary_matcher - INFO - Matching 10 IT Glue Site Summaries to 5 ServiceNow sites
+2025-07-12 17:12:29,029 - site_summary_matcher - INFO - Matched 10 site summaries with 7 data quality issues
+2025-07-12 17:12:29,030 - __main__ - INFO - Site Summary matching completed. Report saved to reports/site_summary_migration_report_20250712_171229.json
+2025-07-12 17:12:29,030 - __main__ - INFO - Migrating site summaries...
+2025-07-12 17:12:29,030 - site_summary_migrator - INFO - Site Summary Migrator initialized (dry_run=False)
+2025-07-12 17:12:29,030 - site_summary_migrator - INFO - Migrating 10 IT Glue Site Summaries
+2025-07-12 17:12:29,030 - site_summary_migrator - INFO - Updating site CI: HQ
+2025-07-12 17:12:29,031 - site_summary_migrator - INFO - Updating site CI: HQ
+2025-07-12 17:12:29,031 - site_summary_migrator - INFO - Updating site CI: HQ (Buckhead)
+2025-07-12 17:12:29,031 - site_summary_migrator - INFO - Updating site CI: Birmingham - HQ
+2025-07-12 17:12:29,031 - site_summary_migrator - INFO - Updating site CI: HQ
+2025-07-12 17:12:29,031 - site_summary_migrator - INFO - Creating new site CI: Classic Window Coverings
+2025-07-12 17:12:29,031 - site_summary_migrator - INFO - Creating new site CI: HQ
+2025-07-12 17:12:29,031 - site_summary_migrator - INFO - Creating new site CI: HQ
+2025-07-12 17:12:29,031 - site_summary_migrator - INFO - Creating new site CI: Jordan Outdoor Enterprises Main
+2025-07-12 17:12:29,031 - site_summary_migrator - INFO - Creating new site CI: New Office
+2025-07-12 17:12:29,031 - site_summary_migrator - INFO - Migration completed: 10/10 successful
+2025-07-12 17:12:29,032 - __main__ - INFO - Site Summary migration completed. Report saved to reports/site_summary_migration_details_20250712_171229.json

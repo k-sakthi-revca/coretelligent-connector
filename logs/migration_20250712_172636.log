@@ -1,0 +1,19 @@
+2025-07-12 17:26:36,816 - __main__ - INFO - Running voice PBX matcher...
+2025-07-12 17:26:36,816 - __main__ - INFO - Loading IT Glue Voice PBX data...
+2025-07-12 17:26:36,817 - __main__ - INFO - Loading ServiceNow voice gateway data...
+2025-07-12 17:26:36,818 - __main__ - INFO - Initializing voice PBX matcher...
+2025-07-12 17:26:36,818 - voice_pbx_matcher - INFO - Voice PBX Matcher initialized with strategies: coreid, exact_name, fuzzy_name
+2025-07-12 17:26:36,818 - __main__ - INFO - Matching voice PBX assets...
+2025-07-12 17:26:36,818 - voice_pbx_matcher - INFO - Matching 5 IT Glue Voice/PBX assets to 3 ServiceNow voice gateways
+2025-07-12 17:26:36,819 - voice_pbx_matcher - INFO - Matched 5 voice PBX assets with 2 data quality issues
+2025-07-12 17:26:36,820 - __main__ - INFO - Voice PBX matching completed. Report saved to reports/voice_pbx_migration_report_20250712_172636.json
+2025-07-12 17:26:36,820 - __main__ - INFO - Migrating voice PBX assets...
+2025-07-12 17:26:36,820 - voice_pbx_migrator - INFO - Voice PBX Migrator initialized (dry_run=False)
+2025-07-12 17:26:36,820 - voice_pbx_migrator - INFO - Migrating 5 IT Glue Voice/PBX assets
+2025-07-12 17:26:36,820 - voice_pbx_migrator - INFO - Updating voice gateway CI: Epic Response Phone System
+2025-07-12 17:26:36,820 - voice_pbx_migrator - INFO - Updating voice gateway CI: Moncrief Office Phone System
+2025-07-12 17:26:36,820 - voice_pbx_migrator - INFO - Creating new voice gateway CI: Brightworth VoIP System
+2025-07-12 17:26:36,820 - voice_pbx_migrator - INFO - Creating new voice gateway CI: Birmingham Office Phone System
+2025-07-12 17:26:36,820 - voice_pbx_migrator - INFO - Creating new voice gateway CI: Cancer CarePoint Phone System
+2025-07-12 17:26:36,820 - voice_pbx_migrator - INFO - Migration completed: 5/5 successful
+2025-07-12 17:26:36,821 - __main__ - INFO - Voice PBX migration completed. Report saved to reports/voice_pbx_migration_details_20250712_172636.json
