@@ -1,0 +1,764 @@
+{
+    "data": [
+        {
+            "id": "2481387",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 2405067,
+                "organization-name": "Atlanta Opera",
+                "resource-url": "https://coretelligent.itglue.com/2405067/assets/71780-printing/records/2481387",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 71780,
+                "flexible-asset-type-name": "Printing",
+                "name": "Printing",
+                "traits": {
+                    "title": "HQ Printing",
+                    "deployment": "Manual",
+                    "notes": "<p>MFP devices use SMTP&nbsp;relay to smart-host in&nbsp;Office365.</p><p><br></p><p>\"XPS Option not enabled\" when user goes to print is caused by the driver that is currently installed. To resolve, download the PS driver from the Xerox site, remove the printer, re-add the printer using the IP address, and set the PS driver to it.<br></p>",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2405067/locations/5960706",
+                                "id": 5960706,
+                                "name": "Primary Address",
+                                "address-1": "1575 Northside Drive, NW, Building 300, Suite 350",
+                                "city": "Atlanta",
+                                "organization-name": "Atlanta Opera"
+                            }
+                        ]
+                    },
+                    "printer-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2405067/configurations/31546619",
+                                "id": 31546619,
+                                "name": "PRINTER: Artistic Xerox VersaLink B7030",
+                                "organization-name": "Atlanta Opera",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2405067/configurations/31547048",
+                                "id": 31547048,
+                                "name": "PRINTER: Finance Xerox AltaLink C8045",
+                                "organization-name": "Atlanta Opera",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2405067/configurations/31546770",
+                                "id": 31546770,
+                                "name": "PRINTER: Executive Xerox AltaLink C8045 PCL6",
+                                "organization-name": "Atlanta Opera",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2405067/configurations/35190841",
+                                "id": 35190841,
+                                "name": "PRINTER: HP LaserJet P4014",
+                                "organization-name": "Atlanta Opera",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2405067/configurations/35190989",
+                                "id": 35190989,
+                                "name": "PRINTER: HP Dev4050",
+                                "organization-name": "Atlanta Opera",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2405067/configurations/73384339",
+                                "id": 73384339,
+                                "name": "PRINTER: Boca Ticket Printer A",
+                                "organization-name": "Atlanta Opera",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2405067/configurations/73384338",
+                                "id": 73384338,
+                                "name": "PRINTER: Boca Ticket Printer B",
+                                "organization-name": "Atlanta Opera",
+                                "configuration-type-name": "Printer"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-12-14T20:14:14.000Z",
+                "updated-at": "2025-03-27T13:36:21.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "2660691",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1953720,
+                "organization-name": "Medical College of Georgia Foundation",
+                "resource-url": "https://coretelligent.itglue.com/1953720/assets/71780-printing/records/2660691",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 71780,
+                "flexible-asset-type-name": "Printing",
+                "name": "main",
+                "traits": {
+                    "notes": "<div><strong>check related items </strong></div>",
+                    "site-retired-move-to-location": "main",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1953720/locations/2595509",
+                                "id": 2595509,
+                                "name": "Main",
+                                "address-1": "720 Saint Sebastian Way Suite 150",
+                                "city": "Augusta",
+                                "organization-name": "Medical College of Georgia Foundation"
+                            }
+                        ]
+                    },
+                    "printer-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1953720/configurations/8638065",
+                                "id": 8638065,
+                                "name": "Konica-Minolta Bizhub - KMB3502D",
+                                "hostname": "KM4723A3",
+                                "organization-name": "Medical College of Georgia Foundation",
+                                "configuration-type-name": "Printer"
+                            }
+                        ]
+                    },
+                    "vendor": {
+                        "type": "FlexibleAssetTypes",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1953720/assets/43822-vendors/records/24138995",
+                                "id": 24138995,
+                                "name": "Konica",
+                                "organization-name": "Medical College of Georgia Foundation",
+                                "asset-type-id": 43822
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2018-01-24T20:51:21.000Z",
+                "updated-at": "2021-08-26T20:07:38.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "2836187",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1447768,
+                "organization-name": "United Technology Group",
+                "resource-url": "https://coretelligent.itglue.com/1447768/assets/71780-printing/records/2836187",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 71780,
+                "flexible-asset-type-name": "Printing",
+                "name": "HQ",
+                "traits": {
+                    "deployment": "Group Policy",
+                    "site-retired-move-to-location": "HQ",
+                    "print-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1447768/configurations/12348576",
+                                "id": 12348576,
+                                "name": "DCS: UTGDC3 - Domain Controller",
+                                "organization-name": "United Technology Group",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "printer-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1447768/configurations/12348569",
+                                "id": 12348569,
+                                "name": "HP4730 (Color Laserjet Printer - Hewlett-Packard)",
+                                "organization-name": "United Technology Group",
+                                "configuration-type-name": "*NETWORK DEVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2018-03-02T15:43:25.000Z",
+                "updated-at": "2018-03-02T15:43:26.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "3261814",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 2771314,
+                "organization-name": "Fox, Chandler, Homans, Hicks and McKinnon",
+                "resource-url": "https://coretelligent.itglue.com/2771314/assets/71780-printing/records/3261814",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 71780,
+                "flexible-asset-type-name": "Printing",
+                "name": "Printing",
+                "traits": {
+                    "title": "HQ Printing",
+                    "deployment": "Manual",
+                    "drivers-path": "https://tfchh.egnyte.com/dl/BUWFtNXNSp",
+                    "coresecret-url": "https://secret.core.tech/pid=39349",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2771314/locations/5152751",
+                                "id": 5152751,
+                                "name": "Primary Address - FCHHM",
+                                "address-1": "125 Maple Street",
+                                "city": "Gainesville",
+                                "organization-name": "Fox, Chandler, Homans, Hicks and McKinnon"
+                            }
+                        ]
+                    },
+                    "printer-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2771314/configurations/35474790",
+                                "id": 35474790,
+                                "name": "PRINTER: SAVIN MP C4504 PCL 6",
+                                "hostname": "RNP002673C1635D",
+                                "organization-name": "Fox, Chandler, Homans, Hicks and McKinnon",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2771314/configurations/51861354",
+                                "id": 51861354,
+                                "name": "PRINTER: HP LaserJet M611 (Check Printer)",
+                                "organization-name": "Fox, Chandler, Homans, Hicks and McKinnon",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2771314/configurations/52818014",
+                                "id": 52818014,
+                                "name": "PRINTER: Kyocera ECOSYS P3045dn (Apryl/Graham Shared USB Printer)",
+                                "organization-name": "Fox, Chandler, Homans, Hicks and McKinnon",
+                                "configuration-type-name": "Printer"
+                            }
+                        ]
+                    },
+                    "vendor": {
+                        "type": "FlexibleAssetTypes",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2771314/assets/43822-vendors/records/61016543",
+                                "id": 61016543,
+                                "name": "Duplicating Products",
+                                "organization-name": "Fox, Chandler, Homans, Hicks and McKinnon",
+                                "asset-type-id": 43822
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2018-05-25T12:43:55.000Z",
+                "updated-at": "2023-02-28T15:21:36.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "3324668",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 2362820,
+                "organization-name": "Credit Union of Atlanta",
+                "resource-url": "https://coretelligent.itglue.com/2362820/assets/71780-printing/records/3324668",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 71780,
+                "flexible-asset-type-name": "Printing",
+                "name": "Printing",
+                "traits": {
+                    "title": [
+                        "CUA Printing",
+                        "CUA Printing"
+                    ],
+                    "deployment": "Other",
+                    "published-to-ad": true,
+                    "drivers-path": "c:\\scripts\\ricoh",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2362820/locations/5231556",
+                                "id": 5231556,
+                                "name": "Primary Address",
+                                "address-1": "670 Metropolitan Pkwy SW",
+                                "city": "Atlanta",
+                                "organization-name": "Credit Union of Atlanta"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2362820/locations/5231556",
+                                "id": 5231556,
+                                "name": "Primary Address",
+                                "address-1": "670 Metropolitan Pkwy SW",
+                                "city": "Atlanta",
+                                "organization-name": "Credit Union of Atlanta"
+                            }
+                        ]
+                    },
+                    "print-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2362820/configurations/22441519",
+                                "id": 22441519,
+                                "name": "ACECUDC03 (Domain Controller - AzureAD Sync)",
+                                "hostname": "ACECUDC03",
+                                "organization-name": "Credit Union of Atlanta",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "printer-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2362820/configurations/20958297",
+                                "id": 20958297,
+                                "name": "Printer: Executive | Ricoh MP C2504ex",
+                                "hostname": "EXECUTIVE",
+                                "organization-name": "Credit Union of Atlanta",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2362820/configurations/20958298",
+                                "id": 20958298,
+                                "name": "Printer: LOANAREA | Ricoh MP 3055",
+                                "hostname": "LOANAREA",
+                                "organization-name": "Credit Union of Atlanta",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2362820/configurations/20958302",
+                                "id": 20958302,
+                                "name": "Printer: Accounting | Ricoh MP 3055",
+                                "hostname": "ACCOUNTING",
+                                "organization-name": "Credit Union of Atlanta",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2362820/configurations/20958286",
+                                "id": 20958286,
+                                "name": "HP LaserJet P2055dn (Check Printer)",
+                                "hostname": "NPI6A1299",
+                                "organization-name": "Credit Union of Atlanta",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2362820/configurations/60626462",
+                                "id": 60626462,
+                                "name": "CUA_CONTACT_CENTER",
+                                "organization-name": "Credit Union of Atlanta",
+                                "configuration-type-name": "Printer"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2018-06-08T12:51:20.000Z",
+                "updated-at": "2024-01-08T15:07:31.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "3403530",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1691564,
+                "organization-name": "Banks, Finley, White & Co",
+                "resource-url": "https://coretelligent.itglue.com/1691564/assets/71780-printing/records/3403530",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 71780,
+                "flexible-asset-type-name": "Printing",
+                "name": "Printing",
+                "traits": {
+                    "title": "Core Cloud Print Server",
+                    "deployment": "Manual",
+                    "drivers-path": "\\\\bfw-cce-fs01",
+                    "notes": "<div>Konica Minolta's listed above are in the Birmingham Office. </div>",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1691564/locations/8326925",
+                                "id": 8326925,
+                                "name": "Core Cloud",
+                                "organization-name": "Banks, Finley, White & Co"
+                            }
+                        ]
+                    },
+                    "print-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1691564/configurations/28916993",
+                                "id": 28916993,
+                                "name": "bfw-cce-fs01",
+                                "hostname": "bfw-cce-fs01",
+                                "organization-name": "Banks, Finley, White & Co",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "printer-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1691564/configurations/7004181",
+                                "id": 7004181,
+                                "name": "TOSHIBA e-STUDIO4515AC",
+                                "hostname": "MFP12226104",
+                                "organization-name": "Banks, Finley, White & Co",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1691564/configurations/7004172",
+                                "id": 7004172,
+                                "name": "Konica Minolta Bizhub C458",
+                                "hostname": "KM3D523F",
+                                "organization-name": "Banks, Finley, White & Co",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1691564/configurations/7004174",
+                                "id": 7004174,
+                                "name": "Konica Bizhub C454e",
+                                "hostname": "KM_C454e",
+                                "organization-name": "Banks, Finley, White & Co",
+                                "configuration-type-name": "Printer"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2018-06-21T13:39:25.000Z",
+                "updated-at": "2023-08-09T16:39:06.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "3653736",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460142,
+                "organization-name": "Southeast Mortgage of Georgia, Inc.",
+                "resource-url": "https://coretelligent.itglue.com/1460142/assets/71780-printing/records/3653736",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 71780,
+                "flexible-asset-type-name": "Printing",
+                "name": "Printing",
+                "traits": {
+                    "title": "HQ Printing",
+                    "deployment": "Manual",
+                    "support-information": "<div>Scan to email functionality is controlled via a local relay on SEM-KOG-FS01</div><div><br></div><div>If user is having issue with printing and all the settings seems to be correct and others can print - please make sure its set to print to black and white. </div>",
+                    "notes": "<div>Most of users at KOGER map printers manually.</div>",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460142/locations/1946212",
+                                "id": 1946212,
+                                "name": "Corporate HQ",
+                                "address-1": "3575 Koger Blvd, Suite 400",
+                                "city": "Duluth",
+                                "organization-name": "Southeast Mortgage of Georgia, Inc."
+                            }
+                        ]
+                    },
+                    "print-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460142/configurations/23661743",
+                                "id": 23661743,
+                                "name": "SEM-CCE-FS01",
+                                "hostname": "SEM-CCE-FS01",
+                                "organization-name": "Southeast Mortgage of Georgia, Inc.",
+                                "configuration-type-name": "Virtual Server"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2018-08-07T20:00:21.000Z",
+                "updated-at": "2022-02-22T00:47:16.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "5858012",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460163,
+                "organization-name": "Cancer CarePoint, Inc",
+                "resource-url": "https://coretelligent.itglue.com/1460163/assets/71780-printing/records/5858012",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 71780,
+                "flexible-asset-type-name": "Printing",
+                "name": "hq",
+                "traits": {
+                    "deployment": "Group Policy",
+                    "published-to-ad": true,
+                    "site-retired-move-to-location": "hq",
+                    "print-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460163/configurations/5963376",
+                                "id": 5963376,
+                                "name": "DCS: CCP-DC1",
+                                "organization-name": "Cancer CarePoint, Inc",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "printer-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460163/configurations/6838340",
+                                "id": 6838340,
+                                "name": "Printer - Sharp MX-3070V MFP",
+                                "hostname": "SHARP-Copier",
+                                "organization-name": "Cancer CarePoint, Inc",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460163/configurations/6838341",
+                                "id": 6838341,
+                                "name": "Printer - HP Color Laserjet CP2025n",
+                                "organization-name": "Cancer CarePoint, Inc",
+                                "configuration-type-name": "Printer"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-03-28T16:49:46.000Z",
+                "updated-at": "2019-03-28T16:49:46.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7972949",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668874,
+                "organization-name": "Guidepost Growth Equity",
+                "resource-url": "https://coretelligent.itglue.com/3668874/assets/71780-printing/records/7972949",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 71780,
+                "flexible-asset-type-name": "Printing",
+                "name": "Guidepost Growth Equity",
+                "traits": {
+                    "deployment": "Group Policy",
+                    "drivers-path": "\\\\GPGE-FP01",
+                    "support-information": "<div>Northern Business Machines (NBM) performs the maintenance and ships the supplies to client. More information can be found within each of the machine's configurations. </div><div><br></div><div><div><span style=\"font-size:10pt\"><span style=\"font-size:10pt\"><span>Note about Scan to SMB: Guidepost has several VLANs for proper network segmentation. All of these printers are on VLAN 96. If for whatever reason these printers are moved to a different wall jack, we must change the switchport from an access port to a trunk port and add them to VLAN 103. This will ensure they can reach GPGE-FP01.</span></span></span></div><div><br></div><div><span style=\"font-size:10pt\"><span style=\"font-size:10pt\"><span>As far as path is concerned, they need to be typed as follows \\\\gpge-fp01.guidepost.lan\\files\\Home\\username\\FolderForScannedDocs. The SVC_Scanner account can be used to authenticate to all the file shares. Login/Password information can be found on CoreSecret.  </span></span></span></div><div><br></div><div><span style=\"font-size:10pt\"><span style=\"font-size:10pt\"><span>HP LJ MFP M425dn printers do not understand DFS. These printers will only work with a regular shared folder on the server. Alexia's Scanning to SMB works as follows:</span></span></span></div><div><br></div><div><ul><li><span style=\"font-size:10pt\"><span style=\"font-size:10pt\"><span><span style=\"font-size:10pt\">Setup Shared folder on GPGE-UTIL called Scanning.</span></span></span></span></li><li><span style=\"font-size:10pt\"><span style=\"font-size:10pt\"><span>Created subfolder called apearsall</span></span></span></li><li><span style=\"font-size:10pt\"><span style=\"font-size:10pt\"><span>Setup permissions so Domain Users have access to the Scanning folder but only Alexia has access to the APearsall Subfolder</span></span></span></li><li><span style=\"font-size:10pt\"><span style=\"font-size:10pt\"><span><span style=\"font-size:10pt\">On the printer, set up Scan to SMB as follows: \\\\192.168.103.14\\Scanning\\apearsall</span></span></span></span></li><li><span style=\"font-size:10pt\"><span style=\"font-size:10pt\"><span><span style=\"font-size:10pt\">Set up mapped drive for Alexia</span></span></span></span></li></ul></div> <br></div>",
+                    "notes": "<div><br></div><div>Most of the partners have their own printers as well. These can also be found shared out through the GPGE-FP01 Server as well. </div><div><p style=\"margin-bottom:.0001pt\"><span><span style=\"font-size:12.0pt\"><span>·</span></span>  <span style=\"font-size:10.0pt\"><span>Alexia's Printer (MFP M425dn) - 192.168.96.34</span></span></span></p><p style=\"margin-bottom:.0001pt\"><span><span style=\"font-size:12.0pt\"><span>·</span></span>  <span style=\"font-size:10.0pt\"><span>Debbie's Printer (MFP M426fdn) - 192.168.96.33</span></span></span></p><p><span style=\"font-size:12.0pt\"><span><span>·</span></span></span>  <span style=\"font-size:10.0pt\"><span><span>Reception Printer (MFP M477fdn) - 192.168.96.42</span></span></span></p><p><span style=\"font-size:10.0pt\"><span><span></span></span></span><br></p><p><span style=\"font-size:10.0pt\"><span><span>Brother QL-810W is not being deployed via group policy</span></span></span><br></p></div>",
+                    "site-retired-move-to-location": "Guidepost Growth Equity",
+                    "print-server-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22009065",
+                                "id": 22009065,
+                                "name": "gpge-fp01",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22009045",
+                                "id": 22009045,
+                                "name": "gpge-util",
+                                "hostname": "GPGE-UTIL",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "printer-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22713385",
+                                "id": 22713385,
+                                "name": "GPGE Rear Copier",
+                                "hostname": "GPGE-Rear-Copier",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22713549",
+                                "id": 22713549,
+                                "name": "GPGE Kitchen Copier",
+                                "hostname": "GPGE-Kitchen-Copier",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/38848293",
+                                "id": 38848293,
+                                "name": "Brother QL-810W",
+                                "hostname": "BRWDCE99452444E",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Printer"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-02T20:33:58.000Z",
+                "updated-at": "2021-08-18T19:41:09.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8074278",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3669036,
+                "organization-name": "Cove Hill Partners",
+                "resource-url": "https://coretelligent.itglue.com/3669036/assets/71780-printing/records/8074278",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 71780,
+                "flexible-asset-type-name": "Printing",
+                "name": "Cove Hill Partners NYC",
+                "traits": {
+                    "deployment": "Other",
+                    "support-information": "<div>Printix Manages Printing services:</div><div><br></div><div>Printer - HP Laser - Back Office</div><div>Printer - HP Laser - Front Office</div><div>Printer - HP Laser - Reception Desk</div><div>Printer - Sharp MFP - BP-70C45-1</div><div>Printer - Sharp MFP - BP-70C45-2</div><div><br></div><div><br></div><div><br></div>",
+                    "site-retired-move-to-location": "Cove Hill Partners NYC",
+                    "location": {
+                        "type": "Locations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669036/locations/5736403",
+                                "id": 5736403,
+                                "name": "Cove Hill NYC",
+                                "address-1": "2 Grand Central Tower",
+                                "city": "New York",
+                                "organization-name": "Cove Hill Partners"
+                            }
+                        ]
+                    },
+                    "printer-s": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669036/configurations/22853789",
+                                "id": 22853789,
+                                "name": "HP Laser Front Office (NPI28996B)",
+                                "hostname": "HP Laser Front Office (NPI28996B)",
+                                "organization-name": "Cove Hill Partners",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669036/configurations/22853788",
+                                "id": 22853788,
+                                "name": "HP Laser Back Office",
+                                "hostname": "HP Laser Back Office (NPI2A4F2C)",
+                                "organization-name": "Cove Hill Partners",
+                                "configuration-type-name": "Printer"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669036/configurations/22853793",
+                                "id": 22853793,
+                                "name": "HP Laser Reception (NPIAFD6F4)",
+                                "hostname": "HP Laser Reception (NPIAFD6F4)",
+                                "organization-name": "Cove Hill Partners",
+                                "configuration-type-name": "Printer"
+                            }
+                        ]
+                    },
+                    "vendor": {
+                        "type": "FlexibleAssetTypes",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669036/assets/43822-vendors/records/74876491",
+                                "id": 74876491,
+                                "name": "Printix",
+                                "organization-name": "Cove Hill Partners",
+                                "asset-type-id": 43822
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-10T21:07:58.000Z",
+                "updated-at": "2024-12-04T17:54:16.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        }
+    ]
+}

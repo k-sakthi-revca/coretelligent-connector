@@ -299,6 +299,50 @@ class ITGlueClient:
             self.logger.error(f"Failed to load mock LoB applications: {e}")
             return []
     
+    def get_printing_assets(self) -> List[Dict]:
+        """
+        Get printing assets from IT Glue.
+        
+        Returns:
+            List of printing asset data
+        """
+        self.logger.info("Fetching printing assets from IT Glue...")
+        
+        if self.use_mock_data:
+            return self._load_mock_printing_assets()
+        
+        # In a real implementation, this would fetch printing assets from the IT Glue API
+        # For now, we'll just return an empty list for non-mock mode
+        self.logger.warning("Real API implementation for get_printing_assets() not implemented")
+        return []
+    
+    def _load_mock_printing_assets(self) -> List[Dict]:
+        """
+        Load mock printing data from file.
+        
+        Returns:
+            List of printing asset data
+        """
+        mock_printing_file = os.path.join("data", "printing", "printing.json")
+        
+        if not os.path.exists(mock_printing_file):
+            self.logger.warning(f"Mock printing file not found: {mock_printing_file}")
+            return []
+        
+        try:
+            # Use UTF-8 encoding to handle special characters
+            with open(mock_printing_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            # Extract the data array
+            printing_assets = data.get("data", [])
+            
+            self.logger.info(f"Loaded {len(printing_assets)} printing assets from mock file: {mock_printing_file}")
+            return printing_assets
+        except Exception as e:
+            self.logger.error(f"Failed to load mock printing assets: {e}")
+            return []
+    
     def get_organizations(self) -> List[Dict]:
         """
         Get all organizations from IT Glue.

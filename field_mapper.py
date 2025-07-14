@@ -649,6 +649,150 @@ class FieldMapper:
         
         return descriptions.get(itglue_field, "Custom email field mapping")
     
+    def map_printing(self, itglue_printing: Dict[str, Any], match_result: Any = None) -> Dict[str, Any]:
+        """
+        Map IT Glue printing asset to ServiceNow printer CI.
+        
+        Args:
+            itglue_printing: IT Glue printing asset data
+            match_result: Optional match result for additional context
+            
+        Returns:
+            ServiceNow printer CI data
+        """
+        attributes = itglue_printing.get("attributes", {})
+        traits = attributes.get("traits", {})
+        
+        # Initialize ServiceNow printer CI data
+        servicenow_data = {
+            "sys_class_name": "cmdb_ci_printer",
+            "sys_created_by": "itglue_migration",
+            "sys_updated_by": "itglue_migration"
+        }
+        
+        # If we have a match, use the existing sys_id
+        if match_result and match_result.servicenow_id:
+            servicenow_data["sys_id"] = match_result.servicenow_id
+        
+        # Map basic fields
+        servicenow_data["name"] = match_result.itglue_name if match_result else attributes.get("name", "Unknown Printer")
+        
+        # Map organization
+        org_id = attributes.get("organization-id")
+        org_name = attributes.get("organization-name", "Unknown Organization")
+        if org_id:
+            servicenow_data["company"] = org_id
+            servicenow_data["u_organization_name"] = org_name
+        
+        # Map title to short description
+        title = traits.get("title")
+        if title:
+            servicenow_data["short_description"] = title
+        
+        # Map location
+        location_data = traits.get("location", {})
+        if location_data and isinstance(location_data, dict) and "values" in location_data:
+            location_values = location_data.get("values", [])
+            if location_values and isinstance(location_values[0], dict):
+                location = location_values[0].get("name")
+                if location:
+                    servicenow_data["location"] = location
+        
+        # Map IP address
+        ip_address = traits.get("ip-address") or traits.get("ip-address-dns-path")
+        if ip_address:
+            servicenow_data["ip_address"] = ip_address
+        
+        # Map deployment to comments
+        deployment = traits.get("deployment")
+        if deployment:
+            servicenow_data["comments"] = f"Deployment Method: {deployment}"
+        
+        # Map notes
+        notes = traits.get("notes")
+        if notes:
+            if "comments" in servicenow_data:
+                servicenow_data["comments"] += f"\n\nNotes:\n{notes}"
+            else:
+                servicenow_data["comments"] = f"Notes:\n{notes}"
+        
+        # Map support information
+        support_info = traits.get("support-information")
+        if support_info:
+            if "comments" in servicenow_data:
+                servicenow_data["comments"] += f"\n\nSupport Information:\n{support_info}"
+            else:
+                servicenow_data["comments"] = f"Support Information:\n{support_info}"
+        
+        # Map drivers path
+        drivers_path = traits.get("drivers-path")
+        if drivers_path:
+            servicenow_data["u_drivers_path"] = drivers_path
+            
+            # Add to comments as well
+            if "comments" in servicenow_data:
+                servicenow_data["comments"] += f"\n\nDrivers Path: {drivers_path}"
+            else:
+                servicenow_data["comments"] = f"Drivers Path: {drivers_path}"
+        
+        # Map vendor
+        vendor_data = traits.get("vendor", {})
+        if vendor_data and isinstance(vendor_data, dict) and "values" in vendor_data:
+            vendor_values = vendor_data.get("values", [])
+            if vendor_values and isinstance(vendor_values[0], dict):
+                vendor = vendor_values[0].get("name")
+                if vendor:
+                    servicenow_data["vendor"] = vendor
+                    servicenow_data["manufacturer"] = vendor
+        
+        # Map print servers
+        print_servers_data = traits.get("print-server-s", {})
+        if print_servers_data and isinstance(print_servers_data, dict) and "values" in print_servers_data:
+            print_server_values = print_servers_data.get("values", [])
+            if print_server_values:
+                print_servers = []
+                for server in print_server_values:
+                    if isinstance(server, dict) and "name" in server:
+                        print_servers.append(server["name"])
+                
+                if print_servers:
+                    servicenow_data["u_print_servers"] = ", ".join(print_servers)
+        
+        # Map published to AD
+        published_to_ad = traits.get("published-to-ad")
+        if published_to_ad is not None:
+            servicenow_data["u_published_to_ad"] = "true" if published_to_ad else "false"
+        
+        # Map CoreSecret URL
+        coresecret_url = traits.get("coresecret-url")
+        if coresecret_url:
+            servicenow_data["u_coresecret_url"] = coresecret_url
+        
+        # Add creation and update timestamps
+        created_at = attributes.get("created-at")
+        if created_at:
+            servicenow_data["sys_created_on"] = self._format_date(created_at)
+            servicenow_data["install_date"] = self._format_date(created_at)
+        
+        updated_at = attributes.get("updated-at")
+        if updated_at:
+            servicenow_data["sys_updated_on"] = self._format_date(updated_at)
+        
+        # Set operational status to active by default
+        servicenow_data["operational_status"] = "1"  # 1 = Operational
+        
+        # Set install status based on archived flag
+        if attributes.get("archived", False):
+            servicenow_data["install_status"] = "7"  # 7 = Retired
+        else:
+            servicenow_data["install_status"] = "1"  # 1 = Installed
+        
+        # Set printer type if available from match result
+        if match_result and match_result.printer_type:
+            servicenow_data["u_printer_type"] = match_result.printer_type
+        
+        return servicenow_data
+    
     def _get_lob_application_field_description(self, itglue_field: str, servicenow_field: str) -> str:
         """
         Get description for a LoB application field mapping.

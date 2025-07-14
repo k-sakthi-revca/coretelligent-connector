@@ -1,0 +1,43 @@
+2025-07-11 18:57:52,783 - __main__ - INFO - Starting printing migration process...
+2025-07-11 18:57:52,784 - itglue_client - INFO - Using mock data instead of making API calls
+2025-07-11 18:57:52,784 - itglue_client - WARNING - Mock organizations file not found: /Users/swapnilmhatre/migration/organizations.json
+2025-07-11 18:57:52,784 - itglue_client - INFO - Initialized IT Glue client with API URL: https://api.itglue.com
+2025-07-11 18:57:52,785 - servicenow_mock - INFO - Loaded mock data from mock_servicenow_companies.json
+2025-07-11 18:57:52,785 - servicenow_mock - INFO - Loaded mock email services from mock_servicenow_email_services.json
+2025-07-11 18:57:52,786 - servicenow_mock - INFO - Loaded mock applications from mock_servicenow_applications.json
+2025-07-11 18:57:52,786 - servicenow_mock - INFO - Creating default mock printers
+2025-07-11 18:57:52,787 - servicenow_mock - INFO - Saved mock printers to mock_servicenow_printers.json
+2025-07-11 18:57:52,787 - servicenow_mock - INFO - Initialized ServiceNow mock client with 10 companies, 10 email services, 14 applications, and 3 printers
+2025-07-11 18:57:52,788 - matchers.printing_matcher - INFO - Printing Matcher initialized with strategies: exact_name, fuzzy_name
+2025-07-11 18:57:52,788 - field_mapper - INFO - Field Mapper initialized with 7 field mappings, 4 email field mappings, and 0 LoB application field mappings
+2025-07-11 18:57:52,788 - migrators.printing_migrator - INFO - Printing Migrator initialized (use_mock_data=True)
+2025-07-11 18:57:52,788 - __main__ - INFO - Running printing migration...
+2025-07-11 18:57:52,789 - migrators.printing_migrator - INFO - Starting printing migration
+2025-07-11 18:57:52,789 - migrators.printing_migrator - INFO - Connection tests successful
+2025-07-11 18:57:52,789 - itglue_client - INFO - Fetching printing assets from IT Glue...
+2025-07-11 18:57:52,790 - itglue_client - INFO - Loaded 10 printing assets from mock file: data\printing\printing.json
+2025-07-11 18:57:52,790 - matchers.printing_matcher - INFO - Matching 10 IT Glue printing assets to 3 ServiceNow printer CIs
+2025-07-11 18:57:52,796 - matchers.printing_matcher - INFO - Matched 29 printing assets with 7 data quality issues
+2025-07-11 18:57:52,797 - migrators.printing_migrator - INFO - Migrating printing asset 1/10: PRINTER: Artistic Xerox VersaLink B7030
+2025-07-11 18:57:52,799 - servicenow_mock - INFO - Saved updated mock printers to mock_servicenow_printers.json
+2025-07-11 18:57:52,800 - migrators.printing_migrator - INFO - Migrating printing asset 2/10: PRINTER: Finance Xerox AltaLink C8045
+2025-07-11 18:57:52,802 - servicenow_mock - INFO - Saved updated mock printers to mock_servicenow_printers.json
+2025-07-11 18:57:52,802 - migrators.printing_migrator - INFO - Migrating printing asset 3/10: PRINTER: Executive Xerox AltaLink C8045 PCL6
+2025-07-11 18:57:52,804 - servicenow_mock - INFO - Saved updated mock printers to mock_servicenow_printers.json
+2025-07-11 18:57:52,805 - migrators.printing_migrator - INFO - Migrating printing asset 4/10: PRINTER: HP LaserJet P4014
+2025-07-11 18:57:52,808 - servicenow_mock - INFO - Saved updated mock printers to mock_servicenow_printers.json
+2025-07-11 18:57:52,809 - migrators.printing_migrator - INFO - Migrating printing asset 5/10: PRINTER: HP Dev4050
+2025-07-11 18:57:52,811 - servicenow_mock - INFO - Saved updated mock printers to mock_servicenow_printers.json
+2025-07-11 18:57:52,812 - migrators.printing_migrator - INFO - Migrating printing asset 6/10: PRINTER: Boca Ticket Printer A
+2025-07-11 18:57:52,815 - servicenow_mock - INFO - Saved updated mock printers to mock_servicenow_printers.json
+2025-07-11 18:57:52,816 - migrators.printing_migrator - INFO - Migrating printing asset 7/10: PRINTER: Boca Ticket Printer B
+2025-07-11 18:57:52,819 - servicenow_mock - INFO - Saved updated mock printers to mock_servicenow_printers.json
+2025-07-11 18:57:52,819 - migrators.printing_migrator - INFO - Migrating printing asset 8/10: Konica-Minolta Bizhub - KMB3502D
+2025-07-11 18:57:52,822 - servicenow_mock - INFO - Saved updated mock printers to mock_servicenow_printers.json
+2025-07-11 18:57:52,823 - migrators.printing_migrator - INFO - Migrating printing asset 9/10: HP4730 (Color Laserjet Printer - Hewlett-Packard)
+2025-07-11 18:57:52,826 - servicenow_mock - INFO - Saved updated mock printers to mock_servicenow_printers.json
+2025-07-11 18:57:52,827 - migrators.printing_migrator - INFO - Migrating printing asset 10/10: PRINTER: SAVIN MP C4504 PCL 6
+2025-07-11 18:57:52,830 - servicenow_mock - INFO - Saved updated mock printers to mock_servicenow_printers.json
+2025-07-11 18:57:52,833 - migrators.printing_migrator - INFO - Migration report saved to reports/printing_migration_report.json
+2025-07-11 18:57:52,837 - __main__ - INFO - Printing migration completed. Total: 10, Successful: 10, Failed: 0
+2025-07-11 18:57:52,837 - __main__ - INFO - Report saved to: reports/printing_migration_report.json

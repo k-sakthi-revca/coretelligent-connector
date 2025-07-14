@@ -1,0 +1,240 @@
+{
+  "statistics": {
+    "total_printers": 10,
+    "successful": 10,
+    "failed": 0,
+    "created": 9,
+    "updated": 1,
+    "skipped": 0,
+    "timestamp": "2025-07-11T18:57:52.831647",
+    "matching": {
+      "total": 29,
+      "by_match_type": {
+        "No Match": {
+          "count": 28,
+          "percentage": 96.55172413793103
+        },
+        "Fuzzy Name": {
+          "count": 1,
+          "percentage": 3.4482758620689653
+        }
+      },
+      "by_recommended_action": {
+        "Create New": {
+          "count": 28,
+          "percentage": 96.55172413793103
+        },
+        "Review Match": {
+          "count": 1,
+          "percentage": 3.4482758620689653
+        }
+      },
+      "by_data_quality": {
+        "\u2705 Ready": {
+          "count": 22,
+          "percentage": 75.86206896551724
+        },
+        "\u26a0\ufe0f Similar Name": {
+          "count": 1,
+          "percentage": 3.4482758620689653
+        },
+        "\u274c Missing Data": {
+          "count": 6,
+          "percentage": 20.689655172413794
+        }
+      },
+      "by_printer_type": {
+        "Multifunction": {
+          "count": 11,
+          "percentage": 37.93103448275862
+        },
+        "Laser": {
+          "count": 9,
+          "percentage": 31.03448275862069
+        },
+        "Other": {
+          "count": 7,
+          "percentage": 24.137931034482758
+        },
+        "Unknown": {
+          "count": 1,
+          "percentage": 3.4482758620689653
+        },
+        "Inkjet": {
+          "count": 1,
+          "percentage": 3.4482758620689653
+        }
+      }
+    },
+    "data_quality": {
+      "total_issues": 7,
+      "by_issue_type": {
+        "Similar Name": 1,
+        "Missing Required Field": 6
+      },
+      "by_priority": {
+        "High": 7
+      }
+    },
+    "field_mappings": {
+      "org:name -> name": "Organization name",
+      "org:description -> notes": "Organization description",
+      "org:short-name -> short_description": "Short name/abbreviation",
+      "org:organization-status-name -> state": "Active/Inactive status",
+      "org:organization-type-name -> category": "Organization type",
+      "org:created-at -> sys_created_on": "Creation date",
+      "org:updated-at -> sys_updated_on": "Last update date",
+      "email:coresecret-url -> u_coresecret_url": "Custom email field mapping",
+      "email:spf-record -> u_spf_record": "Custom email field mapping",
+      "email:journaling-provider -> u_journaling_provider": "Custom email field mapping",
+      "email:dr-failover-plan -> u_dr_failover_plan": "Custom email field mapping",
+      "email:name -> name": "Email service name",
+      "email:type -> service_classification": "Email service type",
+      "email:hosting-location -> u_hosting_location": "Where email is hosted",
+      "email:webmail-url -> u_webmail_url": "URL for webmail access",
+      "email:administrator-url -> u_admin_url": "URL for admin portal",
+      "email:spf-enabled -> u_spf_enabled": "SPF enabled flag",
+      "email:dkim-enabled -> u_dkim_enabled": "DKIM enabled flag",
+      "email:dmarc-enabled -> u_dmarc_enabled": "DMARC enabled flag",
+      "email:notes -> comments": "Additional notes",
+      "email:domain-s -> u_domains": "Associated domains",
+      "email:email-server-s -> u_email_servers": "Email servers",
+      "email:spam-filtering -> u_spam_filtering": "Spam filtering vendor",
+      "lob_application:name -> name": "Application name",
+      "lob_application:version -> version": "Application version",
+      "lob_application:category -> category": "Application category",
+      "lob_application:importance -> operational_status": "Application importance/criticality",
+      "lob_application:business-impact -> short_description": "Business impact description",
+      "lob_application:application-champion -> owned_by": "Application owner/champion",
+      "lob_application:application-manager -> managed_by": "Application manager",
+      "lob_application:hosting-location -> environment": "Where application is hosted",
+      "lob_application:application-url -> u_application_url": "URL for application access",
+      "lob_application:vendor -> vendor": "Application vendor",
+      "lob_application:notes -> comments": "Additional notes",
+      "lob_application:install-instructions -> comments": "Installation instructions",
+      "lob_application:application-server-s -> u_application_servers": "Application servers"
+    }
+  },
+  "results": [
+    {
+      "itglue_id": "2481387",
+      "itglue_name": "PRINTER: Artistic Xerox VersaLink B7030",
+      "servicenow_id": "printer_edb953fe",
+      "servicenow_name": "PRINTER: Artistic Xerox VersaLink B7030",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new printer CI: No matching printer found in ServiceNow"
+    },
+    {
+      "itglue_id": "2481387",
+      "itglue_name": "PRINTER: Finance Xerox AltaLink C8045",
+      "servicenow_id": "printer_d93d2e1d",
+      "servicenow_name": "PRINTER: Finance Xerox AltaLink C8045",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new printer CI: No matching printer found in ServiceNow"
+    },
+    {
+      "itglue_id": "2481387",
+      "itglue_name": "PRINTER: Executive Xerox AltaLink C8045 PCL6",
+      "servicenow_id": "printer_3693585f",
+      "servicenow_name": "PRINTER: Executive Xerox AltaLink C8045 PCL6",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new printer CI: No matching printer found in ServiceNow"
+    },
+    {
+      "itglue_id": "2481387",
+      "itglue_name": "PRINTER: HP LaserJet P4014",
+      "servicenow_id": "printer_1001",
+      "servicenow_name": "PRINTER: HP LaserJet P4014",
+      "match_type": "Fuzzy Name",
+      "confidence": 0.8205128205128205,
+      "action": "updated",
+      "status": "success",
+      "error_message": null,
+      "notes": "Updated existing printer CI: Matched by similar name with moderate confidence: 82.1%"
+    },
+    {
+      "itglue_id": "2481387",
+      "itglue_name": "PRINTER: HP Dev4050",
+      "servicenow_id": "printer_5ac80ffa",
+      "servicenow_name": "PRINTER: HP Dev4050",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new printer CI: No matching printer found in ServiceNow"
+    },
+    {
+      "itglue_id": "2481387",
+      "itglue_name": "PRINTER: Boca Ticket Printer A",
+      "servicenow_id": "printer_70a524db",
+      "servicenow_name": "PRINTER: Boca Ticket Printer A",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new printer CI: No matching printer found in ServiceNow"
+    },
+    {
+      "itglue_id": "2481387",
+      "itglue_name": "PRINTER: Boca Ticket Printer B",
+      "servicenow_id": "printer_386571ca",
+      "servicenow_name": "PRINTER: Boca Ticket Printer B",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new printer CI: No matching printer found in ServiceNow"
+    },
+    {
+      "itglue_id": "2660691",
+      "itglue_name": "Konica-Minolta Bizhub - KMB3502D",
+      "servicenow_id": "printer_d75b0233",
+      "servicenow_name": "Konica-Minolta Bizhub - KMB3502D",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new printer CI: No matching printer found in ServiceNow"
+    },
+    {
+      "itglue_id": "2836187",
+      "itglue_name": "HP4730 (Color Laserjet Printer - Hewlett-Packard)",
+      "servicenow_id": "printer_0dcad990",
+      "servicenow_name": "HP4730 (Color Laserjet Printer - Hewlett-Packard)",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new printer CI: No matching printer found in ServiceNow"
+    },
+    {
+      "itglue_id": "3261814",
+      "itglue_name": "PRINTER: SAVIN MP C4504 PCL 6",
+      "servicenow_id": "printer_2bd54512",
+      "servicenow_name": "PRINTER: SAVIN MP C4504 PCL 6",
+      "match_type": "No Match",
+      "confidence": 0.0,
+      "action": "created",
+      "status": "success",
+      "error_message": null,
+      "notes": "Created new printer CI: No matching printer found in ServiceNow"
+    }
+  ]
+}

@@ -19,6 +19,7 @@ class ServiceNowMock:
         self.mock_servers_file = config.get("servicenow.mock_servers_file", "mock_servicenow_servers.json")
         self.mock_email_services_file = "mock_servicenow_email_services.json"
         self.mock_applications_file = "mock_servicenow_applications.json"
+        self.mock_printers_file = "mock_servicenow_printers.json"
         self.create_missing = config.get("servicenow.create_missing", True)
         self.logger = logging.getLogger(__name__)
         
@@ -26,8 +27,9 @@ class ServiceNowMock:
         self.companies = self._load_mock_data()
         self.email_services = self._load_mock_email_services()
         self.applications = self._load_mock_applications()
+        self.printers = self._load_mock_printers()
         
-        self.logger.info(f"Initialized ServiceNow mock client with {len(self.companies)} companies, {len(self.email_services)} email services, and {len(self.applications)} applications")
+        self.logger.info(f"Initialized ServiceNow mock client with {len(self.companies)} companies, {len(self.email_services)} email services, {len(self.applications)} applications, and {len(self.printers)} printers")
     
     def _load_mock_data(self) -> List[Dict]:
         """
@@ -593,6 +595,164 @@ class ServiceNowMock:
                     self.logger.error(f"Error saving updated mock applications: {e}")
                 
                 return updated_application
+        
+        return None
+    
+    def _load_mock_printers(self) -> List[Dict]:
+        """
+        Load mock printers data from file or create default data.
+        
+        Returns:
+            List of mock printer data
+        """
+        if os.path.exists(self.mock_printers_file):
+            try:
+                with open(self.mock_printers_file, 'r') as f:
+                    data = json.load(f)
+                self.logger.info(f"Loaded mock printers from {self.mock_printers_file}")
+                return data
+            except Exception as e:
+                self.logger.error(f"Error loading mock printers: {e}")
+        
+        # Create default mock printers
+        self.logger.info(f"Creating default mock printers")
+        mock_data = self._create_default_mock_printers()
+        
+        # Save mock data
+        try:
+            with open(self.mock_printers_file, 'w') as f:
+                json.dump(mock_data, f, indent=2)
+            self.logger.info(f"Saved mock printers to {self.mock_printers_file}")
+        except Exception as e:
+            self.logger.error(f"Error saving mock printers: {e}")
+        
+        return mock_data
+    
+    def _create_default_mock_printers(self) -> List[Dict]:
+        """
+        Create default mock printer data.
+        
+        Returns:
+            List of mock printer data
+        """
+        return [
+            {
+                "sys_id": "printer_1001",
+                "name": "HP LaserJet Pro M404dn",
+                "sys_class_name": "cmdb_ci_printer",
+                "company": "sn_1001",
+                "serial_number": "VNB3K12345",
+                "ip_address": "192.168.1.101",
+                "mac_address": "00:11:22:33:44:55",
+                "manufacturer": "HP",
+                "model_id": "LaserJet Pro M404dn",
+                "location": "Main Office",
+                "operational_status": "1",
+                "install_status": "1",
+                "comments": "Mock printer for demo purposes"
+            },
+            {
+                "sys_id": "printer_1002",
+                "name": "Brother MFC-L8900CDW",
+                "sys_class_name": "cmdb_ci_printer",
+                "company": "sn_1002",
+                "serial_number": "U63982M987654",
+                "ip_address": "192.168.2.102",
+                "mac_address": "AA:BB:CC:DD:EE:FF",
+                "manufacturer": "Brother",
+                "model_id": "MFC-L8900CDW",
+                "location": "Marketing Department",
+                "operational_status": "1",
+                "install_status": "1",
+                "comments": "Mock printer for demo purposes"
+            },
+            {
+                "sys_id": "printer_1003",
+                "name": "Xerox VersaLink C405",
+                "sys_class_name": "cmdb_ci_printer",
+                "company": "sn_1003",
+                "serial_number": "3122456789",
+                "ip_address": "192.168.3.103",
+                "mac_address": "11:22:33:44:55:66",
+                "manufacturer": "Xerox",
+                "model_id": "VersaLink C405",
+                "location": "Executive Suite",
+                "operational_status": "1",
+                "install_status": "1",
+                "comments": "Mock printer for demo purposes"
+            }
+        ]
+    
+    def get_printers(self) -> List[Dict]:
+        """
+        Get printers from ServiceNow.
+        
+        Returns:
+            List of printer data
+        """
+        return self.printers
+    
+    def create_printer(self, printer_data: Dict) -> Dict:
+        """
+        Create a new printer.
+        
+        Args:
+            printer_data: Printer data
+            
+        Returns:
+            Created printer data
+        """
+        # Generate a new sys_id
+        sys_id = f"printer_{uuid.uuid4().hex[:8]}"
+        
+        # Create new printer
+        new_printer = {
+            "sys_id": sys_id,
+            **printer_data
+        }
+        
+        # Add to printers list
+        self.printers.append(new_printer)
+        
+        # Save updated mock data
+        try:
+            with open(self.mock_printers_file, 'w') as f:
+                json.dump(self.printers, f, indent=2)
+            self.logger.info(f"Saved updated mock printers to {self.mock_printers_file}")
+        except Exception as e:
+            self.logger.error(f"Error saving updated mock printers: {e}")
+        
+        return new_printer
+    
+    def update_printer(self, sys_id: str, printer_data: Dict) -> Optional[Dict]:
+        """
+        Update an existing printer.
+        
+        Args:
+            sys_id: Printer sys_id
+            printer_data: Updated printer data
+            
+        Returns:
+            Updated printer data or None if not found
+        """
+        for i, printer in enumerate(self.printers):
+            if printer.get("sys_id") == sys_id:
+                # Update printer data
+                updated_printer = {
+                    **printer,
+                    **printer_data
+                }
+                self.printers[i] = updated_printer
+                
+                # Save updated mock data
+                try:
+                    with open(self.mock_printers_file, 'w') as f:
+                        json.dump(self.printers, f, indent=2)
+                    self.logger.info(f"Saved updated mock printers to {self.mock_printers_file}")
+                except Exception as e:
+                    self.logger.error(f"Error saving updated mock printers: {e}")
+                
+                return updated_printer
         
         return None
     
