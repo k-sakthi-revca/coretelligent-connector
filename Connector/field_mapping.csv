@@ -1,0 +1,11 @@
+ITGlue Field,SN Field
+id,u_itg_id
+AD Full Name,u_ad_full_name
+AD Short Name,u_ad_short_name
+AD Level,u_ad_level
+User Authentication Platform,u_user_authentication_platform
+Endpoint Management Platform (Apple),u_endpoint_mgmt_platform_apple
+Endpoint Management Platform (Windows),u_endpoint_mgmt_platform_windows
+Microsoft EntraID,u_microsoft_entraid
+Notes,u_notes
+CoreSecret URL,u_coresecret_url
