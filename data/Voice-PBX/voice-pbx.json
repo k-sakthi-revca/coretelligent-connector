@@ -1,0 +1,240 @@
+[
+    {
+        "id": "2001001",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1460141,
+            "organization-name": "Epic Response",
+            "resource-url": "https://coretelligent.itglue.com/1460141/assets/43822-voice-pbx/records/2001001",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43822,
+            "flexible-asset-type-name": "Voice/PBX",
+            "name": "Epic Response Phone System",
+            "traits": {
+                "title": "Epic Response Phone System",
+                "system-type": "Hosted PBX",
+                "manufacturer": "Cisco",
+                "model": "Unified Communications Manager",
+                "version": "12.5",
+                "ip-address": "10.10.10.50",
+                "mac-address": "00:11:22:33:44:55",
+                "serial-number": "CSCO12345678",
+                "phone-numbers": "770-516-3491 (Main)",
+                "service-provider": "AT&T",
+                "support-contact": "AT&T Business Support (800-222-0400)",
+                "admin-portal": "https://admin.att.com",
+                "admin-credentials": {
+                    "type": "Passwords",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460141/passwords/123456",
+                            "id": 123456,
+                            "name": "AT&T Admin Portal",
+                            "organization-name": "Epic Response"
+                        }
+                    ]
+                },
+                "notes": "<div>System was upgraded in January 2025</div>"
+            },
+            "archived": false,
+            "created-at": "2020-01-15T13:47:24.000Z",
+            "updated-at": "2025-01-16T19:00:36.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "2001002",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1460111,
+            "organization-name": "Moncrief Heating & Air",
+            "resource-url": "https://coretelligent.itglue.com/1460111/assets/43822-voice-pbx/records/2001002",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43822,
+            "flexible-asset-type-name": "Voice/PBX",
+            "name": "Moncrief Office Phone System",
+            "traits": {
+                "title": "Moncrief Office Phone System",
+                "system-type": "On-Premise PBX",
+                "manufacturer": "Avaya",
+                "model": "IP Office",
+                "version": "11.0",
+                "ip-address": "192.168.1.10",
+                "mac-address": "AA:BB:CC:DD:EE:FF",
+                "serial-number": "AVYA987654321",
+                "phone-numbers": "404-350-2304 (Main)",
+                "service-provider": "Comcast Business",
+                "support-contact": "Comcast Business Support (800-391-3000)",
+                "admin-portal": "https://192.168.1.10/admin",
+                "admin-credentials": {
+                    "type": "Passwords",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460111/passwords/123457",
+                            "id": 123457,
+                            "name": "Avaya IP Office Admin",
+                            "organization-name": "Moncrief Heating & Air"
+                        }
+                    ]
+                },
+                "notes": "<div>System installed in March 2023</div>"
+            },
+            "archived": false,
+            "created-at": "2023-03-15T15:14:53.000Z",
+            "updated-at": "2024-10-29T14:52:08.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "2001003",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1460180,
+            "organization-name": "Brightworth",
+            "resource-url": "https://coretelligent.itglue.com/1460180/assets/43822-voice-pbx/records/2001003",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43822,
+            "flexible-asset-type-name": "Voice/PBX",
+            "name": "Brightworth VoIP System",
+            "traits": {
+                "title": "Brightworth VoIP System",
+                "system-type": "Cloud VoIP",
+                "manufacturer": "RingCentral",
+                "model": "Office",
+                "version": "2024.1",
+                "phone-numbers": "404-760-9000 (Main)",
+                "service-provider": "RingCentral",
+                "support-contact": "RingCentral Support (888-528-7464)",
+                "admin-portal": "https://service.ringcentral.com",
+                "admin-credentials": {
+                    "type": "Passwords",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460180/passwords/123458",
+                            "id": 123458,
+                            "name": "RingCentral Admin Portal",
+                            "organization-name": "Brightworth"
+                        }
+                    ]
+                },
+                "notes": "<div>Migrated from on-premise system in 2024</div>"
+            },
+            "archived": false,
+            "created-at": "2024-01-26T18:41:11.000Z",
+            "updated-at": "2024-11-20T13:43:37.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "2001004",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1691564,
+            "organization-name": "Banks, Finley, White & Co",
+            "resource-url": "https://coretelligent.itglue.com/1691564/assets/43822-voice-pbx/records/2001004",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43822,
+            "flexible-asset-type-name": "Voice/PBX",
+            "name": "Birmingham Office Phone System",
+            "traits": {
+                "title": "Birmingham Office Phone System",
+                "system-type": "Hybrid PBX",
+                "manufacturer": "Mitel",
+                "model": "MiVoice Business",
+                "version": "9.0",
+                "ip-address": "10.20.30.40",
+                "mac-address": "11:22:33:44:55:66",
+                "serial-number": "MITL123456789",
+                "phone-numbers": "205-326-6660 (Main)",
+                "service-provider": "Spectrum Business",
+                "support-contact": "Spectrum Business Support (844-760-1923)",
+                "admin-portal": "https://10.20.30.40/admin",
+                "admin-credentials": {
+                    "type": "Passwords",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1691564/passwords/123459",
+                            "id": 123459,
+                            "name": "Mitel Admin Portal",
+                            "organization-name": "Banks, Finley, White & Co"
+                        }
+                    ]
+                }
+            },
+            "archived": false,
+            "created-at": "2022-05-02T12:19:29.000Z",
+            "updated-at": "2024-02-27T19:48:24.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    },
+    {
+        "id": "2001005",
+        "type": "flexible-assets",
+        "attributes": {
+            "organization-id": 1460163,
+            "organization-name": "Cancer CarePoint, Inc",
+            "resource-url": "https://coretelligent.itglue.com/1460163/assets/43822-voice-pbx/records/2001005",
+            "restricted": false,
+            "my-glue": false,
+            "psa-integration": null,
+            "flexible-asset-type-id": 43822,
+            "flexible-asset-type-name": "Voice/PBX",
+            "name": "Cancer CarePoint Phone System",
+            "traits": {
+                "title": "Cancer CarePoint Phone System",
+                "system-type": "Cloud VoIP",
+                "manufacturer": "8x8",
+                "model": "Virtual Office",
+                "version": "2023.2",
+                "phone-numbers": "800-998-5859 (Main)",
+                "service-provider": "8x8",
+                "support-contact": "8x8 Support (888-898-8733)",
+                "admin-portal": "https://admin.8x8.com",
+                "admin-credentials": {
+                    "type": "Passwords",
+                    "values": [
+                        {
+                            "resource-url": "https://coretelligent.itglue.com/1460163/passwords/123460",
+                            "id": 123460,
+                            "name": "8x8 Admin Portal",
+                            "organization-name": "Cancer CarePoint, Inc"
+                        }
+                    ]
+                },
+                "notes": "<div>System implemented in 2023</div>"
+            },
+            "archived": false,
+            "created-at": "2023-05-03T17:12:09.000Z",
+            "updated-at": "2024-05-03T17:12:10.000Z"
+        },
+        "relationships": {
+            "adapters-resources": {
+                "data": []
+            }
+        }
+    }
+]

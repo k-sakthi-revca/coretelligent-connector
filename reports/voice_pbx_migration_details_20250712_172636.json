@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "success": true,
+      "itglue_id": "2001001",
+      "itglue_name": "Epic Response Phone System",
+      "servicenow_id": "1v2o3i4c5e6g7a8t9e0w",
+      "servicenow_name": "Epic Response Phone System",
+      "action": "updated",
+      "message": "Updated voice gateway CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "2001002",
+      "itglue_name": "Moncrief Office Phone System",
+      "servicenow_id": "2v3o4i5c6e7g8a9t0e1w",
+      "servicenow_name": "Moncrief Office Phone System",
+      "action": "updated",
+      "message": "Updated voice gateway CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "2001003",
+      "itglue_name": "Brightworth VoIP System",
+      "servicenow_id": "new_gateway_2001003",
+      "servicenow_name": "Brightworth VoIP System",
+      "action": "created",
+      "message": "Created new voice gateway CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "2001004",
+      "itglue_name": "Birmingham Office Phone System",
+      "servicenow_id": "new_gateway_2001004",
+      "servicenow_name": "Birmingham Office Phone System",
+      "action": "created",
+      "message": "Created new voice gateway CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "2001005",
+      "itglue_name": "Cancer CarePoint Phone System",
+      "servicenow_id": "new_gateway_2001005",
+      "servicenow_name": "Cancer CarePoint Phone System",
+      "action": "created",
+      "message": "Created new voice gateway CI"
+    }
+  ],
+  "report": {
+    "total": 5,
+    "success_count": 5,
+    "success_percentage": 100.0,
+    "failure_count": 0,
+    "failure_percentage": 0.0,
+    "by_action": {
+      "updated": {
+        "count": 2,
+        "percentage": 40.0
+      },
+      "created": {
+        "count": 3,
+        "percentage": 60.0
+      }
+    }
+  }
+}

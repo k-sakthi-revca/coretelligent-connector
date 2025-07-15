@@ -1,0 +1,111 @@
+{
+  "results": [
+    {
+      "success": true,
+      "itglue_id": "1129822",
+      "itglue_name": "HQ",
+      "servicenow_id": "1a2b3c4d5e6f7g8h9i0j",
+      "servicenow_name": "HQ",
+      "action": "updated",
+      "message": "Updated site CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "1298167",
+      "itglue_name": "HQ",
+      "servicenow_id": "2b3c4d5e6f7g8h9i0j1k",
+      "servicenow_name": "HQ",
+      "action": "updated",
+      "message": "Updated site CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "1540515",
+      "itglue_name": "HQ (Buckhead)",
+      "servicenow_id": "3c4d5e6f7g8h9i0j1k2l",
+      "servicenow_name": "HQ (Buckhead)",
+      "action": "updated",
+      "message": "Updated site CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "1561405",
+      "itglue_name": "Birmingham - HQ",
+      "servicenow_id": "4d5e6f7g8h9i0j1k2l3m",
+      "servicenow_name": "Birmingham - HQ",
+      "action": "updated",
+      "message": "Updated site CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "1569257",
+      "itglue_name": "HQ",
+      "servicenow_id": "5e6f7g8h9i0j1k2l3m4n",
+      "servicenow_name": "HQ",
+      "action": "updated",
+      "message": "Updated site CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "1583683",
+      "itglue_name": "Classic Window Coverings",
+      "servicenow_id": "new_site_1583683",
+      "servicenow_name": "Classic Window Coverings",
+      "action": "created",
+      "message": "Created new site CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "1586697",
+      "itglue_name": "HQ",
+      "servicenow_id": "new_site_1586697",
+      "servicenow_name": "HQ",
+      "action": "created",
+      "message": "Created new site CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "1592711",
+      "itglue_name": "HQ",
+      "servicenow_id": "new_site_1592711",
+      "servicenow_name": "HQ",
+      "action": "created",
+      "message": "Created new site CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "1642994",
+      "itglue_name": "Jordan Outdoor Enterprises Main",
+      "servicenow_id": "new_site_1642994",
+      "servicenow_name": "Jordan Outdoor Enterprises Main",
+      "action": "created",
+      "message": "Created new site CI"
+    },
+    {
+      "success": true,
+      "itglue_id": "1647841",
+      "itglue_name": "New Office",
+      "servicenow_id": "new_site_1647841",
+      "servicenow_name": "New Office",
+      "action": "created",
+      "message": "Created new site CI"
+    }
+  ],
+  "report": {
+    "total": 10,
+    "success_count": 10,
+    "success_percentage": 100.0,
+    "failure_count": 0,
+    "failure_percentage": 0.0,
+    "by_action": {
+      "updated": {
+        "count": 5,
+        "percentage": 50.0
+      },
+      "created": {
+        "count": 5,
+        "percentage": 50.0
+      }
+    }
+  }
+}

@@ -12,6 +12,10 @@ from utils.logging_utils import setup_logging, get_timestamped_log_file
 from utils.file_utils import load_itglue_assets, load_json_file, load_servicenow_data
 from matchers.organization_matcher import OrganizationMatcher
 from matchers.virtualization_matcher import VirtualizationMatcher
+from site_summary_matcher import SiteSummaryMatcher
+from site_summary_migrator import SiteSummaryMigrator
+from voice_pbx_matcher import VoicePBXMatcher
+from voice_pbx_migrator import VoicePBXMigrator
 from reports.report_generator import ReportGenerator
 
 
@@ -140,6 +144,236 @@ def run_virtualization_matcher(args):
     logger.info(f"Virtualization matching completed. Report saved to {report_path}")
 
 
+def run_site_summary_matcher(args):
+    """
+    Run the site summary matcher.
+    
+    Args:
+        args: Command line arguments
+    """
+    logger = logging.getLogger(__name__)
+    logger.info("Running site summary matcher...")
+    
+    # Load IT Glue Site Summary data
+    logger.info("Loading IT Glue Site Summary data...")
+    itglue_sites_path = args.itglue_sites or os.path.join("data", "Site-Summary", "site-summary.json")
+    itglue_sites = load_json_file(itglue_sites_path)
+    
+    if not itglue_sites:
+        logger.error("Failed to load IT Glue Site Summary data")
+        return
+    
+    # Load ServiceNow site data
+    logger.info("Loading ServiceNow site data...")
+    servicenow_sites_path = args.servicenow_sites or "mock_servicenow_sites.json"
+    servicenow_sites = load_servicenow_data(servicenow_sites_path)
+    
+    if not servicenow_sites:
+        logger.warning("No ServiceNow site data found, will create new records")
+        servicenow_sites = []
+    
+    # Initialize matcher
+    logger.info("Initializing site summary matcher...")
+    matcher = SiteSummaryMatcher()
+    
+    # Match site summaries
+    logger.info("Matching site summaries...")
+    matches, quality_issues = matcher.match_site_summaries(
+        itglue_sites, servicenow_sites
+    )
+    
+    # Generate statistics
+    stats = matcher.generate_matching_statistics(matches)
+    
+    # Initialize report generator
+    report_generator = ReportGenerator(output_dir=args.output_dir)
+    
+    # Print report summary
+    if not args.quiet:
+        # For now, we'll just print a simple summary
+        print(f"\n=== Site Summary Matching Results ===")
+        print(f"Total matches: {len(matches)}")
+        print(f"Data quality issues: {len(quality_issues)}")
+        
+        # Count by match type
+        match_types = {}
+        for match in matches:
+            match_type = match.match_type
+            if match_type not in match_types:
+                match_types[match_type] = 0
+            match_types[match_type] += 1
+        
+        print("\nMatch Types:")
+        for match_type, count in match_types.items():
+            print(f"  {match_type}: {count} ({count/len(matches)*100:.1f}%)")
+    
+    # Generate report file
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    report_file = args.report_file or f"site_summary_migration_report_{timestamp}.json"
+    
+    # Save match results
+    os.makedirs(args.output_dir, exist_ok=True)
+    report_path = os.path.join(args.output_dir, report_file)
+    
+    with open(report_path, 'w') as f:
+        import json
+        json.dump({
+            "matches": [match.__dict__ for match in matches],
+            "quality_issues": [issue.__dict__ for issue in quality_issues],
+            "statistics": stats
+        }, f, indent=2)
+    
+    logger.info(f"Site Summary matching completed. Report saved to {report_path}")
+    
+    # Perform migration if requested
+    if args.migrate:
+        logger.info("Migrating site summaries...")
+        
+        # Initialize migrator
+        migrator = SiteSummaryMigrator(dry_run=args.dry_run)
+        
+        # Migrate site summaries
+        migration_results = migrator.migrate_site_summaries(
+            itglue_sites, matches, servicenow_sites
+        )
+        
+        # Generate migration report
+        migration_report = migrator.generate_migration_report(migration_results)
+        
+        # Print migration summary
+        if not args.quiet:
+            print(f"\n=== Site Summary Migration Results ===")
+            print(f"Total migrations: {len(migration_results)}")
+            print(f"Successful: {sum(1 for r in migration_results if r.success)}")
+            print(f"Failed: {sum(1 for r in migration_results if not r.success)}")
+        
+        # Save migration results
+        migration_report_path = os.path.join(args.output_dir, f"site_summary_migration_details_{timestamp}.json")
+        with open(migration_report_path, 'w') as f:
+            import json
+            json.dump({
+                "results": [result.__dict__ for result in migration_results],
+                "report": migration_report
+            }, f, indent=2)
+        
+        logger.info(f"Site Summary migration completed. Report saved to {migration_report_path}")
+
+
+def run_voice_pbx_matcher(args):
+    """
+    Run the voice PBX matcher.
+    
+    Args:
+        args: Command line arguments
+    """
+    logger = logging.getLogger(__name__)
+    logger.info("Running voice PBX matcher...")
+    
+    # Load IT Glue Voice PBX data
+    logger.info("Loading IT Glue Voice PBX data...")
+    itglue_assets_path = args.itglue_assets or os.path.join("data", "Voice-PBX", "voice-pbx.json")
+    itglue_assets = load_json_file(itglue_assets_path)
+    
+    if not itglue_assets:
+        logger.error("Failed to load IT Glue Voice PBX data")
+        return
+    
+    # Load ServiceNow voice gateway data
+    logger.info("Loading ServiceNow voice gateway data...")
+    servicenow_gateways_path = args.servicenow_gateways or "mock_servicenow_voice_gateways.json"
+    servicenow_gateways = load_servicenow_data(servicenow_gateways_path)
+    
+    if not servicenow_gateways:
+        logger.warning("No ServiceNow voice gateway data found, will create new records")
+        servicenow_gateways = []
+    
+    # Initialize matcher
+    logger.info("Initializing voice PBX matcher...")
+    matcher = VoicePBXMatcher()
+    
+    # Match voice PBX assets
+    logger.info("Matching voice PBX assets...")
+    matches, quality_issues = matcher.match_voice_pbx_assets(
+        itglue_assets, servicenow_gateways
+    )
+    
+    # Generate statistics
+    stats = matcher.generate_matching_statistics(matches)
+    
+    # Initialize report generator
+    report_generator = ReportGenerator(output_dir=args.output_dir)
+    
+    # Print report summary
+    if not args.quiet:
+        # For now, we'll just print a simple summary
+        print(f"\n=== Voice PBX Matching Results ===")
+        print(f"Total matches: {len(matches)}")
+        print(f"Data quality issues: {len(quality_issues)}")
+        
+        # Count by match type
+        match_types = {}
+        for match in matches:
+            match_type = match.match_type
+            if match_type not in match_types:
+                match_types[match_type] = 0
+            match_types[match_type] += 1
+        
+        print("\nMatch Types:")
+        for match_type, count in match_types.items():
+            print(f"  {match_type}: {count} ({count/len(matches)*100:.1f}%)")
+    
+    # Generate report file
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    report_file = args.report_file or f"voice_pbx_migration_report_{timestamp}.json"
+    
+    # Save match results
+    os.makedirs(args.output_dir, exist_ok=True)
+    report_path = os.path.join(args.output_dir, report_file)
+    
+    with open(report_path, 'w') as f:
+        import json
+        json.dump({
+            "matches": [match.__dict__ for match in matches],
+            "quality_issues": [issue.__dict__ for issue in quality_issues],
+            "statistics": stats
+        }, f, indent=2)
+    
+    logger.info(f"Voice PBX matching completed. Report saved to {report_path}")
+    
+    # Perform migration if requested
+    if args.migrate:
+        logger.info("Migrating voice PBX assets...")
+        
+        # Initialize migrator
+        migrator = VoicePBXMigrator(dry_run=args.dry_run)
+        
+        # Migrate voice PBX assets
+        migration_results = migrator.migrate_voice_pbx_assets(
+            itglue_assets, matches, servicenow_gateways
+        )
+        
+        # Generate migration report
+        migration_report = migrator.generate_migration_report(migration_results)
+        
+        # Print migration summary
+        if not args.quiet:
+            print(f"\n=== Voice PBX Migration Results ===")
+            print(f"Total migrations: {len(migration_results)}")
+            print(f"Successful: {sum(1 for r in migration_results if r.success)}")
+            print(f"Failed: {sum(1 for r in migration_results if not r.success)}")
+        
+        # Save migration results
+        migration_report_path = os.path.join(args.output_dir, f"voice_pbx_migration_details_{timestamp}.json")
+        with open(migration_report_path, 'w') as f:
+            import json
+            json.dump({
+                "results": [result.__dict__ for result in migration_results],
+                "report": migration_report
+            }, f, indent=2)
+        
+        logger.info(f"Voice PBX migration completed. Report saved to {migration_report_path}")
+
+
 def main():
     """Main function."""
     # Parse command line arguments
@@ -169,6 +403,30 @@ def main():
     virt_parser.add_argument("--log-level", default="INFO", help="Logging level")
     virt_parser.add_argument("--quiet", action="store_true", help="Suppress console output")
     
+    # Site Summary matcher command
+    site_parser = subparsers.add_parser("site-summary", help="Match site summary assets")
+    site_parser.add_argument("--itglue-sites", help="Path to IT Glue Site Summary JSON file")
+    site_parser.add_argument("--servicenow-sites", help="Path to ServiceNow sites JSON file")
+    site_parser.add_argument("--output-dir", default="reports", help="Output directory for reports")
+    site_parser.add_argument("--report-file", help="Report file name")
+    site_parser.add_argument("--log-file", help="Log file path")
+    site_parser.add_argument("--log-level", default="INFO", help="Logging level")
+    site_parser.add_argument("--quiet", action="store_true", help="Suppress console output")
+    site_parser.add_argument("--migrate", action="store_true", help="Perform migration after matching")
+    site_parser.add_argument("--dry-run", action="store_true", help="Perform a dry run (no actual migration)")
+    
+    # Voice PBX matcher command
+    voice_parser = subparsers.add_parser("voice-pbx", help="Match voice PBX assets")
+    voice_parser.add_argument("--itglue-assets", help="Path to IT Glue Voice PBX JSON file")
+    voice_parser.add_argument("--servicenow-gateways", help="Path to ServiceNow voice gateways JSON file")
+    voice_parser.add_argument("--output-dir", default="reports", help="Output directory for reports")
+    voice_parser.add_argument("--report-file", help="Report file name")
+    voice_parser.add_argument("--log-file", help="Log file path")
+    voice_parser.add_argument("--log-level", default="INFO", help="Logging level")
+    voice_parser.add_argument("--quiet", action="store_true", help="Suppress console output")
+    voice_parser.add_argument("--migrate", action="store_true", help="Perform migration after matching")
+    voice_parser.add_argument("--dry-run", action="store_true", help="Perform a dry run (no actual migration)")
+    
     # Parse arguments
     args = parser.parse_args()
     
@@ -186,6 +444,10 @@ def main():
         run_organization_matcher(args)
     elif args.command == "virtualization":
         run_virtualization_matcher(args)
+    elif args.command == "site-summary":
+        run_site_summary_matcher(args)
+    elif args.command == "voice-pbx":
+        run_voice_pbx_matcher(args)
     else:
         # If no command specified, show help
         parser.print_help()
