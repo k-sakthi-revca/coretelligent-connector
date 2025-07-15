@@ -52,6 +52,16 @@ class Config:
         if os.getenv("ITGLUE_API_KEY"):
             self.config.setdefault("itglue", {})["api_key"] = os.getenv("ITGLUE_API_KEY")
         
+        # ServiceNow API settings
+        if os.getenv("SERVICENOW_API_URL"):
+            self.config.setdefault("servicenow", {})["api_url"] = os.getenv("SERVICENOW_API_URL")
+        
+        if os.getenv("SERVICENOW_USERNAME"):
+            self.config.setdefault("servicenow", {})["username"] = os.getenv("SERVICENOW_USERNAME")
+        
+        if os.getenv("SERVICENOW_PASSWORD"):
+            self.config.setdefault("servicenow", {})["password"] = os.getenv("SERVICENOW_PASSWORD")
+        
         # Optional settings
         if os.getenv("ORGANIZATION_LIMIT"):
             self.config.setdefault("itglue", {})["organization_limit"] = int(os.getenv("ORGANIZATION_LIMIT"))

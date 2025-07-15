@@ -11,6 +11,7 @@ from dataclasses import dataclass, asdict
 
 from itglue_client import ITGlueClient
 from servicenow_mock import ServiceNowMock
+from servicenow_client import ServiceNowClient
 from organization_matcher import OrganizationMatcher, OrganizationMatch, DataQualityIssue
 from field_mapper import FieldMapper
 from config import config
@@ -34,19 +35,28 @@ class MigrationResult:
 class OrganizationMigrator:
     """Migrates organizations from IT Glue to ServiceNow."""
     
-    def __init__(self, use_mock_data: bool = True):
+    def __init__(self, use_mock_data: bool = True, use_mock_servicenow: bool = True):
         """
         Initialize organization migrator.
         
         Args:
-            use_mock_data: Whether to use mock data instead of making API calls
+            use_mock_data: Whether to use mock data instead of making API calls to IT Glue
+            use_mock_servicenow: Whether to use mock ServiceNow client instead of real API
         """
         self.logger = logging.getLogger(__name__)
         self.use_mock_data = use_mock_data
+        self.use_mock_servicenow = use_mock_servicenow
         
         # Initialize clients
         self.itglue_client = ITGlueClient(use_mock_data=use_mock_data)
-        self.servicenow_client = ServiceNowMock()
+        
+        # Initialize ServiceNow client based on configuration
+        if use_mock_servicenow:
+            self.servicenow_client = ServiceNowMock()
+            self.logger.info("Using mock ServiceNow client")
+        else:
+            self.servicenow_client = ServiceNowClient()
+            self.logger.info("Using real ServiceNow client")
         
         # Initialize matcher and mapper
         self.matcher = OrganizationMatcher()
@@ -57,7 +67,7 @@ class OrganizationMigrator:
         self.report_file = self.output_settings.get("report_file", "migration_report.json")
         self.console_output = self.output_settings.get("console_output", True)
         
-        self.logger.info(f"Organization Migrator initialized (use_mock_data={use_mock_data})")
+        self.logger.info(f"Organization Migrator initialized (use_mock_data={use_mock_data}, use_mock_servicenow={use_mock_servicenow})")
     
     def migrate_organizations(self) -> Tuple[List[MigrationResult], Dict[str, Any]]:
         """

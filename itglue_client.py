@@ -384,12 +384,36 @@ class ITGlueClient:
             return None
         
         try:
-            response = self._make_request(f"organizations/{org_id}")
-            return response.get("data")
+            # Make API request to get organization by ID
+            headers = {
+                "x-api-key": self.api_key,
+                "Content-Type": "application/vnd.api+json",
+                "x-api-version": "2"
+            }
+            
+            url = f"{self.api_url}/organizations/{org_id}"
+            
+            import requests
+            response = requests.get(
+                url=url,
+                headers=headers,
+                timeout=self.timeout
+            )
+            
+            # Raise for errors
+            response.raise_for_status()
+            
+            # Log the response for debugging
+            self.logger.debug(f"IT Glue API response for org ID {org_id}: {response.text[:200]}...")
+            
+            # Return the data
+            return response.json().get("data")
+            
         except Exception as e:
             if hasattr(e, 'response') and getattr(e.response, 'status_code', None) == 404:
                 self.logger.warning(f"Organization not found: {org_id}")
                 return None
+            self.logger.error(f"Failed to get organization by ID {org_id}: {e}")
             raise
     
     def get_organization_by_name(self, name: str) -> Optional[Dict]:
