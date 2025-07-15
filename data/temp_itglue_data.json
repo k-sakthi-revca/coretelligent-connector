@@ -1,0 +1,3552 @@
+{
+    "data": [
+        {
+            "id": "1111260",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460141,
+                "organization-name": "Epic Response",
+                "resource-url": "https://coretelligent.itglue.com/1460141/assets/39796-identity-services/records/1111260",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "epicres.local epic",
+                "traits": {
+                    "ad-full-name": "epicres.local",
+                    "ad-short-name": "epic",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2016-12-30T20:26:32.000Z",
+                "updated-at": "2017-05-09T19:08:47.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1291364",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460111,
+                "organization-name": "Moncrief Heating & Air",
+                "resource-url": "https://coretelligent.itglue.com/1460111/assets/39796-identity-services/records/1291364",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "moncrief.local moncrief",
+                "traits": {
+                    "ad-full-name": "moncrief.local",
+                    "ad-short-name": "moncrief",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460111/configurations/6933400",
+                                "id": 6933400,
+                                "name": "VMware VM",
+                                "hostname": "MONC-DC1",
+                                "organization-name": "Moncrief Heating & Air",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460111/configurations/6933400",
+                                "id": 6933400,
+                                "name": "VMware VM",
+                                "hostname": "MONC-DC1",
+                                "organization-name": "Moncrief Heating & Air",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460111/configurations/6933400",
+                                "id": 6933400,
+                                "name": "VMware VM",
+                                "hostname": "MONC-DC1",
+                                "organization-name": "Moncrief Heating & Air",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-02-27T21:00:13.000Z",
+                "updated-at": "2017-05-15T15:01:47.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1562921",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1691564,
+                "organization-name": "Banks, Finley, White & Co",
+                "resource-url": "https://coretelligent.itglue.com/1691564/assets/39796-identity-services/records/1562921",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "bfwc.local bfwc",
+                "traits": {
+                    "ad-full-name": "bfwc.local",
+                    "ad-short-name": "bfwc",
+                    "ad-level": "2019",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1691564/configurations/28916992",
+                                "id": 28916992,
+                                "name": "bfw-cce-dc01 (DC)",
+                                "hostname": "bfw-cce-dc01",
+                                "organization-name": "Banks, Finley, White & Co",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1691564/configurations/28916992",
+                                "id": 28916992,
+                                "name": "bfw-cce-dc01 (DC)",
+                                "hostname": "bfw-cce-dc01",
+                                "organization-name": "Banks, Finley, White & Co",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-02T15:47:23.000Z",
+                "updated-at": "2020-06-27T20:30:20.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1566499",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460107,
+                "organization-name": "Courier Express",
+                "resource-url": "https://coretelligent.itglue.com/1460107/assets/39796-identity-services/records/1566499",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "ceant.courierexpress.net CEANTDOMAIN",
+                "traits": {
+                    "ad-full-name": "ceant.courierexpress.net",
+                    "ad-short-name": "CEANTDOMAIN",
+                    "ad-level": "2012 R2",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/configurations/8065657",
+                                "id": 8065657,
+                                "name": "DCS: CEDC02 | VMware Virtual Server",
+                                "hostname": "CEDC02",
+                                "organization-name": "Courier Express",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/configurations/6935686",
+                                "id": 6935686,
+                                "name": "DCS: CEDC01 - DC - DNS - RDS Licensing",
+                                "organization-name": "Courier Express",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/configurations/6935713",
+                                "id": 6935713,
+                                "name": "DCS: CXDC01 - Windows Server 2016 Domain Controller",
+                                "organization-name": "Courier Express",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/configurations/30795637",
+                                "id": 30795637,
+                                "name": "cxdc02 (DC)",
+                                "hostname": "cxdc02",
+                                "organization-name": "Courier Express",
+                                "configuration-type-name": "Autotask Default"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/configurations/60661173",
+                                "id": 60661173,
+                                "name": "CXDC03",
+                                "organization-name": "Courier Express",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/configurations/8065657",
+                                "id": 8065657,
+                                "name": "DCS: CEDC02 | VMware Virtual Server",
+                                "hostname": "CEDC02",
+                                "organization-name": "Courier Express",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/configurations/6935686",
+                                "id": 6935686,
+                                "name": "DCS: CEDC01 - DC - DNS - RDS Licensing",
+                                "organization-name": "Courier Express",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/configurations/30795637",
+                                "id": 30795637,
+                                "name": "cxdc02 (DC)",
+                                "hostname": "cxdc02",
+                                "organization-name": "Courier Express",
+                                "configuration-type-name": "Autotask Default"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/configurations/60661173",
+                                "id": 60661173,
+                                "name": "CXDC03",
+                                "organization-name": "Courier Express",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460107/configurations/6935686",
+                                "id": 6935686,
+                                "name": "DCS: CEDC01 - DC - DNS - RDS Licensing",
+                                "organization-name": "Courier Express",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-03T01:46:16.000Z",
+                "updated-at": "2024-01-09T20:52:42.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1569532",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460163,
+                "organization-name": "Cancer CarePoint, Inc",
+                "resource-url": "https://coretelligent.itglue.com/1460163/assets/39796-identity-services/records/1569532",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "ccp.local ccp",
+                "traits": {
+                    "ad-full-name": "ccp.local",
+                    "ad-short-name": "ccp",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460163/configurations/5963376",
+                                "id": 5963376,
+                                "name": "DCS: CCP-DC1",
+                                "organization-name": "Cancer CarePoint, Inc",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460163/configurations/5963376",
+                                "id": 5963376,
+                                "name": "DCS: CCP-DC1",
+                                "organization-name": "Cancer CarePoint, Inc",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460163/configurations/5963376",
+                                "id": 5963376,
+                                "name": "DCS: CCP-DC1",
+                                "organization-name": "Cancer CarePoint, Inc",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-03T17:53:58.000Z",
+                "updated-at": "2017-05-03T17:53:58.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1592942",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460168,
+                "organization-name": "Gateway Center",
+                "resource-url": "https://coretelligent.itglue.com/1460168/assets/39796-identity-services/records/1592942",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "GWC.Server01.gatewayctr.org gatewayctr.org",
+                "traits": {
+                    "ad-full-name": "GWC.Server01.gatewayctr.org",
+                    "ad-short-name": "gatewayctr.org",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460168/configurations/5963425",
+                                "id": 5963425,
+                                "name": "DCS: GWC-Server01",
+                                "organization-name": "Gateway Center",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460168/configurations/5963425",
+                                "id": 5963425,
+                                "name": "DCS: GWC-Server01",
+                                "organization-name": "Gateway Center",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460168/configurations/5963425",
+                                "id": 5963425,
+                                "name": "DCS: GWC-Server01",
+                                "organization-name": "Gateway Center",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-10T15:52:12.000Z",
+                "updated-at": "2017-05-10T15:52:12.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1658037",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460143,
+                "organization-name": "Wellstreet Urgent Care",
+                "resource-url": "https://coretelligent.itglue.com/1460143/assets/39796-identity-services/records/1658037",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "fourwinds.local fourwinds",
+                "traits": {
+                    "ad-full-name": "fourwinds.local",
+                    "ad-short-name": "fourwinds",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460143/configurations/5963056",
+                                "id": 5963056,
+                                "name": "DCS: FWHDC1",
+                                "organization-name": "Wellstreet Urgent Care",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460143/configurations/5963056",
+                                "id": 5963056,
+                                "name": "DCS: FWHDC1",
+                                "organization-name": "Wellstreet Urgent Care",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-17T00:53:41.000Z",
+                "updated-at": "2017-05-17T00:53:41.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1668074",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460171,
+                "organization-name": "International Auto Logistics",
+                "resource-url": "https://coretelligent.itglue.com/1460171/assets/39796-identity-services/records/1668074",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "ialpov.local ialpov",
+                "traits": {
+                    "ad-full-name": "ialpov.local",
+                    "ad-short-name": "ialpov",
+                    "ad-level": "2016",
+                    "notes": "<div>FSMO roles has been moved to IAL-DC02 server.<br></div>",
+                    "coresecret-url": "https://secret.core.tech/pid=30134",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/22005669",
+                                "id": 22005669,
+                                "name": "IAL-ADConnect",
+                                "hostname": "IAL-ADConnect",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/63648282",
+                                "id": 63648282,
+                                "name": "IAL-DC02",
+                                "hostname": "IAL-DC02",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/63674203",
+                                "id": 63674203,
+                                "name": "TX-AUS-IAL-DC3",
+                                "hostname": "TX-AUS-IAL-DC3",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/63678371",
+                                "id": 63678371,
+                                "name": "ial-dc-az-us-e4",
+                                "hostname": "ial-dc-az-us-e4",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/63678630",
+                                "id": 63678630,
+                                "name": "ial-dc-az-us-e5",
+                                "hostname": "ial-dc-az-us-e5",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/63648282",
+                                "id": 63648282,
+                                "name": "IAL-DC02",
+                                "hostname": "IAL-DC02",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/63674203",
+                                "id": 63674203,
+                                "name": "TX-AUS-IAL-DC3",
+                                "hostname": "TX-AUS-IAL-DC3",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/63678371",
+                                "id": 63678371,
+                                "name": "ial-dc-az-us-e4",
+                                "hostname": "ial-dc-az-us-e4",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/63678630",
+                                "id": 63678630,
+                                "name": "ial-dc-az-us-e5",
+                                "hostname": "ial-dc-az-us-e5",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/63648282",
+                                "id": 63648282,
+                                "name": "IAL-DC02",
+                                "hostname": "IAL-DC02",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-19T01:17:34.000Z",
+                "updated-at": "2024-07-09T22:26:23.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1668078",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460171,
+                "organization-name": "International Auto Logistics",
+                "resource-url": "https://coretelligent.itglue.com/1460171/assets/39796-identity-services/records/1668078",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "TRAX.COM TRAX",
+                "traits": {
+                    "ad-full-name": "TRAX.COM",
+                    "ad-short-name": "TRAX",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/5963437",
+                                "id": 5963437,
+                                "name": "DCS: DC-LIVE-16 - (Logisuite / TRAX DOMAIN CONTROLLER)",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460171/configurations/5963437",
+                                "id": 5963437,
+                                "name": "DCS: DC-LIVE-16 - (Logisuite / TRAX DOMAIN CONTROLLER)",
+                                "organization-name": "International Auto Logistics",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-19T01:18:25.000Z",
+                "updated-at": "2017-05-19T01:18:25.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1695669",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460207,
+                "organization-name": "Peach State Federal Credit Union",
+                "resource-url": "https://coretelligent.itglue.com/1460207/assets/39796-identity-services/records/1695669",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "gwinnettfcu. GWINNETTFCU",
+                "traits": {
+                    "ad-full-name": "gwinnettfcu.",
+                    "ad-short-name": "GWINNETTFCU"
+                },
+                "archived": false,
+                "created-at": "2017-05-25T13:54:38.000Z",
+                "updated-at": "2017-05-25T13:54:38.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1695721",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460207,
+                "organization-name": "Peach State Federal Credit Union",
+                "resource-url": "https://coretelligent.itglue.com/1460207/assets/39796-identity-services/records/1695721",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "gwinnettfcu.org GWINNETTFCU",
+                "traits": {
+                    "ad-full-name": "gwinnettfcu.org",
+                    "ad-short-name": "GWINNETTFCU",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460207/configurations/6481891",
+                                "id": 6481891,
+                                "name": "DCS: PSF-LAK-VM04 (Lakes Parkway HQ Domain Controller)",
+                                "organization-name": "Peach State Federal Credit Union",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460207/configurations/6481892",
+                                "id": 6481892,
+                                "name": "DCS: PSF-LAK-VM05 (Lakes Parkway HQ Domain Controller)",
+                                "organization-name": "Peach State Federal Credit Union",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460207/configurations/6481891",
+                                "id": 6481891,
+                                "name": "DCS: PSF-LAK-VM04 (Lakes Parkway HQ Domain Controller)",
+                                "organization-name": "Peach State Federal Credit Union",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460207/configurations/6481892",
+                                "id": 6481892,
+                                "name": "DCS: PSF-LAK-VM05 (Lakes Parkway HQ Domain Controller)",
+                                "organization-name": "Peach State Federal Credit Union",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460207/configurations/6481891",
+                                "id": 6481891,
+                                "name": "DCS: PSF-LAK-VM04 (Lakes Parkway HQ Domain Controller)",
+                                "organization-name": "Peach State Federal Credit Union",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460207/configurations/6481892",
+                                "id": 6481892,
+                                "name": "DCS: PSF-LAK-VM05 (Lakes Parkway HQ Domain Controller)",
+                                "organization-name": "Peach State Federal Credit Union",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-25T14:01:54.000Z",
+                "updated-at": "2017-05-25T14:01:55.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1695806",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460142,
+                "organization-name": "Southeast Mortgage of Georgia, Inc.",
+                "resource-url": "https://coretelligent.itglue.com/1460142/assets/39796-identity-services/records/1695806",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "SEM.semonline.com SEM",
+                "traits": {
+                    "ad-full-name": "SEM.semonline.com",
+                    "ad-short-name": "SEM",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460142/configurations/23661741",
+                                "id": 23661741,
+                                "name": "SEM-CCE-DC01 (AD>Azure Sync)",
+                                "hostname": "SEM-CCE-DC01",
+                                "organization-name": "Southeast Mortgage of Georgia, Inc.",
+                                "configuration-type-name": "Virtual Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460142/configurations/25148490",
+                                "id": 25148490,
+                                "name": "SEM-KOG-DC01",
+                                "hostname": "SEM-KOG-DC01",
+                                "organization-name": "Southeast Mortgage of Georgia, Inc.",
+                                "configuration-type-name": "Virtual Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460142/configurations/61174305",
+                                "id": 61174305,
+                                "name": "SEM-KOG-DC03",
+                                "hostname": "SEM-KOG-DC03",
+                                "organization-name": "Southeast Mortgage of Georgia, Inc.",
+                                "configuration-type-name": "Virtual Server"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460142/configurations/23661741",
+                                "id": 23661741,
+                                "name": "SEM-CCE-DC01 (AD>Azure Sync)",
+                                "hostname": "SEM-CCE-DC01",
+                                "organization-name": "Southeast Mortgage of Georgia, Inc.",
+                                "configuration-type-name": "Virtual Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460142/configurations/25148490",
+                                "id": 25148490,
+                                "name": "SEM-KOG-DC01",
+                                "hostname": "SEM-KOG-DC01",
+                                "organization-name": "Southeast Mortgage of Georgia, Inc.",
+                                "configuration-type-name": "Virtual Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460142/configurations/61174305",
+                                "id": 61174305,
+                                "name": "SEM-KOG-DC03",
+                                "hostname": "SEM-KOG-DC03",
+                                "organization-name": "Southeast Mortgage of Georgia, Inc.",
+                                "configuration-type-name": "Virtual Server"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460142/configurations/25148490",
+                                "id": 25148490,
+                                "name": "SEM-KOG-DC01",
+                                "hostname": "SEM-KOG-DC01",
+                                "organization-name": "Southeast Mortgage of Georgia, Inc.",
+                                "configuration-type-name": "Virtual Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460142/configurations/61174305",
+                                "id": 61174305,
+                                "name": "SEM-KOG-DC03",
+                                "hostname": "SEM-KOG-DC03",
+                                "organization-name": "Southeast Mortgage of Georgia, Inc.",
+                                "configuration-type-name": "Virtual Server"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-25T14:16:36.000Z",
+                "updated-at": "2025-01-29T19:43:59.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1696897",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1447768,
+                "organization-name": "United Technology Group",
+                "resource-url": "https://coretelligent.itglue.com/1447768/assets/39796-identity-services/records/1696897",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "utg.local utg",
+                "traits": {
+                    "ad-full-name": "utg.local",
+                    "ad-short-name": "utg",
+                    "ad-level": "2008",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1447768/configurations/6933328",
+                                "id": 6933328,
+                                "name": "DCS: UTGDC4 - Domain Controller",
+                                "organization-name": "United Technology Group",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1447768/configurations/14459630",
+                                "id": 14459630,
+                                "name": "DCS: UTGDC6 - HQ Domain Controller",
+                                "hostname": "UTGDCC6",
+                                "organization-name": "United Technology Group",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1447768/configurations/15323917",
+                                "id": 15323917,
+                                "name": "DCS: UTGDC7 - Domain Controller",
+                                "organization-name": "United Technology Group",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1447768/configurations/6933328",
+                                "id": 6933328,
+                                "name": "DCS: UTGDC4 - Domain Controller",
+                                "organization-name": "United Technology Group",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1447768/configurations/14459630",
+                                "id": 14459630,
+                                "name": "DCS: UTGDC6 - HQ Domain Controller",
+                                "hostname": "UTGDCC6",
+                                "organization-name": "United Technology Group",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1447768/configurations/15323917",
+                                "id": 15323917,
+                                "name": "DCS: UTGDC7 - Domain Controller",
+                                "organization-name": "United Technology Group",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1447768/configurations/6933328",
+                                "id": 6933328,
+                                "name": "DCS: UTGDC4 - Domain Controller",
+                                "organization-name": "United Technology Group",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-25T16:33:08.000Z",
+                "updated-at": "2018-12-12T15:46:23.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1713971",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460184,
+                "organization-name": "Westminster Church",
+                "resource-url": "https://coretelligent.itglue.com/1460184/assets/39796-identity-services/records/1713971",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "Westminster.local Westminster",
+                "traits": {
+                    "ad-full-name": "Westminster.local",
+                    "ad-short-name": "Westminster",
+                    "ad-level": "2019",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460184/configurations/57125865",
+                                "id": 57125865,
+                                "name": "WCPCADC01",
+                                "hostname": "WCPCADC01",
+                                "organization-name": "Westminster Church",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460184/configurations/57125865",
+                                "id": 57125865,
+                                "name": "WCPCADC01",
+                                "hostname": "WCPCADC01",
+                                "organization-name": "Westminster Church",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460184/configurations/8119296",
+                                "id": 8119296,
+                                "name": "FWL: SonicWall TZ300",
+                                "organization-name": "Westminster Church",
+                                "configuration-type-name": "Firewall"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-05-31T15:46:38.000Z",
+                "updated-at": "2023-08-21T17:25:59.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "1975100",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1976440,
+                "organization-name": "Dinova",
+                "resource-url": "https://coretelligent.itglue.com/1976440/assets/39796-identity-services/records/1975100",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "dinova.com dinova",
+                "traits": {
+                    "ad-full-name": "dinova.com",
+                    "ad-short-name": "dinova",
+                    "ad-level": "2016",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1976440/configurations/8739659",
+                                "id": 8739659,
+                                "name": "DCS: DNDC001 - Cloud Hosted Domain Controller",
+                                "organization-name": "Dinova",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1976440/configurations/24374060",
+                                "id": 24374060,
+                                "name": "hqdc02",
+                                "organization-name": "Dinova",
+                                "configuration-type-name": "Autotask Default"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1976440/configurations/55337139",
+                                "id": 55337139,
+                                "name": "DCS: DNDC023 - Primary DC",
+                                "organization-name": "Dinova",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1976440/configurations/8739659",
+                                "id": 8739659,
+                                "name": "DCS: DNDC001 - Cloud Hosted Domain Controller",
+                                "organization-name": "Dinova",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1976440/configurations/8660710",
+                                "id": 8660710,
+                                "name": "Cisco 5508",
+                                "hostname": "dinova-hq-asa",
+                                "organization-name": "Dinova",
+                                "configuration-type-name": "*NETWORK DEVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1976440/configurations/24374060",
+                                "id": 24374060,
+                                "name": "hqdc02",
+                                "organization-name": "Dinova",
+                                "configuration-type-name": "Autotask Default"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-08-10T20:06:02.000Z",
+                "updated-at": "2023-06-08T15:44:55.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "2012928",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460198,
+                "organization-name": "Classic Window Coverings",
+                "resource-url": "https://coretelligent.itglue.com/1460198/assets/39796-identity-services/records/2012928",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "No Domain WORKGROUP",
+                "traits": {
+                    "ad-full-name": "No Domain",
+                    "ad-short-name": "WORKGROUP",
+                    "coresecret-url": "https://secret.core.tech/pid=30781",
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460198/configurations/51905388",
+                                "id": 51905388,
+                                "name": "CWC-FWL-001",
+                                "hostname": "CWC-FWL-001",
+                                "organization-name": "Classic Window Coverings",
+                                "configuration-type-name": "Firewall"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460198/configurations/51905388",
+                                "id": 51905388,
+                                "name": "CWC-FWL-001",
+                                "hostname": "CWC-FWL-001",
+                                "organization-name": "Classic Window Coverings",
+                                "configuration-type-name": "Firewall"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-08-22T18:07:42.000Z",
+                "updated-at": "2023-02-16T13:52:28.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "2013387",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 4089575,
+                "organization-name": "Jordan Outdoor Enterprises, LTD",
+                "resource-url": "https://coretelligent.itglue.com/4089575/assets/39796-identity-services/records/2013387",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "corp.jordanoutdoors.net REALTREE",
+                "traits": {
+                    "ad-full-name": "corp.jordanoutdoors.net",
+                    "ad-short-name": "REALTREE",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/4089575/configurations/5962903",
+                                "id": 5962903,
+                                "name": "JOELDC1 (File and DC)",
+                                "hostname": "JOELDC1",
+                                "organization-name": "Jordan Outdoor Enterprises, LTD",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/4089575/configurations/5962904",
+                                "id": 5962904,
+                                "name": "DCS: JOELDC2 (DC)",
+                                "hostname": "JOELDC2",
+                                "organization-name": "Jordan Outdoor Enterprises, LTD",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/4089575/configurations/5962903",
+                                "id": 5962903,
+                                "name": "JOELDC1 (File and DC)",
+                                "hostname": "JOELDC1",
+                                "organization-name": "Jordan Outdoor Enterprises, LTD",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/4089575/configurations/5962904",
+                                "id": 5962904,
+                                "name": "DCS: JOELDC2 (DC)",
+                                "hostname": "JOELDC2",
+                                "organization-name": "Jordan Outdoor Enterprises, LTD",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/4089575/configurations/5962903",
+                                "id": 5962903,
+                                "name": "JOELDC1 (File and DC)",
+                                "hostname": "JOELDC1",
+                                "organization-name": "Jordan Outdoor Enterprises, LTD",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-08-22T19:26:13.000Z",
+                "updated-at": "2017-08-22T19:26:13.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "2018276",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460180,
+                "organization-name": "Brightworth",
+                "resource-url": "https://coretelligent.itglue.com/1460180/assets/39796-identity-services/records/2018276",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "Brightworth.com brightworth",
+                "traits": {
+                    "ad-full-name": "Brightworth.com",
+                    "ad-short-name": "brightworth",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/20665481",
+                                "id": 20665481,
+                                "name": "DCS: BWDC05",
+                                "hostname": "BWDC05.brightworth.com",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/20665564",
+                                "id": 20665564,
+                                "name": "DCS: BWDC06",
+                                "hostname": "bwdc06.brightworth.com",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/20725726",
+                                "id": 20725726,
+                                "name": "DCS: MADC01",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/20665481",
+                                "id": 20665481,
+                                "name": "DCS: BWDC05",
+                                "hostname": "BWDC05.brightworth.com",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/20665564",
+                                "id": 20665564,
+                                "name": "DCS: BWDC06",
+                                "hostname": "bwdc06.brightworth.com",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/20725726",
+                                "id": 20725726,
+                                "name": "DCS: MADC01",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/20665481",
+                                "id": 20665481,
+                                "name": "DCS: BWDC05",
+                                "hostname": "BWDC05.brightworth.com",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460180/configurations/20725726",
+                                "id": 20725726,
+                                "name": "DCS: MADC01",
+                                "organization-name": "Brightworth",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-08-23T19:13:16.000Z",
+                "updated-at": "2022-04-12T13:44:10.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "2039292",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460117,
+                "organization-name": "Empire Tickets",
+                "resource-url": "https://coretelligent.itglue.com/1460117/assets/39796-identity-services/records/2039292",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "empiretickets.com NONE WORKGROUP - JumpCloud DIRECTORY",
+                "traits": {
+                    "ad-full-name": "empiretickets.com",
+                    "ad-short-name": "NONE WORKGROUP - JumpCloud DIRECTORY",
+                    "notes": "<p>Clients are in Workgroup - no onsite AD - it is cloud based directory - see JumpCloud</p><p><br></p><p>RADUIS server IPs for client VPN on Meraki:<br></p><p>18.204.0.31<br></p><p>54.203.27.225<br></p><p>Note: any changes in WAN IP address will require update on Jump Cloud to allow authentication. </p>",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460117/configurations/8688744",
+                                "id": 8688744,
+                                "name": "JumpCloud - Domain Services (DaaS Provider)",
+                                "organization-name": "Empire Tickets",
+                                "configuration-type-name": "_CREDENTIALS"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-08-29T23:57:03.000Z",
+                "updated-at": "2020-12-03T17:44:12.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "2051969",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460116,
+                "organization-name": "LPBC",
+                "resource-url": "https://coretelligent.itglue.com/1460116/assets/39796-identity-services/records/2051969",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "LPBATLANTA.local LPBATLANTA",
+                "traits": {
+                    "ad-full-name": "LPBATLANTA.local",
+                    "ad-short-name": "LPBATLANTA",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460116/configurations/6934188",
+                                "id": 6934188,
+                                "name": "DCS: LPB-LVL-DCS-004 - (Primary DC)",
+                                "organization-name": "LPBC",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460116/configurations/6934189",
+                                "id": 6934189,
+                                "name": "DCS: LPB-LVL-DCS-005 - (Secondary DC / WSUS)",
+                                "organization-name": "LPBC",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460116/configurations/6934188",
+                                "id": 6934188,
+                                "name": "DCS: LPB-LVL-DCS-004 - (Primary DC)",
+                                "organization-name": "LPBC",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460116/configurations/6934189",
+                                "id": 6934189,
+                                "name": "DCS: LPB-LVL-DCS-005 - (Secondary DC / WSUS)",
+                                "organization-name": "LPBC",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1460116/configurations/6934188",
+                                "id": 6934188,
+                                "name": "DCS: LPB-LVL-DCS-004 - (Primary DC)",
+                                "organization-name": "LPBC",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-09-01T13:31:23.000Z",
+                "updated-at": "2017-09-01T13:31:24.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "2075967",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460140,
+                "organization-name": "Nakanishi Manufacturing Corporation",
+                "resource-url": "https://coretelligent.itglue.com/1460140/assets/39796-identity-services/records/2075967",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "nakanishimfg.com NKC-J",
+                "traits": {
+                    "ad-full-name": "nakanishimfg.com",
+                    "ad-short-name": "NKC-J"
+                },
+                "archived": false,
+                "created-at": "2017-09-08T19:46:28.000Z",
+                "updated-at": "2017-09-08T19:46:28.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "2111155",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1460115,
+                "organization-name": "Turner Enterprises",
+                "resource-url": "https://coretelligent.itglue.com/1460115/assets/39796-identity-services/records/2111155",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "Non-MSP Supported Non-MSP Supported",
+                "traits": {
+                    "ad-full-name": "Non-MSP Supported",
+                    "ad-short-name": "Non-MSP Supported"
+                },
+                "archived": false,
+                "created-at": "2017-09-19T18:03:32.000Z",
+                "updated-at": "2017-09-19T18:03:32.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "2121019",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 1953720,
+                "organization-name": "Medical College of Georgia Foundation",
+                "resource-url": "https://coretelligent.itglue.com/1953720/assets/39796-identity-services/records/2121019",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "MCGFORG.local MCGF",
+                "traits": {
+                    "ad-full-name": "MCGFORG.local",
+                    "ad-short-name": "MCGF",
+                    "ad-level": "2016",
+                    "notes": "<div>Azure AD Connect is running on both servers,&nbsp;MCGF-CCE-DC01 and&nbsp;MCGF-CCE-DC02.</div><div><br></div><div>The CoreSecret listed below is the domain Admin account.&nbsp;</div>",
+                    "coresecret-url": "https://coretelligent.secretservercloud.com/app/#/secrets/34940/general",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1953720/configurations/62580940",
+                                "id": 62580940,
+                                "name": "MCGF-CCE-DC01",
+                                "hostname": "MCGF-CCE-DC01",
+                                "organization-name": "Medical College of Georgia Foundation",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1953720/configurations/62580988",
+                                "id": 62580988,
+                                "name": "MCGF-CCE-DC02",
+                                "hostname": "MCGF-CCE-DC02",
+                                "organization-name": "Medical College of Georgia Foundation",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1953720/configurations/62580940",
+                                "id": 62580940,
+                                "name": "MCGF-CCE-DC01",
+                                "hostname": "MCGF-CCE-DC01",
+                                "organization-name": "Medical College of Georgia Foundation",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1953720/configurations/62580988",
+                                "id": 62580988,
+                                "name": "MCGF-CCE-DC02",
+                                "hostname": "MCGF-CCE-DC02",
+                                "organization-name": "Medical College of Georgia Foundation",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/1953720/configurations/58324993",
+                                "id": 58324993,
+                                "name": "MCG-FW",
+                                "hostname": "MCG-FW",
+                                "organization-name": "Medical College of Georgia Foundation",
+                                "configuration-type-name": "Firewall"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2017-09-21T14:50:03.000Z",
+                "updated-at": "2025-04-24T15:12:57.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "2951459",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 2616011,
+                "organization-name": "Atlanta Heart Specialists",
+                "resource-url": "https://coretelligent.itglue.com/2616011/assets/39796-identity-services/records/2951459",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "atlantahearts.net atlantahearts",
+                "traits": {
+                    "ad-full-name": "atlantahearts.net",
+                    "ad-short-name": "atlantahearts",
+                    "ad-level": "2008",
+                    "notes": "<div><div>C:\\Windows\\system32&gt;netdom query fsmo <br>Schema master ADAM.atlantahearts.net <br>Domain naming master ADAM.atlantahearts.net <br>PDC ADAM.atlantahearts.net <br>RID pool manager ADAM.atlantahearts.net <br>Infrastructure master ADAM.atlantahearts.net <br>The command completed successfully.</div><div>C:\\Windows\\system32&gt;ping adam</div><div>Pinging adam.atlantahearts.net [10.0.1.200] with 32 bytes of data: <br>Reply from 10.0.1.200: bytes=32 timenslookup <br>Default Server: adam.atlantahearts.net <br>Address: 10.0.1.200</div><div>&gt; set type=ns <br>&gt; atlantahearts.net <br>Server: adam.atlantahearts.net <br>Address: 10.0.1.200</div><div>atlantahearts.net nameserver = adam.atlantahearts.net <br>atlantahearts.net nameserver = ahsdc.atlantahearts.net <br>adam.atlantahearts.net internet address = 10.0.1.200 <br>ahsdc.atlantahearts.net internet address = 10.0.1.7 <br>ahsdc.atlantahearts.net internet address = 10.0.0.190 <br>&gt;</div></div>",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2616011/configurations/12785957",
+                                "id": 12785957,
+                                "name": "DCS: AHSMAIN",
+                                "organization-name": "Atlanta Heart Specialists",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2616011/configurations/12785956",
+                                "id": 12785956,
+                                "name": "DCS: AHSDC",
+                                "organization-name": "Atlanta Heart Specialists",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2616011/configurations/12785957",
+                                "id": 12785957,
+                                "name": "DCS: AHSMAIN",
+                                "organization-name": "Atlanta Heart Specialists",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2616011/configurations/12785956",
+                                "id": 12785956,
+                                "name": "DCS: AHSDC",
+                                "organization-name": "Atlanta Heart Specialists",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2018-03-26T13:35:05.000Z",
+                "updated-at": "2018-03-26T13:35:05.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "3184485",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 2362820,
+                "organization-name": "Credit Union of Atlanta",
+                "resource-url": "https://coretelligent.itglue.com/2362820/assets/39796-identity-services/records/3184485",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "ACECU.local ACECU",
+                "traits": {
+                    "ad-full-name": "ACECU.local",
+                    "ad-short-name": "ACECU",
+                    "ad-level": "2016",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2362820/configurations/20708230",
+                                "id": 20708230,
+                                "name": "DCS: ACECUDC03 - Domain Controller",
+                                "hostname": "ACECUDC03",
+                                "organization-name": "Credit Union of Atlanta",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2018-05-10T12:49:34.000Z",
+                "updated-at": "2022-09-06T15:36:50.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "3250793",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 2771314,
+                "organization-name": "Fox, Chandler, Homans, Hicks and McKinnon",
+                "resource-url": "https://coretelligent.itglue.com/2771314/assets/39796-identity-services/records/3250793",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "*decommission fc.local fc",
+                "traits": {
+                    "ad-full-name": "*decommission fc.local",
+                    "ad-short-name": "fc",
+                    "ad-level": "2012",
+                    "notes": "<div>**Domain / onprem servers decommission 5/2021</div><div><br></div><div>FSMO Role Master: FCFILE</div>",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2771314/configurations/13922192",
+                                "id": 13922192,
+                                "name": "SVR: FCFILE",
+                                "hostname": "FCFILE",
+                                "organization-name": "Fox, Chandler, Homans, Hicks and McKinnon",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2771314/configurations/13922194",
+                                "id": 13922194,
+                                "name": "SVR: FCEXCH - DC / Former Exchange Server",
+                                "hostname": "FCEXCH",
+                                "organization-name": "Fox, Chandler, Homans, Hicks and McKinnon",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2771314/configurations/13922192",
+                                "id": 13922192,
+                                "name": "SVR: FCFILE",
+                                "hostname": "FCFILE",
+                                "organization-name": "Fox, Chandler, Homans, Hicks and McKinnon",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2771314/configurations/13922194",
+                                "id": 13922194,
+                                "name": "SVR: FCEXCH - DC / Former Exchange Server",
+                                "hostname": "FCEXCH",
+                                "organization-name": "Fox, Chandler, Homans, Hicks and McKinnon",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/2771314/configurations/13922192",
+                                "id": 13922192,
+                                "name": "SVR: FCFILE",
+                                "hostname": "FCFILE",
+                                "organization-name": "Fox, Chandler, Homans, Hicks and McKinnon",
+                                "configuration-type-name": "*APPLICATION SERVER/SERVICE"
+                            }
+                        ]
+                    }
+                },
+                "archived": true,
+                "created-at": "2018-05-23T18:20:39.000Z",
+                "updated-at": "2021-06-23T17:17:24.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7823513",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668934,
+                "organization-name": "Abry Partners",
+                "resource-url": "https://coretelligent.itglue.com/3668934/assets/39796-identity-services/records/7823513",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "Abry.internal ABRY",
+                "traits": {
+                    "ad-full-name": "Abry.internal",
+                    "ad-short-name": "ABRY",
+                    "ad-level": "2012",
+                    "notes": "<div>LAPS is implemented to all member servers and workstations on the domain. Please check ABRY-BOS-UTIL02 to query LAPS UI to get the local admin password of a member server or workstation on the domain<br></div>",
+                    "coresecret-url": "https://secret.core.tech/pid=43252",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/32783294",
+                                "id": 32783294,
+                                "name": "abry-bos-dc03",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Autotask Default"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/33255691",
+                                "id": 33255691,
+                                "name": "abry-bos-dc04",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Autotask Default"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/32494717",
+                                "id": 32494717,
+                                "name": "abry-cce-dc1",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/32494717",
+                                "id": 32494717,
+                                "name": "abry-cce-dc1",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/32783294",
+                                "id": 32783294,
+                                "name": "abry-bos-dc03",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Autotask Default"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/33255691",
+                                "id": 33255691,
+                                "name": "abry-bos-dc04",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Autotask Default"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/32783294",
+                                "id": 32783294,
+                                "name": "abry-bos-dc03",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Autotask Default"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668934/configurations/32494717",
+                                "id": 32494717,
+                                "name": "abry-cce-dc1",
+                                "organization-name": "Abry Partners",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-07-26T13:14:43.000Z",
+                "updated-at": "2024-06-21T17:40:02.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7865325",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3669003,
+                "organization-name": "InfoBionic",
+                "resource-url": "https://coretelligent.itglue.com/3669003/assets/39796-identity-services/records/7865325",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "https://portal.azure.com/#home AzureAD",
+                "traits": {
+                    "ad-full-name": "https://portal.azure.com/#home",
+                    "ad-short-name": "AzureAD",
+                    "notes": "<div>InfoBionic is using Azure as PAAS.<br></div>"
+                },
+                "archived": false,
+                "created-at": "2019-07-29T18:16:01.000Z",
+                "updated-at": "2019-07-29T18:16:01.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7867440",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3672325,
+                "organization-name": "Access Intelligence",
+                "resource-url": "https://coretelligent.itglue.com/3672325/assets/39796-identity-services/records/7867440",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "accessintel.com ACCESSINTEL",
+                "traits": {
+                    "ad-full-name": "accessintel.com",
+                    "ad-short-name": "ACCESSINTEL",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-deleted": true
+                            },
+                            {
+                                "resource-deleted": true
+                            },
+                            {
+                                "resource-deleted": true
+                            },
+                            {
+                                "resource-deleted": true
+                            },
+                            {
+                                "resource-deleted": true
+                            },
+                            {
+                                "resource-deleted": true
+                            },
+                            {
+                                "resource-deleted": true
+                            },
+                            {
+                                "resource-deleted": true
+                            },
+                            {
+                                "resource-deleted": true
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-07-29T21:41:00.000Z",
+                "updated-at": "2019-07-29T21:41:01.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7941259",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3669146,
+                "organization-name": "Ovid Therapeutics",
+                "resource-url": "https://coretelligent.itglue.com/3669146/assets/39796-identity-services/records/7941259",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "ovid.local ovid",
+                "traits": {
+                    "ad-full-name": "ovid.local",
+                    "ad-short-name": "ovid",
+                    "ad-level": "2016",
+                    "notes": "<div>Functional Level is 2016</div>",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669146/configurations/22003374",
+                                "id": 22003374,
+                                "name": "ovid-cce-dc01",
+                                "organization-name": "Ovid Therapeutics",
+                                "configuration-type-name": "Autotask Default"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669146/configurations/22003374",
+                                "id": 22003374,
+                                "name": "ovid-cce-dc01",
+                                "organization-name": "Ovid Therapeutics",
+                                "configuration-type-name": "Autotask Default"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669146/configurations/24016532",
+                                "id": 24016532,
+                                "name": "** OLD - OVID-NYC-FW01",
+                                "hostname": "OVID-NYC-FW01",
+                                "organization-name": "Ovid Therapeutics",
+                                "configuration-type-name": "Firewall"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-07-31T21:58:12.000Z",
+                "updated-at": "2020-09-10T00:26:57.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7950018",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668874,
+                "organization-name": "Guidepost Growth Equity",
+                "resource-url": "https://coretelligent.itglue.com/3668874/assets/39796-identity-services/records/7950018",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "guidepost.lan guidepost",
+                "traits": {
+                    "ad-full-name": "guidepost.lan",
+                    "ad-short-name": "guidepost",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22009053",
+                                "id": 22009053,
+                                "name": "gpge-dc01",
+                                "hostname": "gpge-dc01",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22009082",
+                                "id": 22009082,
+                                "name": "gpge-ccw-dc01",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22009078",
+                                "id": 22009078,
+                                "name": "gpge-cce-dc02 (DC)",
+                                "hostname": "gpge-cce-dc02",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/61745420",
+                                "id": 61745420,
+                                "name": "gpge-cce-dc03 (DC)",
+                                "hostname": "gpge-cce-dc03",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/61745420",
+                                "id": 61745420,
+                                "name": "gpge-cce-dc03 (DC)",
+                                "hostname": "gpge-cce-dc03",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22009078",
+                                "id": 22009078,
+                                "name": "gpge-cce-dc02 (DC)",
+                                "hostname": "gpge-cce-dc02",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22009082",
+                                "id": 22009082,
+                                "name": "gpge-ccw-dc01",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22009053",
+                                "id": 22009053,
+                                "name": "gpge-dc01",
+                                "hostname": "gpge-dc01",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668874/configurations/22009053",
+                                "id": 22009053,
+                                "name": "gpge-dc01",
+                                "hostname": "gpge-dc01",
+                                "organization-name": "Guidepost Growth Equity",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-01T15:50:54.000Z",
+                "updated-at": "2024-04-02T18:29:08.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7969579",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668959,
+                "organization-name": "Willowridge Partners",
+                "resource-url": "https://coretelligent.itglue.com/3668959/assets/39796-identity-services/records/7969579",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "Entra ID Willowridge.com",
+                "traits": {
+                    "user-authentication-platform": "Entra",
+                    "ad-full-name": "Entra ID",
+                    "ad-short-name": "Willowridge.com",
+                    "endpoint-management-platform-windows": "Microsoft Entra ID and InTune"
+                },
+                "archived": false,
+                "created-at": "2019-08-02T16:06:08.000Z",
+                "updated-at": "2025-04-28T20:57:36.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7973018",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668889,
+                "organization-name": "FTV Capital",
+                "resource-url": "https://coretelligent.itglue.com/3668889/assets/39796-identity-services/records/7973018",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "ftventures.com ftventures",
+                "traits": {
+                    "ad-full-name": "ftventures.com",
+                    "ad-short-name": "ftventures",
+                    "ad-level": "2012",
+                    "notes": "<div>AAD Sync is installed on FTV-CCW-DC1</div><div>Idaptive Connector is installed on FTV-CCW-DC1 and FTV-CCE-DC01</div><div>Password notification script is located on FTV-CA-DC1 and the task to run it is also scheduled on the same server. (Script lives in C:\\Scripts)</div><div>Lastpass AD sync tool is on FTV-NY-Utility1</div>",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668889/configurations/22009961",
+                                "id": 22009961,
+                                "name": "FTV-CCE-DC1 (DC)  - DECOMMISSIONED",
+                                "hostname": "FTV-CCE-DC1",
+                                "organization-name": "FTV Capital",
+                                "configuration-type-name": "Autotask Default"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668889/configurations/22009941",
+                                "id": 22009941,
+                                "name": "FTV-CA-DC1 (DC)",
+                                "hostname": "FTV-CA-DC1",
+                                "organization-name": "FTV Capital",
+                                "configuration-type-name": "virtualMachine"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668889/configurations/22009969",
+                                "id": 22009969,
+                                "name": "FTV-CCW-DC1 (DC)",
+                                "organization-name": "FTV Capital",
+                                "configuration-type-name": "Autotask Default"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668889/configurations/22009941",
+                                "id": 22009941,
+                                "name": "FTV-CA-DC1 (DC)",
+                                "hostname": "FTV-CA-DC1",
+                                "organization-name": "FTV Capital",
+                                "configuration-type-name": "virtualMachine"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668889/configurations/22009922",
+                                "id": 22009922,
+                                "name": "ftv-cce-dc01",
+                                "organization-name": "FTV Capital",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668889/configurations/22009944",
+                                "id": 22009944,
+                                "name": "ftv-ccw-dc01",
+                                "organization-name": "FTV Capital",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668889/configurations/22013930",
+                                "id": 22013930,
+                                "name": "FTV-NY-DC01 (DC)",
+                                "hostname": "ftv-ny-dc01",
+                                "organization-name": "FTV Capital",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-02T20:43:59.000Z",
+                "updated-at": "2023-03-03T17:41:25.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "7983855",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668896,
+                "organization-name": "Grove Street Advisors LLC",
+                "resource-url": "https://coretelligent.itglue.com/3668896/assets/39796-identity-services/records/7983855",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "grovestreetadvisors.com GSA",
+                "traits": {
+                    "ad-full-name": "grovestreetadvisors.com",
+                    "ad-short-name": "GSA",
+                    "ad-level": "2019",
+                    "notes": "<div>All FMSO Roles reside on GSA-CCE-DC1</div>",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668896/configurations/41979415",
+                                "id": 41979415,
+                                "name": "GSA-CCE-DC1",
+                                "organization-name": "Grove Street Advisors LLC",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668896/configurations/41979479",
+                                "id": 41979479,
+                                "name": "GSA-CCE-DC2 (DECOM)",
+                                "organization-name": "Grove Street Advisors LLC",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668896/configurations/41979779",
+                                "id": 41979779,
+                                "name": "GSA-BOS-DC1",
+                                "organization-name": "Grove Street Advisors LLC",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668896/configurations/41979415",
+                                "id": 41979415,
+                                "name": "GSA-CCE-DC1",
+                                "organization-name": "Grove Street Advisors LLC",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668896/configurations/41979479",
+                                "id": 41979479,
+                                "name": "GSA-CCE-DC2 (DECOM)",
+                                "organization-name": "Grove Street Advisors LLC",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668896/configurations/41979779",
+                                "id": 41979779,
+                                "name": "GSA-BOS-DC1",
+                                "organization-name": "Grove Street Advisors LLC",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668896/configurations/41979415",
+                                "id": 41979415,
+                                "name": "GSA-CCE-DC1",
+                                "organization-name": "Grove Street Advisors LLC",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-04T14:19:45.000Z",
+                "updated-at": "2022-01-03T20:30:45.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8004323",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3669067,
+                "organization-name": "Allied Minds",
+                "resource-url": "https://coretelligent.itglue.com/3669067/assets/39796-identity-services/records/8004323",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "hq.alliedminds.com HQ",
+                "traits": {
+                    "ad-full-name": "hq.alliedminds.com",
+                    "ad-short-name": "HQ",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669067/configurations/22015876",
+                                "id": 22015876,
+                                "name": "amdc03",
+                                "organization-name": "Allied Minds",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669067/configurations/22016268",
+                                "id": 22016268,
+                                "name": "amdc04",
+                                "organization-name": "Allied Minds",
+                                "configuration-type-name": "Autotask Default"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669067/configurations/22016066",
+                                "id": 22016066,
+                                "name": "am-cce-dc01",
+                                "organization-name": "Allied Minds",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-05T18:53:38.000Z",
+                "updated-at": "2019-09-18T14:44:24.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8038121",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3669138,
+                "organization-name": "Smile Train",
+                "resource-url": "https://coretelligent.itglue.com/3669138/assets/39796-identity-services/records/8038121",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "Smiletrain.org smiletrain",
+                "traits": {
+                    "ad-full-name": "Smiletrain.org",
+                    "ad-short-name": "smiletrain",
+                    "ad-level": "2012 R2",
+                    "notes": "<div>AAD Sync to Office 365 on installed on STNY<a href=\"https://coretelligent.itglue.com/3669138/configurations/22003917\">-</a>DCSRV03</div><div>All user attributes must be edited from that server</div>",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669138/configurations/34402662",
+                                "id": 34402662,
+                                "name": "stny-dcsrv03(DC)",
+                                "hostname": "stny-dcsrv03",
+                                "organization-name": "Smile Train",
+                                "configuration-type-name": "Autotask Default"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669138/configurations/34402662",
+                                "id": 34402662,
+                                "name": "stny-dcsrv03(DC)",
+                                "hostname": "stny-dcsrv03",
+                                "organization-name": "Smile Train",
+                                "configuration-type-name": "Autotask Default"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669138/configurations/34402662",
+                                "id": 34402662,
+                                "name": "stny-dcsrv03(DC)",
+                                "hostname": "stny-dcsrv03",
+                                "organization-name": "Smile Train",
+                                "configuration-type-name": "Autotask Default"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-08T14:47:54.000Z",
+                "updated-at": "2023-10-27T16:09:12.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8070472",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668882,
+                "organization-name": "Boston Youth Sanctuary",
+                "resource-url": "https://coretelligent.itglue.com/3668882/assets/39796-identity-services/records/8070472",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "bys.lan bys",
+                "traits": {
+                    "ad-full-name": "bys.lan",
+                    "ad-short-name": "bys",
+                    "ad-level": "2008",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668882/configurations/22009425",
+                                "id": 22009425,
+                                "name": "bys-dc02",
+                                "organization-name": "Boston Youth Sanctuary",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668882/configurations/22009425",
+                                "id": 22009425,
+                                "name": "bys-dc02",
+                                "organization-name": "Boston Youth Sanctuary",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668882/configurations/22009425",
+                                "id": 22009425,
+                                "name": "bys-dc02",
+                                "organization-name": "Boston Youth Sanctuary",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-10T19:31:34.000Z",
+                "updated-at": "2019-08-10T19:31:34.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8073704",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3669036,
+                "organization-name": "Cove Hill Partners",
+                "resource-url": "https://coretelligent.itglue.com/3669036/assets/39796-identity-services/records/8073704",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "covehillpartners.com coverhillpartners.com",
+                "traits": {
+                    "ad-full-name": "covehillpartners.com",
+                    "ad-short-name": "coverhillpartners.com"
+                },
+                "archived": false,
+                "created-at": "2019-08-10T20:56:23.000Z",
+                "updated-at": "2024-12-18T14:33:56.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8097729",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668951,
+                "organization-name": "NED - BOS",
+                "resource-url": "https://coretelligent.itglue.com/3668951/assets/39796-identity-services/records/8097729",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "nedev.local NEDEV",
+                "traits": {
+                    "ad-full-name": "nedev.local",
+                    "ad-short-name": "NEDEV",
+                    "ad-level": "2008 R2",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668951/configurations/59003166",
+                                "id": 59003166,
+                                "name": "NED-CCE-DC05",
+                                "organization-name": "NED - BOS",
+                                "configuration-type-name": "Virtual Machine"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668951/configurations/59003115",
+                                "id": 59003115,
+                                "name": "NED-CCE-DC03",
+                                "organization-name": "NED - BOS",
+                                "configuration-type-name": "Virtual Machine"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668951/configurations/31290100",
+                                "id": 31290100,
+                                "name": "ned-bos-dc01 (DC)",
+                                "hostname": "NED-BOS-DC01",
+                                "organization-name": "NED - BOS",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668951/configurations/31290099",
+                                "id": 31290099,
+                                "name": "ned-bos-dc02 (DC)",
+                                "hostname": "ned-bos-dc02",
+                                "organization-name": "NED - BOS",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668951/configurations/59003166",
+                                "id": 59003166,
+                                "name": "NED-CCE-DC05",
+                                "organization-name": "NED - BOS",
+                                "configuration-type-name": "Virtual Machine"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668951/configurations/59003115",
+                                "id": 59003115,
+                                "name": "NED-CCE-DC03",
+                                "organization-name": "NED - BOS",
+                                "configuration-type-name": "Virtual Machine"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668951/configurations/31290100",
+                                "id": 31290100,
+                                "name": "ned-bos-dc01 (DC)",
+                                "hostname": "NED-BOS-DC01",
+                                "organization-name": "NED - BOS",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668951/configurations/31290099",
+                                "id": 31290099,
+                                "name": "ned-bos-dc02 (DC)",
+                                "hostname": "ned-bos-dc02",
+                                "organization-name": "NED - BOS",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-12T19:04:34.000Z",
+                "updated-at": "2024-03-11T17:24:39.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8178613",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3669092,
+                "organization-name": "Optum Venture Management, LLC",
+                "resource-url": "https://coretelligent.itglue.com/3669092/assets/39796-identity-services/records/8178613",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "optum.lan optum",
+                "traits": {
+                    "ad-full-name": "optum.lan",
+                    "ad-short-name": "optum",
+                    "ad-level": "2012",
+                    "notes": "<div>OPT-CCE-DC02 is required to be online for CyberArk.</div><div>New user accounts must be configured in OPT-CCE-DC02 ADUC for access to CyberArk groups.</div>",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669092/configurations/43625498",
+                                "id": 43625498,
+                                "name": "OPT-CCE-DC02",
+                                "hostname": "OPT-CCE-DC02",
+                                "organization-name": "Optum Venture Management, LLC",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669092/configurations/43625498",
+                                "id": 43625498,
+                                "name": "OPT-CCE-DC02",
+                                "hostname": "OPT-CCE-DC02",
+                                "organization-name": "Optum Venture Management, LLC",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669092/configurations/43625498",
+                                "id": 43625498,
+                                "name": "OPT-CCE-DC02",
+                                "hostname": "OPT-CCE-DC02",
+                                "organization-name": "Optum Venture Management, LLC",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-15T19:43:17.000Z",
+                "updated-at": "2024-04-03T13:22:50.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8203170",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3669174,
+                "organization-name": "Equality Asset Management, LP",
+                "resource-url": "https://coretelligent.itglue.com/3669174/assets/39796-identity-services/records/8203170",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "equalityam.com equalityam",
+                "traits": {
+                    "ad-full-name": "equalityam.com",
+                    "ad-short-name": "equalityam",
+                    "ad-level": "2019",
+                    "notes": "<div>Azure Active Directory</div>"
+                },
+                "archived": false,
+                "created-at": "2019-08-17T15:55:29.000Z",
+                "updated-at": "2023-03-22T20:34:39.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8314859",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668925,
+                "organization-name": "Silversmith Capital Partners",
+                "resource-url": "https://coretelligent.itglue.com/3668925/assets/39796-identity-services/records/8314859",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "Silversmith Capital silversmith.com",
+                "traits": {
+                    "user-authentication-platform": "Entra",
+                    "ad-full-name": "Silversmith Capital",
+                    "ad-short-name": "silversmith.com",
+                    "ad-level": "2025",
+                    "endpoint-management-platform-windows": "Microsoft Entra ID and InTune",
+                    "microsoft-entraid": "<div>tenant ID -&nbsp;6f8aa8ea-bd69-4979-8066-03c7215afea9<br></div>"
+                },
+                "archived": false,
+                "created-at": "2019-08-25T16:05:39.000Z",
+                "updated-at": "2025-05-20T01:39:34.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8338159",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668916,
+                "organization-name": "Officeworks, Inc.",
+                "resource-url": "https://coretelligent.itglue.com/3668916/assets/39796-identity-services/records/8338159",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "ow.lan[DEPRECATED] [Azure Migration] OW",
+                "traits": {
+                    "ad-full-name": "ow.lan[DEPRECATED] [Azure Migration]",
+                    "ad-short-name": "OW",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/22011798",
+                                "id": 22011798,
+                                "name": "ow-cce-dc01 (DC)",
+                                "hostname": "ow-cce-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/22011668",
+                                "id": 22011668,
+                                "name": "ow-ply-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/22011739",
+                                "id": 22011739,
+                                "name": "ow-pa-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/22011703",
+                                "id": 22011703,
+                                "name": "ow-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/31538154",
+                                "id": 31538154,
+                                "name": "ow-va-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/33257135",
+                                "id": 33257135,
+                                "name": "OW-NJ-DC01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/22011798",
+                                "id": 22011798,
+                                "name": "ow-cce-dc01 (DC)",
+                                "hostname": "ow-cce-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/22011668",
+                                "id": 22011668,
+                                "name": "ow-ply-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/22011739",
+                                "id": 22011739,
+                                "name": "ow-pa-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/22011703",
+                                "id": 22011703,
+                                "name": "ow-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/31538154",
+                                "id": 31538154,
+                                "name": "ow-va-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/33257135",
+                                "id": 33257135,
+                                "name": "OW-NJ-DC01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/22011739",
+                                "id": 22011739,
+                                "name": "ow-pa-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/22011703",
+                                "id": 22011703,
+                                "name": "ow-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/31538154",
+                                "id": 31538154,
+                                "name": "ow-va-dc01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668916/configurations/30633141",
+                                "id": 30633141,
+                                "name": "OW-NJ-FW01",
+                                "hostname": "OW-VA-FW01",
+                                "organization-name": "Officeworks, Inc.",
+                                "configuration-type-name": "Firewall"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-26T19:36:46.000Z",
+                "updated-at": "2024-05-29T13:00:25.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8409430",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3669123,
+                "organization-name": "North Bridge Venture Management",
+                "resource-url": "https://coretelligent.itglue.com/3669123/assets/39796-identity-services/records/8409430",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "NBVP_NT.LAN NBVP_NT",
+                "traits": {
+                    "ad-full-name": "NBVP_NT.LAN",
+                    "ad-short-name": "NBVP_NT",
+                    "ad-level": "2012 R2",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669123/configurations/28929395",
+                                "id": 28929395,
+                                "name": "nbvp-cce-dc03a (DC)",
+                                "hostname": "NB-CCE-DC03",
+                                "organization-name": "North Bridge Venture Management",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669123/configurations/28929395",
+                                "id": 28929395,
+                                "name": "nbvp-cce-dc03a (DC)",
+                                "hostname": "NB-CCE-DC03",
+                                "organization-name": "North Bridge Venture Management",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-08-30T18:26:48.000Z",
+                "updated-at": "2022-11-27T12:18:55.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8474290",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668943,
+                "organization-name": "Fulcrum Therapeutics",
+                "resource-url": "https://coretelligent.itglue.com/3668943/assets/39796-identity-services/records/8474290",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "fulcrum.com fulcrum",
+                "traits": {
+                    "ad-full-name": "fulcrum.com",
+                    "ad-short-name": "fulcrum",
+                    "ad-level": "2012",
+                    "notes": "<div><div><br></div><div><br></div><table><tbody><tr><td><strong>Project</strong></td><td><strong>Fulcrum Server refresh</strong></td><td><br></td></tr><tr><td>IP Block</td><td>192.168.200.0</td><td>192.168.207</td><td><br></td></tr><tr><td>Subnet</td><td>/21</td><td><br></td><td><br></td></tr><tr><td>DHCP Server 1</td><td>192.168.201.11</td><td><br></td><td><br></td></tr><tr><td>DHCP Server 2</td><td>192.168.201.12</td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td>CURRENT</td></tr><tr><td>Scope</td><td>IP range</td><td>Gateway</td><td>DNS Servers</td></tr><tr><td>Server-Lan</td><td>192.168.201.100</td><td>192.168.201.254</td><td>10.255.69.11</td></tr><tr><td>Voice</td><td>192.168.203.100-254</td><td>192.168.203.1</td><td>10.255.69.11</td></tr><tr><td>Corporate WiFi</td><td>192.168.202.100-254</td><td>192.168.202.1</td><td>10.255.69.11</td></tr><tr><td>Guest WiFi</td><td>192.168.255.100-254</td><td>192.168.255.1</td><td>8.8.8.8, 8.8.4.4</td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td>NEW</td></tr><tr><td>Scope</td><td>IP range</td><td>Gateway</td><td>DNS Servers</td></tr><tr><td>LAN</td><td>192.168.200.0/23</td><td>192.168.200.1</td><td>192.168.200.11, 192.168.200.12, 10.255.69.11</td></tr><tr><td>WiFi</td><td>192.168.202.0/23</td><td>192.168.202.1</td><td>192.168.200.11, 192.168.200.12, 10.255.69.11</td></tr><tr><td>VOIP</td><td>192.168.204.0/23</td><td>192.168.204.1</td><td>192.168.200.11, 192.168.200.12, 10.255.69.11</td></tr><tr><td>Lab</td><td>192.168.206.0/24</td><td>192.168.206.1</td><td>192.168.200.11, 192.168.200.12, 10.255.69.11</td></tr><tr><td>Management / Infrastructure</td><td>192.168.207.0/24</td><td>192.168.207.1</td><td>192.168.200.11, 192.168.200.12, 10.255.69.11</td></tr><tr><td>Guest WiFi</td><td>192.168.255.100-254</td><td>192.168.255.1</td><td><div>8.8.8.8, 8.8.4.4<br></div><div><br></div><div><br></div></td></tr></tbody></table></div>",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668943/configurations/22013096",
+                                "id": 22013096,
+                                "name": "ful-cce-dc01",
+                                "organization-name": "Fulcrum Therapeutics",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668943/configurations/22012711",
+                                "id": 22012711,
+                                "name": "ful-dc01",
+                                "organization-name": "Fulcrum Therapeutics",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668943/configurations/22012785",
+                                "id": 22012785,
+                                "name": "ful-dc02",
+                                "organization-name": "Fulcrum Therapeutics",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668943/configurations/22013096",
+                                "id": 22013096,
+                                "name": "ful-cce-dc01",
+                                "organization-name": "Fulcrum Therapeutics",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668943/configurations/22012711",
+                                "id": 22012711,
+                                "name": "ful-dc01",
+                                "organization-name": "Fulcrum Therapeutics",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668943/configurations/22012785",
+                                "id": 22012785,
+                                "name": "ful-dc02",
+                                "organization-name": "Fulcrum Therapeutics",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668943/configurations/22013096",
+                                "id": 22013096,
+                                "name": "ful-cce-dc01",
+                                "organization-name": "Fulcrum Therapeutics",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668943/configurations/22012711",
+                                "id": 22012711,
+                                "name": "ful-dc01",
+                                "organization-name": "Fulcrum Therapeutics",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-09-04T20:46:53.000Z",
+                "updated-at": "2019-09-04T20:46:53.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8486099",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3738418,
+                "organization-name": "Spectrum Equity",
+                "resource-url": "https://coretelligent.itglue.com/3738418/assets/39796-identity-services/records/8486099",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "spectrumequity.com spectrumequity",
+                "traits": {
+                    "ad-full-name": "spectrumequity.com",
+                    "ad-short-name": "spectrumequity",
+                    "ad-level": "2008",
+                    "microsoft-entraid": "<div>Azure tenant ID 6c3c7eb5-12ca-471b-939e-177d466e3533</div><div><br></div><div>Hybrid connection to AD</div>",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3738418/configurations/23254423",
+                                "id": 23254423,
+                                "name": "CA-DC2 (PDC)",
+                                "hostname": "CA-DC2",
+                                "organization-name": "Spectrum Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3738418/configurations/23254430",
+                                "id": 23254430,
+                                "name": "CA-DC3 (DC)",
+                                "hostname": "CA-DC3",
+                                "organization-name": "Spectrum Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3738418/configurations/23333931",
+                                "id": 23333931,
+                                "name": "MA-DC1 (DC)",
+                                "hostname": "MA-DC1",
+                                "organization-name": "Spectrum Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3738418/configurations/23333939",
+                                "id": 23333939,
+                                "name": "MA-FS (DC)",
+                                "hostname": "MA-FS",
+                                "organization-name": "Spectrum Equity",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3738418/configurations/23254423",
+                                "id": 23254423,
+                                "name": "CA-DC2 (PDC)",
+                                "hostname": "CA-DC2",
+                                "organization-name": "Spectrum Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3738418/configurations/23254430",
+                                "id": 23254430,
+                                "name": "CA-DC3 (DC)",
+                                "hostname": "CA-DC3",
+                                "organization-name": "Spectrum Equity",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3738418/configurations/23333931",
+                                "id": 23333931,
+                                "name": "MA-DC1 (DC)",
+                                "hostname": "MA-DC1",
+                                "organization-name": "Spectrum Equity",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-09-05T17:52:20.000Z",
+                "updated-at": "2025-02-03T14:29:14.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8749058",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668942,
+                "organization-name": "Fairhaven Capital Partners",
+                "resource-url": "https://coretelligent.itglue.com/3668942/assets/39796-identity-services/records/8749058",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "fairhaven.local fairhaven",
+                "traits": {
+                    "ad-full-name": "fairhaven.local",
+                    "ad-short-name": "fairhaven",
+                    "ad-level": "2012",
+                    "notes": "<div>AD level - 2012R2</div>",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668942/configurations/23212906",
+                                "id": 23212906,
+                                "name": "fhvn-cce-dc01",
+                                "organization-name": "Fairhaven Capital Partners",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668942/configurations/23212906",
+                                "id": 23212906,
+                                "name": "fhvn-cce-dc01",
+                                "organization-name": "Fairhaven Capital Partners",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-09-22T13:35:12.000Z",
+                "updated-at": "2019-09-22T13:35:12.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8908858",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3797975,
+                "organization-name": "Wychmere Beach Club",
+                "resource-url": "https://coretelligent.itglue.com/3797975/assets/39796-identity-services/records/8908858",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "WBC.LAN WBC",
+                "traits": {
+                    "ad-full-name": "WBC.LAN",
+                    "ad-short-name": "WBC",
+                    "ad-level": "2019",
+                    "notes": "<div>DNS, AD, NAP</div>",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3797975/configurations/23750026",
+                                "id": 23750026,
+                                "name": "WBC-CCE-DC01 (DC)",
+                                "hostname": "WBC-CCE-DC01",
+                                "organization-name": "Wychmere Beach Club",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3797975/configurations/23750026",
+                                "id": 23750026,
+                                "name": "WBC-CCE-DC01 (DC)",
+                                "hostname": "WBC-CCE-DC01",
+                                "organization-name": "Wychmere Beach Club",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-10-02T16:23:19.000Z",
+                "updated-at": "2019-12-17T03:30:20.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8953372",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3669050,
+                "organization-name": "Randolph Engineering",
+                "resource-url": "https://coretelligent.itglue.com/3669050/assets/39796-identity-services/records/8953372",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "randolph.com randolph",
+                "traits": {
+                    "ad-full-name": "randolph.com",
+                    "ad-short-name": "randolph",
+                    "ad-level": "2008",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669050/configurations/22016291",
+                                "id": 22016291,
+                                "name": "ran-dc01",
+                                "organization-name": "Randolph Engineering",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669050/configurations/22016116",
+                                "id": 22016116,
+                                "name": "re-cce-dc01",
+                                "organization-name": "Randolph Engineering",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669050/configurations/22016291",
+                                "id": 22016291,
+                                "name": "ran-dc01",
+                                "organization-name": "Randolph Engineering",
+                                "configuration-type-name": "Workstation"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669050/configurations/22016116",
+                                "id": 22016116,
+                                "name": "re-cce-dc01",
+                                "organization-name": "Randolph Engineering",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3669050/configurations/22016291",
+                                "id": 22016291,
+                                "name": "ran-dc01",
+                                "organization-name": "Randolph Engineering",
+                                "configuration-type-name": "Workstation"
+                            }
+                        ]
+                    }
+                },
+                "archived": true,
+                "created-at": "2019-10-04T14:39:04.000Z",
+                "updated-at": "2024-10-21T19:20:47.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        },
+        {
+            "id": "8990750",
+            "type": "flexible-assets",
+            "attributes": {
+                "organization-id": 3668912,
+                "organization-name": "BioNTech US",
+                "resource-url": "https://coretelligent.itglue.com/3668912/assets/39796-identity-services/records/8990750",
+                "restricted": false,
+                "my-glue": false,
+                "psa-integration": null,
+                "flexible-asset-type-id": 39796,
+                "flexible-asset-type-name": "Identity Services",
+                "name": "neon.lan neon",
+                "traits": {
+                    "ad-full-name": "neon.lan",
+                    "ad-short-name": "neon",
+                    "ad-level": "2012",
+                    "ad-servers-on-prem": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668912/configurations/22011426",
+                                "id": 22011426,
+                                "name": "NEON-DC01 (DC)",
+                                "hostname": "NEON-DC01",
+                                "organization-name": "BioNTech US",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668912/configurations/22011311",
+                                "id": 22011311,
+                                "name": "NEON-DC02 (DC)",
+                                "hostname": "NEON-DC02",
+                                "organization-name": "BioNTech US",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668912/configurations/22011308",
+                                "id": 22011308,
+                                "name": "NEON-CCE-DC01 (DC)",
+                                "hostname": "NEON-CCE-DC01",
+                                "organization-name": "BioNTech US",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668912/configurations/42964046",
+                                "id": 42964046,
+                                "name": "BION-CAM-DC01",
+                                "organization-name": "BioNTech US",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dns-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668912/configurations/22011426",
+                                "id": 22011426,
+                                "name": "NEON-DC01 (DC)",
+                                "hostname": "NEON-DC01",
+                                "organization-name": "BioNTech US",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668912/configurations/22011311",
+                                "id": 22011311,
+                                "name": "NEON-DC02 (DC)",
+                                "hostname": "NEON-DC02",
+                                "organization-name": "BioNTech US",
+                                "configuration-type-name": "Server"
+                            },
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668912/configurations/22011308",
+                                "id": 22011308,
+                                "name": "NEON-CCE-DC01 (DC)",
+                                "hostname": "NEON-CCE-DC01",
+                                "organization-name": "BioNTech US",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    },
+                    "dhcp-servers": {
+                        "type": "Configurations",
+                        "values": [
+                            {
+                                "resource-url": "https://coretelligent.itglue.com/3668912/configurations/22011426",
+                                "id": 22011426,
+                                "name": "NEON-DC01 (DC)",
+                                "hostname": "NEON-DC01",
+                                "organization-name": "BioNTech US",
+                                "configuration-type-name": "Server"
+                            }
+                        ]
+                    }
+                },
+                "archived": false,
+                "created-at": "2019-10-06T22:48:32.000Z",
+                "updated-at": "2022-02-10T15:00:19.000Z"
+            },
+            "relationships": {
+                "adapters-resources": {
+                    "data": []
+                }
+            }
+        }
+    ],
+    "meta": {
+        "current-page": 1,
+        "next-page": 2,
+        "prev-page": null,
+        "total-pages": 14,
+        "total-count": 673,
+        "filters": {}
+    },
+    "links": {
+        "self": "https://api.itglue.com/flexible_assets?filter%5Bflexible-asset-type-id%5D=39796&page%5Bnumber%5D=1&page%5Bsize%5D=50",
+        "first": "https://api.itglue.com/flexible_assets?filter%5Bflexible-asset-type-id%5D=39796&page%5Bnumber%5D=1&page%5Bsize%5D=50",
+        "prev": null,
+        "next": "https://api.itglue.com/flexible_assets?filter%5Bflexible-asset-type-id%5D=39796&page%5Bnumber%5D=2&page%5Bsize%5D=50",
+        "last": "https://api.itglue.com/flexible_assets?filter%5Bflexible-asset-type-id%5D=39796&page%5Bnumber%5D=14&page%5Bsize%5D=50"
+    }
+}
