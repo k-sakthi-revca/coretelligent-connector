@@ -1,0 +1,32 @@
+[
+  {
+    "sys_id": "sn-001",
+    "name": "ACME-SRV01",
+    "hostname": "acme-srv01.local",
+    "serial_number": "ABC123456",
+    "mac_address": "00:11:22:33:44:55",
+    "ip_address": "192.168.1.10",
+    "company": "org-001",
+    "u_itg_id": ""
+  },
+  {
+    "sys_id": "sn-002",
+    "name": "ACME-SRV02-OLD",
+    "hostname": "acme-srv02.local",
+    "serial_number": "DEF789012",
+    "mac_address": "AA:BB:CC:DD:EE:FF",
+    "ip_address": "192.168.1.11",
+    "company": "org-001",
+    "u_itg_id": ""
+  },
+  {
+    "sys_id": "sn-003",
+    "name": "ACME-WKS99",
+    "hostname": "acme-wks99.local",
+    "serial_number": "GHI345678",
+    "mac_address": "00:11:22:33:44:77",
+    "ip_address": "192.168.1.199",
+    "company": "org-001",
+    "u_itg_id": ""
+  }
+]

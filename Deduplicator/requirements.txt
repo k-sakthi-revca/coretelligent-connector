@@ -1,0 +1,38 @@
+# ITGlue to ServiceNow Deduplication Tool Requirements
+# These packages are required to run the deduplication tool
+# Compatible with Python 3.7+ only
+
+# Python 3 compatibility
+typing-extensions>=4.0.0  # Enhanced typing support for Python 3
+importlib-metadata>=4.0.0  # For Python 3.7 compatibility
+
+# Data processing
+pandas>=1.3.0,<2.0.0  # Pandas 2.0+ requires Python 3.8+
+numpy>=1.20.0,<2.0.0
+
+# Configuration and file handling
+pyyaml>=6.0
+python-dotenv>=0.19.0
+
+# API interaction
+requests>=2.26.0
+urllib3>=1.26.0,<2.0.0  # urllib3 2.0+ drops Python 3.7 support
+
+# String processing and similarity
+python-Levenshtein>=0.12.0
+difflib3>=0.1.0  # Enhanced difflib for Python 3
+
+# Date handling
+python-dateutil>=2.8.2
+
+# Progress tracking
+tqdm>=4.62.0
+
+# Optional: For advanced logging
+colorlog>=6.6.0
+
+# Testing and development
+pytest>=7.0.0  # For running tests
+mypy>=0.910  # For type checking
+pylint>=2.12.0  # For linting
+black>=22.3.0  # For code formatting

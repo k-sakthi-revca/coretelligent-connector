@@ -1,0 +1,2 @@
+match_score,itg_id,itg_name,itg_serial,itg_mac,itg_hostname,sn_sys_id,sn_name,sn_serial,sn_mac,sn_hostname,decision
+0.7715686274509804,itg-002,ACME-SRV02,DEF789012,00:11:22:33:44:66,acme-srv02.local,sn-002,ACME-SRV02-OLD,DEF789012,AA:BB:CC:DD:EE:FF,acme-srv02.local,

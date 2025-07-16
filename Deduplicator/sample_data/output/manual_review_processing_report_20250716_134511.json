@@ -1,0 +1,13 @@
+{
+  "timestamp": "20250716_134511",
+  "stats": {
+    "total_records": 1,
+    "processed_records": 1,
+    "error_records": 0
+  },
+  "updated_count": 1,
+  "kept_count": 0,
+  "created_count": 0,
+  "error_count": 0,
+  "errors": []
+}

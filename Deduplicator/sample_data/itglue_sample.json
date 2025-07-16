@@ -1,0 +1,50 @@
+[
+  {
+    "id": "itg-001",
+    "name": "ACME-SRV01",
+    "hostname": "acme-srv01.local",
+    "serial_number": "ABC123456",
+    "mac_address": "00:11:22:33:44:55",
+    "primary_ip": "192.168.1.10",
+    "organization_id": "org-001",
+    "organization_status_name": "Active",
+    "notes": "Primary file server",
+    "archived": true
+  },
+  {
+    "id": "itg-002",
+    "name": "ACME-SRV02",
+    "hostname": "acme-srv02.local",
+    "serial_number": "DEF789012",
+    "mac_address": "00:11:22:33:44:66",
+    "primary_ip": "192.168.1.11",
+    "organization_id": "org-001",
+    "organization_status_name": "Active",
+    "notes": "Database server",
+    "archived": true
+  },
+  {
+    "id": "itg-003",
+    "name": "ACME-WKS01",
+    "hostname": "acme-wks01.local",
+    "serial_number": "GHI345678",
+    "mac_address": "00:11:22:33:44:77",
+    "primary_ip": "192.168.1.100",
+    "organization_id": "org-001",
+    "organization_status_name": "Active",
+    "notes": "CEO workstation",
+    "archived": true
+  },
+  {
+    "id": "itg-004",
+    "name": "ACME-RTR01",
+    "hostname": "acme-rtr01.local",
+    "serial_number": "JKL901234",
+    "mac_address": "00:11:22:33:44:88",
+    "primary_ip": "192.168.1.1",
+    "organization_id": "org-001",
+    "organization_status_name": "Active",
+    "notes": "Main router",
+    "archived": true
+  }
+]

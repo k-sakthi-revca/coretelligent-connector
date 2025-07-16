@@ -1,0 +1,43 @@
+{
+  "timestamp": "20250716_134511",
+  "stats": {
+    "total_records": 4,
+    "high_confidence_matches": 2,
+    "medium_confidence_matches": 1,
+    "new_records": 1,
+    "error_records": 0
+  },
+  "high_confidence_count": 2,
+  "medium_confidence_count": 1,
+  "low_confidence_count": 1,
+  "error_count": 0,
+  "medium_confidence_matches": [
+    {
+      "itglue_record": {
+        "id": "itg-002",
+        "name": "ACME-SRV02",
+        "hostname": "acme-srv02.local",
+        "serial_number": "DEF789012",
+        "mac_address": "00:11:22:33:44:66",
+        "primary_ip": "192.168.1.11",
+        "organization_id": "org-001",
+        "organization_status_name": "Active",
+        "notes": "Database server",
+        "archived": true
+      },
+      "servicenow_record": {
+        "sys_id": "sn-002",
+        "name": "ACME-SRV02-OLD",
+        "hostname": "acme-srv02.local",
+        "serial_number": "DEF789012",
+        "mac_address": "AA:BB:CC:DD:EE:FF",
+        "ip_address": "192.168.1.11",
+        "company": "org-001",
+        "u_itg_id": ""
+      },
+      "match_score": 0.7715686274509804,
+      "action": "manual_review"
+    }
+  ],
+  "errors": []
+}
